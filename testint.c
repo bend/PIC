@@ -31,6 +31,7 @@ void alarm();
 char time[] = "00:00  00:00:00";
 char* currentTime = &time[7];
 int position = 0;
+int alarmflag = 0;
 short refresh = 1;
 unsigned long long int bres = 0;
 
@@ -134,6 +135,9 @@ void main(void)
         if ( refresh == 1){
             refresh = 0;
             display_time();
+            if ( alarmflag == 1){
+                alarm();
+            }
         }
     }
 }
@@ -170,19 +174,20 @@ void alarm(){
     for(i; i<5; i++){
         if(currentTime[i]!=time[i]){
             blink = 0;
-            break;
+            i = 5;
         }
     }
     if(blink){
-        for(j; j<10; j++){
-            //blink the yellow led with a 2 secons period
+        display_string(0,"    Wake up!    ");
+        display_string(16, "                ");
+        for(j; j<30; j++){
             LED1_IO ^=1;
-            for(k=0;k<10;k++) 
-                display_string(0,"wake up");
-                //dumb_delay1ms();
+            for(k=0; k<40;++k) 
+                dumb_delay1ms();
         }
         LED1_IO ^=1;
     }
+    alarmflag = 0;
 }
 
 void test_inc_current_time(){        
@@ -193,7 +198,7 @@ void test_inc_current_time(){
     if(currentTime[6]=='6'){
         currentTime[6]='0';
         currentTime[4]++;
-        alarm();
+        alarmflag = 1;
     }
     if(currentTime[4] == ':'){
         currentTime[4] = '0';
@@ -341,5 +346,5 @@ void dumb_delay1ms (void)
     T0CONbits.TMR0ON = 1;  //enable timer0
     while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
     INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
-    T0CONbits.TMR0ON = 0;  //disable timer0   
+    //T0CONbits.TMR0ON = 0;  //disable timer0   
 }
