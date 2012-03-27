@@ -225,7 +225,7 @@ void test_inc_current_time(){
 
 void display_time(){    
     display_string(0,time);         
-    if(position == 0) display_string(16+position-1," ^");
+    if(position == 0 || position == 1) display_string(16+position-1," ^");
     else display_string(16+position-3,"   ^");
 }
  

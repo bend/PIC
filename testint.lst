@@ -1,6 +1,6 @@
 gplink-0.13.7 beta
 Copyright (c) 1998-2005 gputils project
-Listing File Generated: 3-27-2012  16:55:59
+Listing File Generated: 3-27-2012  17:36:00
  
  
 Address  Value    Disassembly              Source
@@ -8,7 +8,7 @@ Address  Value    Disassembly              Source
                                            ;--------------------------------------------------------
                                            ; File Created by SDCC : free open source ANSI-C Compiler
                                            ; Version 2.9.4 #5595 (Mar 13 2012) (UNIX)
-                                           ; This file was generated Tue Mar 27 16:55:59 2012
+                                           ; This file was generated Tue Mar 27 17:22:23 2012
                                            ;--------------------------------------------------------
                                            ; PIC16 port for the Microchip 16-bit core micros
                                            ;--------------------------------------------------------
@@ -610,7 +610,7 @@ Address  Value    Disassembly              Source
 00172c   6e00     movwf	0, 0               	MOVWF	r0x00
 00172e   6a01     clrf	0x1, 0              	CLRF	r0x01
                                            _00183_DS_:
-001730   ec25     call	0x1a4a, 0           	CALL	_dumb_delay1ms
+001730   ec2d     call	0x1a5a, 0           	CALL	_dumb_delay1ms
 001732   f00d
 001734   0eff     movlw	0xff               	MOVLW	0xff
 001736   2600     addwf	0, 0x1, 0          	ADDWF	r0x00, F
@@ -675,37 +675,37 @@ Address  Value    Disassembly              Source
                                            S_testint__dumb_delay1ms	code
                                            _dumb_delay1ms:
                                            ;	.line	340; testint.c	void dumb_delay1ms (void)
-001a4a   cfd9     movff	0xfd9, 0xfe5       	MOVFF	FSR2L, POSTDEC1
-001a4c   ffe5
-001a4e   cfe1     movff	0xfe1, 0xfd9       	MOVFF	FSR1L, FSR2L
-001a50   ffd9
+001a5a   cfd9     movff	0xfd9, 0xfe5       	MOVFF	FSR2L, POSTDEC1
+001a5c   ffe5
+001a5e   cfe1     movff	0xfe1, 0xfd9       	MOVFF	FSR1L, FSR2L
+001a60   ffd9
                                            ;	.line	342; testint.c	TMR0H = HIGH (0x10000-EXEC_FREQ/1000);
-001a52   0ed8     movlw	0xd8               	MOVLW	0xd8
-001a54   6ed7     movwf	0xd7, 0            	MOVWF	_TMR0H
+001a62   0ed8     movlw	0xd8               	MOVLW	0xd8
+001a64   6ed7     movwf	0xd7, 0            	MOVWF	_TMR0H
                                            ;	.line	343; testint.c	TMR0L = LOW  (0x10000-EXEC_FREQ/1000);
-001a56   0ef0     movlw	0xf0               	MOVLW	0xf0
-001a58   6ed6     movwf	0xd6, 0            	MOVWF	_TMR0L
+001a66   0ef0     movlw	0xf0               	MOVLW	0xf0
+001a68   6ed6     movwf	0xd6, 0            	MOVWF	_TMR0L
                                            ;	.line	344; testint.c	T0CONbits.TMR0ON = 0;  //disable timer0
-001a5a   9ed5     bcf	0xd5, 0x7, 0         	BCF	_T0CONbits, 7
+001a6a   9ed5     bcf	0xd5, 0x7, 0         	BCF	_T0CONbits, 7
                                            ;	.line	345; testint.c	T0CONbits.T08BIT = 0;  //use timer0 16-bit counter
-001a5c   9cd5     bcf	0xd5, 0x6, 0         	BCF	_T0CONbits, 6
+001a6c   9cd5     bcf	0xd5, 0x6, 0         	BCF	_T0CONbits, 6
                                            ;	.line	346; testint.c	T0CONbits.T0CS   = 0;  //use timer0 instruction cycle clock
-001a5e   9ad5     bcf	0xd5, 0x5, 0         	BCF	_T0CONbits, 5
+001a6e   9ad5     bcf	0xd5, 0x5, 0         	BCF	_T0CONbits, 5
                                            ;	.line	347; testint.c	T0CONbits.PSA    = 1;  //disable timer0 prescaler
-001a60   86d5     bsf	0xd5, 0x3, 0         	BSF	_T0CONbits, 3
+001a70   86d5     bsf	0xd5, 0x3, 0         	BSF	_T0CONbits, 3
                                            ;	.line	348; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
-001a62   94f2     bcf	0xf2, 0x2, 0         	BCF	_INTCONbits, 2
+001a72   94f2     bcf	0xf2, 0x2, 0         	BCF	_INTCONbits, 2
                                            ;	.line	349; testint.c	T0CONbits.TMR0ON = 1;  //enable timer0
-001a64   8ed5     bsf	0xd5, 0x7, 0         	BSF	_T0CONbits, 7
-                                           _00378_DS_:
+001a74   8ed5     bsf	0xd5, 0x7, 0         	BSF	_T0CONbits, 7
+                                           _00383_DS_:
                                            ;	.line	350; testint.c	while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
-001a66   a4f2     btfss	0xf2, 0x2, 0       	BTFSS	_INTCONbits, 2
-001a68   d7fe     bra	0x1a66               	BRA	_00378_DS_
+001a76   a4f2     btfss	0xf2, 0x2, 0       	BTFSS	_INTCONbits, 2
+001a78   d7fe     bra	0x1a76               	BRA	_00383_DS_
                                            ;	.line	351; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
-001a6a   94f2     bcf	0xf2, 0x2, 0         	BCF	_INTCONbits, 2
-001a6c   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
-001a6e   ffd9
-001a70   0012     return	0                 	RETURN	
+001a7a   94f2     bcf	0xf2, 0x2, 0         	BCF	_INTCONbits, 2
+001a7c   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
+001a7e   ffd9
+001a80   0012     return	0                 	RETURN	
                                            
                                            ; ; Starting pCode block
                                            S_testint__strlcpy	code
@@ -806,7 +806,7 @@ Address  Value    Disassembly              Source
 000bd2   5006     movf	0x6, 0, 0           	MOVF	r0x06, W
 000bd4   1007     iorwf	0x7, 0, 0          	IORWF	r0x07, W
 000bd6   b4d8     btfsc	0xd8, 0x2, 0       	BTFSC	STATUS, 2
-000bd8   d03e     bra	0xc56                	BRA	_00358_DS_
+000bd8   d03e     bra	0xc56                	BRA	_00363_DS_
                                            ;	.line	318; testint.c	while (--n != 0)
 000bda   c003     movff	0x3, 0x10          	MOVFF	r0x03, r0x10
 000bdc   f010
@@ -818,21 +818,21 @@ Address  Value    Disassembly              Source
 000be8   f013
 000bea   c007     movff	0x7, 0x14          	MOVFF	r0x07, r0x14
 000bec   f014
-                                           _00354_DS_:
+                                           _00359_DS_:
 000bee   0eff     movlw	0xff               	MOVLW	0xff
 000bf0   2613     addwf	0x13, 0x1, 0       	ADDWF	r0x13, F
 000bf2   a0d8     btfss	0xd8, 0, 0         	BTFSS	STATUS, 0
 000bf4   0614     decf	0x14, 0x1, 0        	DECF	r0x14, F
 000bf6   5013     movf	0x13, 0, 0          	MOVF	r0x13, W
 000bf8   1014     iorwf	0x14, 0, 0         	IORWF	r0x14, W
-000bfa   e01d     bz	0xc36                 	BZ	_00373_DS_
+000bfa   e01d     bz	0xc36                 	BZ	_00378_DS_
                                            ;	.line	320; testint.c	if ((*d++ = *s++) == '\0')
 000bfc   c010     movff	0x10, 0xfe9        	MOVFF	r0x10, FSR0L
 000bfe   ffe9
 000c00   c011     movff	0x11, 0xff3        	MOVFF	r0x11, PRODL
 000c02   fff3
 000c04   5012     movf	0x12, 0, 0          	MOVF	r0x12, W
-000c06   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000c06   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000c08   f00d
 000c0a   6e15     movwf	0x15, 0            	MOVWF	r0x15
 000c0c   2a10     incf	0x10, 0x1, 0        	INCF	r0x10, F
@@ -847,7 +847,7 @@ Address  Value    Disassembly              Source
 000c1e   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000c20   fff3
 000c22   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000c24   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000c24   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000c26   f00d
 000c28   2a00     incf	0, 0x1, 0           	INCF	r0x00, F
 000c2a   b0d8     btfsc	0xd8, 0, 0         	BTFSC	STATUS, 0
@@ -855,8 +855,8 @@ Address  Value    Disassembly              Source
 000c2e   b0d8     btfsc	0xd8, 0, 0         	BTFSC	STATUS, 0
 000c30   2a02     incf	0x2, 0x1, 0         	INCF	r0x02, F
 000c32   5015     movf	0x15, 0, 0          	MOVF	r0x15, W
-000c34   e1dc     bnz	0xbee                	BNZ	_00354_DS_
-                                           _00373_DS_:
+000c34   e1dc     bnz	0xbee                	BNZ	_00359_DS_
+                                           _00378_DS_:
                                            ;	.line	321; testint.c	break;
 000c36   c010     movff	0x10, 0xb          	MOVFF	r0x10, r0x0b
 000c38   f00b
@@ -874,15 +874,15 @@ Address  Value    Disassembly              Source
 000c50   f00e
 000c52   c014     movff	0x14, 0xf          	MOVFF	r0x14, r0x0f
 000c54   f00f
-                                           _00358_DS_:
+                                           _00363_DS_:
                                            ;	.line	326; testint.c	if (n == 0)
 000c56   500e     movf	0xe, 0, 0           	MOVF	r0x0e, W
 000c58   100f     iorwf	0xf, 0, 0          	IORWF	r0x0f, W
-000c5a   e127     bnz	0xcaa                	BNZ	_00365_DS_
+000c5a   e127     bnz	0xcaa                	BNZ	_00370_DS_
                                            ;	.line	328; testint.c	if (siz != 0)
 000c5c   5006     movf	0x6, 0, 0           	MOVF	r0x06, W
 000c5e   1007     iorwf	0x7, 0, 0          	IORWF	r0x07, W
-000c60   e009     bz	0xc74                 	BZ	_00372_DS_
+000c60   e009     bz	0xc74                 	BZ	_00377_DS_
                                            ;	.line	329; testint.c	*d = '\0';          /* NUL-terminate dst */
 000c62   0e00     movlw	0                  	MOVLW	0x00
 000c64   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
@@ -891,9 +891,9 @@ Address  Value    Disassembly              Source
 000c6a   c009     movff	0x9, 0xff3         	MOVFF	r0x09, PRODL
 000c6c   fff3
 000c6e   500a     movf	0xa, 0, 0           	MOVF	r0x0a, W
-000c70   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000c70   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000c72   f00d
-                                           _00372_DS_:
+                                           _00377_DS_:
                                            ;	.line	330; testint.c	while (*s++)
 000c74   c00b     movff	0xb, 0             	MOVFF	r0x0b, r0x00
 000c76   f000
@@ -901,13 +901,13 @@ Address  Value    Disassembly              Source
 000c7a   f001
 000c7c   c00d     movff	0xd, 0x2           	MOVFF	r0x0d, r0x02
 000c7e   f002
-                                           _00361_DS_:
+                                           _00366_DS_:
 000c80   c000     movff	0, 0xfe9           	MOVFF	r0x00, FSR0L
 000c82   ffe9
 000c84   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000c86   fff3
 000c88   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000c8a   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000c8a   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000c8c   f00d
 000c8e   6e06     movwf	0x6, 0             	MOVWF	r0x06
 000c90   2a00     incf	0, 0x1, 0           	INCF	r0x00, F
@@ -916,14 +916,14 @@ Address  Value    Disassembly              Source
 000c96   b0d8     btfsc	0xd8, 0, 0         	BTFSC	STATUS, 0
 000c98   2a02     incf	0x2, 0x1, 0         	INCF	r0x02, F
 000c9a   5006     movf	0x6, 0, 0           	MOVF	r0x06, W
-000c9c   e1f1     bnz	0xc80                	BNZ	_00361_DS_
+000c9c   e1f1     bnz	0xc80                	BNZ	_00366_DS_
 000c9e   c000     movff	0, 0xb             	MOVFF	r0x00, r0x0b
 000ca0   f00b
 000ca2   c001     movff	0x1, 0xc           	MOVFF	r0x01, r0x0c
 000ca4   f00c
 000ca6   c002     movff	0x2, 0xd           	MOVFF	r0x02, r0x0d
 000ca8   f00d
-                                           _00365_DS_:
+                                           _00370_DS_:
                                            ;	.line	336; testint.c	return (s - src - 1);       /* count does not include NUL */
 000caa   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
 000cac   5c0b     subwf	0xb, 0, 0          	SUBWF	r0x0b, W
@@ -1029,7 +1029,7 @@ Address  Value    Disassembly              Source
 0013dc   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 0013de   5001     movf	0x1, 0, 0           	MOVF	r0x01, W
 0013e0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0013e2   ecb4     call	0x1968, 0           	CALL	_strlen
+0013e2   ecbc     call	0x1978, 0           	CALL	_strlen
 0013e4   f00c
 0013e6   6e04     movwf	0x4, 0             	MOVWF	r0x04
 0013e8   cff3     movff	0xff3, 0x5         	MOVFF	PRODL, r0x05
@@ -1055,10 +1055,10 @@ Address  Value    Disassembly              Source
 00140c   6e07     movwf	0x7, 0             	MOVWF	r0x07
 00140e   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
 001410   5c04     subwf	0x4, 0, 0          	SUBWF	r0x04, W
-001412   e302     bnc	0x1418               	BNC	_00345_DS_
+001412   e302     bnc	0x1418               	BNC	_00350_DS_
 001414   c005     movff	0x5, 0x4           	MOVFF	r0x05, r0x04
 001416   f004
-                                           _00345_DS_:
+                                           _00350_DS_:
 001418   6a05     clrf	0x5, 0              	CLRF	r0x05
 00141a   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
 00141c   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
@@ -1155,7 +1155,7 @@ Address  Value    Disassembly              Source
 0011b6   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
                                            ;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 0011b8   6a01     clrf	0x1, 0              	CLRF	r0x01
-                                           _00326_DS_:
+                                           _00331_DS_:
 0011ba   0e0e     movlw	0xe                	MOVLW	HIGH(_display_word_WDigit_1_1)
 0011bc   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0011be   0e10     movlw	0x10               	MOVLW	LOW(_display_word_WDigit_1_1)
@@ -1168,7 +1168,7 @@ Address  Value    Disassembly              Source
 0011cc   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 0011ce   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
 0011d0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0011d2   ecb4     call	0x1968, 0           	CALL	_strlen
+0011d2   ecbc     call	0x1978, 0           	CALL	_strlen
 0011d4   f00c
 0011d6   6e02     movwf	0x2, 0             	MOVWF	r0x02
 0011d8   cff3     movff	0xff3, 0x3         	MOVFF	PRODL, r0x03
@@ -1184,11 +1184,11 @@ Address  Value    Disassembly              Source
 0011ec   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
 0011ee   0f80     addlw	0x80               	ADDLW	0x80
 0011f0   5cf3     subwf	0xf3, 0, 0         	SUBWF	PRODL, W
-0011f2   e102     bnz	0x11f8               	BNZ	_00336_DS_
+0011f2   e102     bnz	0x11f8               	BNZ	_00341_DS_
 0011f4   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
 0011f6   5c04     subwf	0x4, 0, 0          	SUBWF	r0x04, W
-                                           _00336_DS_:
-0011f8   e21c     bc	0x1232                	BC	_00329_DS_
+                                           _00341_DS_:
+0011f8   e21c     bc	0x1232                	BC	_00334_DS_
                                            ;	.line	253; testint.c	LCDText[LCDPos++] = WDigit[j];
 0011fa   c000     movff	0, 0x2             	MOVFF	r0x00, r0x02
 0011fc   f002
@@ -1218,19 +1218,19 @@ Address  Value    Disassembly              Source
 00122c   ffef
                                            ;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 00122e   2a01     incf	0x1, 0x1, 0         	INCF	r0x01, F
-001230   d7c4     bra	0x11ba               	BRA	_00326_DS_
-                                           _00329_DS_:
+001230   d7c4     bra	0x11ba               	BRA	_00331_DS_
+                                           _00334_DS_:
                                            ;	.line	255; testint.c	if(LCDPos < 32u)
 001232   c000     movff	0, 0x1             	MOVFF	r0x00, r0x01
 001234   f001
 001236   6a02     clrf	0x2, 0              	CLRF	r0x02
 001238   0e00     movlw	0                  	MOVLW	0x00
 00123a   5c02     subwf	0x2, 0, 0          	SUBWF	r0x02, W
-00123c   e102     bnz	0x1242               	BNZ	_00337_DS_
+00123c   e102     bnz	0x1242               	BNZ	_00342_DS_
 00123e   0e20     movlw	0x20               	MOVLW	0x20
 001240   5c01     subwf	0x1, 0, 0          	SUBWF	r0x01, W
-                                           _00337_DS_:
-001242   e20b     bc	0x125a                	BC	_00325_DS_
+                                           _00342_DS_:
+001242   e20b     bc	0x125a                	BC	_00330_DS_
                                            ;	.line	256; testint.c	LCDText[LCDPos] = 0;
 001244   6a01     clrf	0x1, 0              	CLRF	r0x01
 001246   0e00     movlw	0                  	MOVLW	LOW(_LCDText)
@@ -1243,7 +1243,7 @@ Address  Value    Disassembly              Source
 001254   ffea
 001256   0e00     movlw	0                  	MOVLW	0x00
 001258   6eef     movwf	0xef, 0            	MOVWF	INDF0
-                                           _00325_DS_:
+                                           _00330_DS_:
                                            ;	.line	257; testint.c	LCDUpdate();
 00125a   ec2e     call	0x65c, 0            	CALL	_LCDUpdate
 00125c   f003
@@ -1297,58 +1297,68 @@ Address  Value    Disassembly              Source
 00186a   0e04     movlw	0x4                	MOVLW	0x04
 00186c   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
 00186e   010f     movlb	0xf                	BANKSEL	_position
-                                           ;	.line	228; testint.c	if(position == 0) display_string(16+position-1," ^");
+                                           ;	.line	228; testint.c	if(position == 0 || position == 1) display_string(16+position-1," ^");
 001870   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
 001872   010f     movlb	0xf                	BANKSEL	(_position + 1)
 001874   1155     iorwf	0x55, 0, 0x1       	IORWF	(_position + 1), W, B
-001876   e112     bnz	0x189c               	BNZ	_00317_DS_
+001876   e008     bz	0x1888                	BZ	_00316_DS_
 001878   010f     movlb	0xf                	BANKSEL	_position
 00187a   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
-00187c   6e00     movwf	0, 0               	MOVWF	r0x00
-00187e   0e0f     movlw	0xf                	MOVLW	0x0f
-001880   2600     addwf	0, 0x1, 0          	ADDWF	r0x00, F
-001882   0e00     movlw	0                  	MOVLW	UPPER(__str_2)
-001884   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-001886   0e06     movlw	0x6                	MOVLW	HIGH(__str_2)
-001888   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-00188a   0e52     movlw	0x52               	MOVLW	LOW(__str_2)
-00188c   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-00188e   5000     movf	0, 0, 0             	MOVF	r0x00, W
-001890   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-001892   eccb     call	0x1396, 0           	CALL	_display_string
-001894   f009
-001896   0e04     movlw	0x4                	MOVLW	0x04
-001898   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
-00189a   d011     bra	0x18be               	BRA	_00319_DS_
+00187c   0a01     xorlw	0x1                	XORLW	0x01
+00187e   e103     bnz	0x1886               	BNZ	_00323_DS_
+001880   010f     movlb	0xf                	BANKSEL	(_position + 1)
+001882   5155     movf	0x55, 0, 0x1        	MOVF	(_position + 1), W, B
+001884   e001     bz	0x1888                	BZ	_00316_DS_
+                                           _00323_DS_:
+001886   d012     bra	0x18ac               	BRA	_00317_DS_
+                                           _00316_DS_:
+001888   010f     movlb	0xf                	BANKSEL	_position
+00188a   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
+00188c   6e00     movwf	0, 0               	MOVWF	r0x00
+00188e   0e0f     movlw	0xf                	MOVLW	0x0f
+001890   2600     addwf	0, 0x1, 0          	ADDWF	r0x00, F
+001892   0e00     movlw	0                  	MOVLW	UPPER(__str_2)
+001894   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+001896   0e06     movlw	0x6                	MOVLW	HIGH(__str_2)
+001898   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+00189a   0e52     movlw	0x52               	MOVLW	LOW(__str_2)
+00189c   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+00189e   5000     movf	0, 0, 0             	MOVF	r0x00, W
+0018a0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+0018a2   eccb     call	0x1396, 0           	CALL	_display_string
+0018a4   f009
+0018a6   0e04     movlw	0x4                	MOVLW	0x04
+0018a8   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
+0018aa   d011     bra	0x18ce               	BRA	_00320_DS_
                                            _00317_DS_:
-00189c   010f     movlb	0xf                	BANKSEL	_position
+0018ac   010f     movlb	0xf                	BANKSEL	_position
                                            ;	.line	229; testint.c	else display_string(16+position-3,"   ^");
-00189e   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
-0018a0   6e00     movwf	0, 0               	MOVWF	r0x00
-0018a2   0e0d     movlw	0xd                	MOVLW	0x0d
-0018a4   2600     addwf	0, 0x1, 0          	ADDWF	r0x00, F
-0018a6   0e00     movlw	0                  	MOVLW	UPPER(__str_3)
-0018a8   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0018aa   0e06     movlw	0x6                	MOVLW	HIGH(__str_3)
-0018ac   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0018ae   0e56     movlw	0x56               	MOVLW	LOW(__str_3)
-0018b0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0018b2   5000     movf	0, 0, 0             	MOVF	r0x00, W
-0018b4   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0018b6   eccb     call	0x1396, 0           	CALL	_display_string
-0018b8   f009
-0018ba   0e04     movlw	0x4                	MOVLW	0x04
-0018bc   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
-                                           _00319_DS_:
-0018be   cfe4     movff	0xfe4, 0x2         	MOVFF	PREINC1, r0x02
-0018c0   f002
-0018c2   cfe4     movff	0xfe4, 0x1         	MOVFF	PREINC1, r0x01
-0018c4   f001
-0018c6   cfe4     movff	0xfe4, 0           	MOVFF	PREINC1, r0x00
-0018c8   f000
-0018ca   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
-0018cc   ffd9
-0018ce   0012     return	0                 	RETURN	
+0018ae   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
+0018b0   6e00     movwf	0, 0               	MOVWF	r0x00
+0018b2   0e0d     movlw	0xd                	MOVLW	0x0d
+0018b4   2600     addwf	0, 0x1, 0          	ADDWF	r0x00, F
+0018b6   0e00     movlw	0                  	MOVLW	UPPER(__str_3)
+0018b8   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+0018ba   0e06     movlw	0x6                	MOVLW	HIGH(__str_3)
+0018bc   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+0018be   0e56     movlw	0x56               	MOVLW	LOW(__str_3)
+0018c0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+0018c2   5000     movf	0, 0, 0             	MOVF	r0x00, W
+0018c4   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
+0018c6   eccb     call	0x1396, 0           	CALL	_display_string
+0018c8   f009
+0018ca   0e04     movlw	0x4                	MOVLW	0x04
+0018cc   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
+                                           _00320_DS_:
+0018ce   cfe4     movff	0xfe4, 0x2         	MOVFF	PREINC1, r0x02
+0018d0   f002
+0018d2   cfe4     movff	0xfe4, 0x1         	MOVFF	PREINC1, r0x01
+0018d4   f001
+0018d6   cfe4     movff	0xfe4, 0           	MOVFF	PREINC1, r0x00
+0018d8   f000
+0018da   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
+0018dc   ffd9
+0018de   0012     return	0                 	RETURN	
                                            
                                            ; ; Starting pCode block
                                            S_testint__test_inc_current_time	code
@@ -1390,7 +1400,7 @@ Address  Value    Disassembly              Source
 00004c   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00004e   fff3
 000050   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000052   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000052   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000054   f00d
 000056   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000058   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1404,7 +1414,7 @@ Address  Value    Disassembly              Source
 000066   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000068   fff3
 00006a   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00006c   ec65     call	0x1aca, 0           	CALL	__gptrput1
+00006c   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 00006e   f00d
 000070   010f     movlb	0xf                	BANKSEL	_currentTime
                                            ;	.line	198; testint.c	++currentTime[6];
@@ -1424,7 +1434,7 @@ Address  Value    Disassembly              Source
 00008c   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00008e   fff3
 000090   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000092   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000092   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000094   f00d
 000096   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000098   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -1435,7 +1445,7 @@ Address  Value    Disassembly              Source
 0000a2   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0000a4   fff3
 0000a6   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0000a8   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0000a8   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0000aa   f00d
                                            _00272_DS_:
 0000ac   010f     movlb	0xf                	BANKSEL	_currentTime
@@ -1456,7 +1466,7 @@ Address  Value    Disassembly              Source
 0000c8   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0000ca   fff3
 0000cc   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0000ce   ec39     call	0x1a72, 0           	CALL	__gptrget1
+0000ce   ec41     call	0x1a82, 0           	CALL	__gptrget1
 0000d0   f00d
 0000d2   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0000d4   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1470,7 +1480,7 @@ Address  Value    Disassembly              Source
 0000e2   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0000e4   fff3
 0000e6   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0000e8   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0000e8   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0000ea   f00d
 0000ec   010f     movlb	0xf                	BANKSEL	_currentTime
                                            ;	.line	202; testint.c	currentTime[4]++;
@@ -1490,7 +1500,7 @@ Address  Value    Disassembly              Source
 000108   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00010a   fff3
 00010c   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00010e   ec39     call	0x1a72, 0           	CALL	__gptrget1
+00010e   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000110   f00d
 000112   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000114   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -1501,7 +1511,7 @@ Address  Value    Disassembly              Source
 00011e   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000120   fff3
 000122   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000124   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000124   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000126   f00d
                                            ;	.line	203; testint.c	alarmflag = 1;
 000128   0e01     movlw	0x1                	MOVLW	0x01
@@ -1528,7 +1538,7 @@ Address  Value    Disassembly              Source
 00014e   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000150   fff3
 000152   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000154   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000154   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000156   f00d
 000158   6e03     movwf	0x3, 0             	MOVWF	r0x03
 00015a   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1542,7 +1552,7 @@ Address  Value    Disassembly              Source
 000168   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00016a   fff3
 00016c   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00016e   ec65     call	0x1aca, 0           	CALL	__gptrput1
+00016e   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000170   f00d
 000172   010f     movlb	0xf                	BANKSEL	_currentTime
                                            ;	.line	207; testint.c	++currentTime[3];
@@ -1562,7 +1572,7 @@ Address  Value    Disassembly              Source
 00018e   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000190   fff3
 000192   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000194   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000194   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000196   f00d
 000198   6e03     movwf	0x3, 0             	MOVWF	r0x03
 00019a   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -1573,7 +1583,7 @@ Address  Value    Disassembly              Source
 0001a4   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0001a6   fff3
 0001a8   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0001aa   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0001aa   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0001ac   f00d
                                            _00276_DS_:
 0001ae   010f     movlb	0xf                	BANKSEL	_currentTime
@@ -1594,7 +1604,7 @@ Address  Value    Disassembly              Source
 0001ca   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0001cc   fff3
 0001ce   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0001d0   ec39     call	0x1a72, 0           	CALL	__gptrget1
+0001d0   ec41     call	0x1a82, 0           	CALL	__gptrget1
 0001d2   f00d
 0001d4   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0001d6   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1608,7 +1618,7 @@ Address  Value    Disassembly              Source
 0001e4   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0001e6   fff3
 0001e8   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0001ea   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0001ea   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0001ec   f00d
 0001ee   010f     movlb	0xf                	BANKSEL	_currentTime
                                            ;	.line	211; testint.c	currentTime[1]++;
@@ -1628,7 +1638,7 @@ Address  Value    Disassembly              Source
 00020a   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00020c   fff3
 00020e   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000210   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000210   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000212   f00d
 000214   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000216   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -1639,7 +1649,7 @@ Address  Value    Disassembly              Source
 000220   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000222   fff3
 000224   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000226   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000226   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000228   f00d
                                            _00278_DS_:
 00022a   010f     movlb	0xf                	BANKSEL	_currentTime
@@ -1660,7 +1670,7 @@ Address  Value    Disassembly              Source
 000246   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000248   fff3
 00024a   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00024c   ec39     call	0x1a72, 0           	CALL	__gptrget1
+00024c   ec41     call	0x1a82, 0           	CALL	__gptrget1
 00024e   f00d
 000250   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000252   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1674,7 +1684,7 @@ Address  Value    Disassembly              Source
 000260   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000262   fff3
 000264   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000266   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000266   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000268   f00d
                                            ;	.line	215; testint.c	++currentTime[0];
 00026a   cf51     movff	0xf51, 0x3         	MOVFF	_currentTime, r0x03
@@ -1688,7 +1698,7 @@ Address  Value    Disassembly              Source
 00027a   c004     movff	0x4, 0xff3         	MOVFF	r0x04, PRODL
 00027c   fff3
 00027e   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
-000280   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000280   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000282   f00d
 000284   6e06     movwf	0x6, 0             	MOVWF	r0x06
 000286   2a06     incf	0x6, 0x1, 0         	INCF	r0x06, F
@@ -1699,7 +1709,7 @@ Address  Value    Disassembly              Source
 000290   c004     movff	0x4, 0xff3         	MOVFF	r0x04, PRODL
 000292   fff3
 000294   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
-000296   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000296   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000298   f00d
                                            _00280_DS_:
                                            ;	.line	217; testint.c	if(currentTime[0]=='2' && currentTime[1]=='4'){
@@ -1714,7 +1724,7 @@ Address  Value    Disassembly              Source
 0002aa   c004     movff	0x4, 0xff3         	MOVFF	r0x04, PRODL
 0002ac   fff3
 0002ae   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
-0002b0   ec39     call	0x1a72, 0           	CALL	__gptrget1
+0002b0   ec41     call	0x1a82, 0           	CALL	__gptrget1
 0002b2   f00d
 0002b4   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0002b6   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1725,7 +1735,7 @@ Address  Value    Disassembly              Source
 0002c0   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0002c2   fff3
 0002c4   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0002c6   ec39     call	0x1a72, 0           	CALL	__gptrget1
+0002c6   ec41     call	0x1a82, 0           	CALL	__gptrget1
 0002c8   f00d
 0002ca   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0002cc   5003     movf	0x3, 0, 0           	MOVF	r0x03, W
@@ -1745,7 +1755,7 @@ Address  Value    Disassembly              Source
 0002e6   c004     movff	0x4, 0xff3         	MOVFF	r0x04, PRODL
 0002e8   fff3
 0002ea   5005     movf	0x5, 0, 0           	MOVF	r0x05, W
-0002ec   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0002ec   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0002ee   f00d
                                            ;	.line	219; testint.c	currentTime[1]='0';
 0002f0   0e30     movlw	0x30               	MOVLW	0x30
@@ -1755,7 +1765,7 @@ Address  Value    Disassembly              Source
 0002f8   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0002fa   fff3
 0002fc   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0002fe   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0002fe   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000300   f00d
                                            _00282_DS_:
                                            ;	.line	221; testint.c	if(currentTime[0]=='3'){
@@ -1770,7 +1780,7 @@ Address  Value    Disassembly              Source
 000312   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000314   fff3
 000316   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000318   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000318   ec41     call	0x1a82, 0           	CALL	__gptrget1
 00031a   f00d
 00031c   6e00     movwf	0, 0               	MOVWF	r0x00
 00031e   5000     movf	0, 0, 0             	MOVF	r0x00, W
@@ -1790,7 +1800,7 @@ Address  Value    Disassembly              Source
 000338   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00033a   fff3
 00033c   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00033e   ec65     call	0x1aca, 0           	CALL	__gptrput1
+00033e   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000340   f00d
                                            _00286_DS_:
 000342   cfe4     movff	0xfe4, 0x6         	MOVFF	PREINC1, r0x06
@@ -1870,7 +1880,7 @@ Address  Value    Disassembly              Source
 000f36   c005     movff	0x5, 0xff3         	MOVFF	r0x05, PRODL
 000f38   fff3
 000f3a   5006     movf	0x6, 0, 0           	MOVF	r0x06, W
-000f3c   ec39     call	0x1a72, 0           	CALL	__gptrget1
+000f3c   ec41     call	0x1a82, 0           	CALL	__gptrget1
 000f3e   f00d
 000f40   6e04     movwf	0x4, 0             	MOVWF	r0x04
 000f42   0e41     movlw	0x41               	MOVLW	LOW(_time)
@@ -1965,7 +1975,7 @@ Address  Value    Disassembly              Source
 000fda   6a03     clrf	0x3, 0              	CLRF	r0x03
                                            _00246_DS_:
                                            ;	.line	188; testint.c	dumb_delay1ms();
-000fdc   ec25     call	0x1a4a, 0           	CALL	_dumb_delay1ms
+000fdc   ec2d     call	0x1a5a, 0           	CALL	_dumb_delay1ms
 000fde   f00d
 000fe0   0eff     movlw	0xff               	MOVLW	0xff
 000fe2   2602     addwf	0x2, 0x1, 0        	ADDWF	r0x02, F
@@ -2310,7 +2320,7 @@ Address  Value    Disassembly              Source
 000476   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 000478   fff3
 00047a   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-00047c   ec39     call	0x1a72, 0           	CALL	__gptrget1
+00047c   ec41     call	0x1a82, 0           	CALL	__gptrget1
 00047e   f00d
 000480   6e03     movwf	0x3, 0             	MOVWF	r0x03
 000482   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -2321,7 +2331,7 @@ Address  Value    Disassembly              Source
 00048c   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 00048e   fff3
 000490   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-000492   ec65     call	0x1aca, 0           	CALL	__gptrput1
+000492   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 000494   f00d
                                            ;	.line	48; testint.c	test_inc_current_time();
 000496   ec06     call	0xc, 0              	CALL	_test_inc_current_time
@@ -2342,10 +2352,10 @@ Address  Value    Disassembly              Source
 0004aa   010f     movlb	0xf                	BANKSEL	_position
                                            ;	.line	57; testint.c	position++;
 0004ac   2b54     incf	0x54, 0x1, 0x1      	INCF	_position, F, B
-0004ae   e302     bnc	0x4b4                	BNC	_10378_DS_
+0004ae   e302     bnc	0x4b4                	BNC	_10383_DS_
 0004b0   010f     movlb	0xf                	BANKSEL	(_position + 1)
 0004b2   2b55     incf	0x55, 0x1, 0x1      	INCF	(_position + 1), F, B
-                                           _10378_DS_:
+                                           _10383_DS_:
 0004b4   010f     movlb	0xf                	BANKSEL	_position
                                            ;	.line	58; testint.c	if(position == 2) position = 3;
 0004b6   5154     movf	0x54, 0, 0x1        	MOVF	_position, W, B
@@ -2515,7 +2525,7 @@ Address  Value    Disassembly              Source
 0005c4   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0005c6   fff3
 0005c8   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0005ca   ec39     call	0x1a72, 0           	CALL	__gptrget1
+0005ca   ec41     call	0x1a82, 0           	CALL	__gptrget1
 0005cc   f00d
 0005ce   6e03     movwf	0x3, 0             	MOVWF	r0x03
 0005d0   2a03     incf	0x3, 0x1, 0         	INCF	r0x03, F
@@ -2526,7 +2536,7 @@ Address  Value    Disassembly              Source
 0005da   c001     movff	0x1, 0xff3         	MOVFF	r0x01, PRODL
 0005dc   fff3
 0005de   5002     movf	0x2, 0, 0           	MOVF	r0x02, W
-0005e0   ec65     call	0x1aca, 0           	CALL	__gptrput1
+0005e0   ec6d     call	0x1ada, 0           	CALL	__gptrput1
 0005e2   f00d
                                            ;	.line	76; testint.c	test_inc_current_time();
 0005e4   ec06     call	0xc, 0              	CALL	_test_inc_current_time
@@ -2605,8 +2615,8 @@ Address  Value    Disassembly              Source
                                            
                                            
                                            ; Statistics:
-                                           ; code size:	 3534 (0x0dce) bytes ( 2.70%)
-                                           ;           	 1767 (0x06e7) words
+                                           ; code size:	 3550 (0x0dde) bytes ( 2.71%)
+                                           ;           	 1775 (0x06ef) words
                                            ; udata size:	   22 (0x0016) bytes ( 0.57%)
                                            ; access size:	   22 (0x0016) bytes
                                            
@@ -2615,7 +2625,7 @@ Address  Value    Disassembly              Source
                                            ;--------------------------------------------------------
                                            ; File Created by SDCC : free open source ANSI-C Compiler
                                            ; Version 2.9.4 #5595 (Mar 13 2012) (UNIX)
-                                           ; This file was generated Tue Mar 27 13:13:30 2012
+                                           ; This file was generated Tue Mar 27 17:36:00 2012
                                            ;--------------------------------------------------------
                                            ; PIC16 port for the Microchip 16-bit core micros
                                            ;--------------------------------------------------------
@@ -3123,7 +3133,7 @@ Address  Value    Disassembly              Source
 0017b0   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 0017b2   0e00     movlw	0                  	MOVLW	0x00
 0017b4   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0017b6   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+0017b6   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 0017b8   f00c
 0017ba   0e02     movlw	0x2                	MOVLW	0x02
 0017bc   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3222,7 +3232,7 @@ Address  Value    Disassembly              Source
 00068a   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 00068c   0e00     movlw	0                  	MOVLW	0x00
 00068e   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-000690   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+000690   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 000692   f00c
 000694   0e02     movlw	0x2                	MOVLW	0x02
 000696   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3332,7 +3342,7 @@ Address  Value    Disassembly              Source
 00074c   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 00074e   0e01     movlw	0x1                	MOVLW	0x01
 000750   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-000752   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+000752   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 000754   f00c
 000756   0e02     movlw	0x2                	MOVLW	0x02
 000758   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3373,7 +3383,7 @@ Address  Value    Disassembly              Source
 000794   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 000796   0e00     movlw	0                  	MOVLW	0x00
 000798   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-00079a   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+00079a   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 00079c   f00c
 00079e   0e02     movlw	0x2                	MOVLW	0x02
 0007a0   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3483,7 +3493,7 @@ Address  Value    Disassembly              Source
 000856   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 000858   0e01     movlw	0x1                	MOVLW	0x01
 00085a   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-00085c   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+00085c   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 00085e   f00c
 000860   0e02     movlw	0x2                	MOVLW	0x02
 000862   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3717,7 +3727,7 @@ Address  Value    Disassembly              Source
 0009e8   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 0009ea   0e00     movlw	0                  	MOVLW	0x00
 0009ec   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-0009ee   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+0009ee   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 0009f0   f00c
 0009f2   0e02     movlw	0x2                	MOVLW	0x02
 0009f4   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3754,7 +3764,7 @@ Address  Value    Disassembly              Source
 000a2c   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 000a2e   0e00     movlw	0                  	MOVLW	0x00
 000a30   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-000a32   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+000a32   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 000a34   f00c
 000a36   0e02     movlw	0x2                	MOVLW	0x02
 000a38   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3791,7 +3801,7 @@ Address  Value    Disassembly              Source
 000a70   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 000a72   0e00     movlw	0                  	MOVLW	0x00
 000a74   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-000a76   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+000a76   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 000a78   f00c
 000a7a   0e02     movlw	0x2                	MOVLW	0x02
 000a7c   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3828,7 +3838,7 @@ Address  Value    Disassembly              Source
 000ab4   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
 000ab6   0e00     movlw	0                  	MOVLW	0x00
 000ab8   6ee5     movwf	0xe5, 0            	MOVWF	POSTDEC1
-000aba   ecf4     call	0x19e8, 0           	CALL	_LCDWrite
+000aba   ecfc     call	0x19f8, 0           	CALL	_LCDWrite
 000abc   f00c
 000abe   0e02     movlw	0x2                	MOVLW	0x02
 000ac0   26e1     addwf	0xe1, 0x1, 0       	ADDWF	FSR1L, F
@@ -3887,63 +3897,63 @@ Address  Value    Disassembly              Source
                                            S_LCDBlocking__LCDWrite	code
                                            _LCDWrite:
                                            ;	.line	94; TCPIP_Stack/LCDBlocking.c	static void LCDWrite(BYTE RS, BYTE Data)
-0019e8   cfd9     movff	0xfd9, 0xfe5       	MOVFF	FSR2L, POSTDEC1
-0019ea   ffe5
-0019ec   cfe1     movff	0xfe1, 0xfd9       	MOVFF	FSR1L, FSR2L
-0019ee   ffd9
-0019f0   c000     movff	0, 0xfe5           	MOVFF	r0x00, POSTDEC1
-0019f2   ffe5
-0019f4   c001     movff	0x1, 0xfe5         	MOVFF	r0x01, POSTDEC1
-0019f6   ffe5
-0019f8   0e02     movlw	0x2                	MOVLW	0x02
-0019fa   cfdb     movff	0xfdb, 0           	MOVFF	PLUSW2, r0x00
-0019fc   f000
-0019fe   0e03     movlw	0x3                	MOVLW	0x03
-001a00   cfdb     movff	0xfdb, 0x1         	MOVFF	PLUSW2, r0x01
-001a02   f001
+0019f8   cfd9     movff	0xfd9, 0xfe5       	MOVFF	FSR2L, POSTDEC1
+0019fa   ffe5
+0019fc   cfe1     movff	0xfe1, 0xfd9       	MOVFF	FSR1L, FSR2L
+0019fe   ffd9
+001a00   c000     movff	0, 0xfe5           	MOVFF	r0x00, POSTDEC1
+001a02   ffe5
+001a04   c001     movff	0x1, 0xfe5         	MOVFF	r0x01, POSTDEC1
+001a06   ffe5
+001a08   0e02     movlw	0x2                	MOVLW	0x02
+001a0a   cfdb     movff	0xfdb, 0           	MOVFF	PLUSW2, r0x00
+001a0c   f000
+001a0e   0e03     movlw	0x3                	MOVLW	0x03
+001a10   cfdb     movff	0xfdb, 0x1         	MOVFF	PLUSW2, r0x01
+001a12   f001
                                            ;	.line	97; TCPIP_Stack/LCDBlocking.c	LCD_DATA_TRIS = 0x00;
-001a04   6a96     clrf	0x96, 0             	CLRF	_TRISE
+001a14   6a96     clrf	0x96, 0             	CLRF	_TRISE
                                            ;	.line	110; TCPIP_Stack/LCDBlocking.c	LCD_RS_TRIS = 0;
-001a06   9499     bcf	0x99, 0x2, 0         	BCF	_TRISHbits, 2
+001a16   9499     bcf	0x99, 0x2, 0         	BCF	_TRISHbits, 2
                                            ;	.line	111; TCPIP_Stack/LCDBlocking.c	LCD_RD_WR_TRIS = 0;
-001a08   9299     bcf	0x99, 0x1, 0         	BCF	_TRISHbits, 1
+001a18   9299     bcf	0x99, 0x1, 0         	BCF	_TRISHbits, 1
                                            ;	.line	112; TCPIP_Stack/LCDBlocking.c	LCD_RD_WR_IO = 0;
-001a0a   9290     bcf	0x90, 0x1, 0         	BCF	_LATHbits, 1
+001a1a   9290     bcf	0x90, 0x1, 0         	BCF	_LATHbits, 1
                                            ;	.line	113; TCPIP_Stack/LCDBlocking.c	LCD_RS_IO = RS;
-001a0c   5000     movf	0, 0, 0             	MOVF	r0x00, W
-001a0e   0b01     andlw	0x1                	ANDLW	0x01
-001a10   44e8     rlncf	0xe8, 0, 0         	RLNCF	WREG, W
-001a12   44e8     rlncf	0xe8, 0, 0         	RLNCF	WREG, W
-001a14   6ef4     movwf	0xf4, 0            	MOVWF	PRODH
-001a16   5090     movf	0x90, 0, 0          	MOVF	_LATHbits, W
-001a18   0bfb     andlw	0xfb               	ANDLW	0xfb
-001a1a   10f4     iorwf	0xf4, 0, 0         	IORWF	PRODH, W
-001a1c   6e90     movwf	0x90, 0            	MOVWF	_LATHbits
+001a1c   5000     movf	0, 0, 0             	MOVF	r0x00, W
+001a1e   0b01     andlw	0x1                	ANDLW	0x01
+001a20   44e8     rlncf	0xe8, 0, 0         	RLNCF	WREG, W
+001a22   44e8     rlncf	0xe8, 0, 0         	RLNCF	WREG, W
+001a24   6ef4     movwf	0xf4, 0            	MOVWF	PRODH
+001a26   5090     movf	0x90, 0, 0          	MOVF	_LATHbits, W
+001a28   0bfb     andlw	0xfb               	ANDLW	0xfb
+001a2a   10f4     iorwf	0xf4, 0, 0         	IORWF	PRODH, W
+001a2c   6e90     movwf	0x90, 0            	MOVWF	_LATHbits
                                            ;	.line	140; TCPIP_Stack/LCDBlocking.c	LCD_DATA_IO = Data;
-001a1e   c001     movff	0x1, 0xf8d         	MOVFF	r0x01, _LATE
-001a20   ff8d
-001a22   0000     nop                      	nop 
-001a24   0000     nop                      	nop 
-                                           ;	.line	155; TCPIP_Stack/LCDBlocking.c	LCD_E_IO = 1;
-001a26   8090     bsf	0x90, 0, 0           	BSF	_LATHbits, 0
-001a28   0000     nop                      	nop 
-001a2a   0000     nop                      	nop 
-001a2c   0000     nop                      	nop 
-001a2e   0000     nop                      	nop 
-001a30   0000     nop                      	nop 
+001a2e   c001     movff	0x1, 0xf8d         	MOVFF	r0x01, _LATE
+001a30   ff8d
 001a32   0000     nop                      	nop 
 001a34   0000     nop                      	nop 
-001a36   0000     nop                      	nop 
+                                           ;	.line	155; TCPIP_Stack/LCDBlocking.c	LCD_E_IO = 1;
+001a36   8090     bsf	0x90, 0, 0           	BSF	_LATHbits, 0
 001a38   0000     nop                      	nop 
+001a3a   0000     nop                      	nop 
+001a3c   0000     nop                      	nop 
+001a3e   0000     nop                      	nop 
+001a40   0000     nop                      	nop 
+001a42   0000     nop                      	nop 
+001a44   0000     nop                      	nop 
+001a46   0000     nop                      	nop 
+001a48   0000     nop                      	nop 
                                            ;	.line	165; TCPIP_Stack/LCDBlocking.c	LCD_E_IO = 0;
-001a3a   9090     bcf	0x90, 0, 0           	BCF	_LATHbits, 0
-001a3c   cfe4     movff	0xfe4, 0x1         	MOVFF	PREINC1, r0x01
-001a3e   f001
-001a40   cfe4     movff	0xfe4, 0           	MOVFF	PREINC1, r0x00
-001a42   f000
-001a44   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
-001a46   ffd9
-001a48   0012     return	0                 	RETURN	
+001a4a   9090     bcf	0x90, 0, 0           	BCF	_LATHbits, 0
+001a4c   cfe4     movff	0xfe4, 0x1         	MOVFF	PREINC1, r0x01
+001a4e   f001
+001a50   cfe4     movff	0xfe4, 0           	MOVFF	PREINC1, r0x00
+001a52   f000
+001a54   cfe4     movff	0xfe4, 0xfd9       	MOVFF	PREINC1, FSR2L
+001a56   ffd9
+001a58   0012     return	0                 	RETURN	
                                            
                                            
                                            

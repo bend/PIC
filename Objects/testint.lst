@@ -1,4 +1,4 @@
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  1
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7,7 +7,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00001 ;--------------------------------------------------------
                00002 ; File Created by SDCC : free open source ANSI-C Compiler
                00003 ; Version 2.9.4 #5595 (Mar 13 2012) (UNIX)
-               00004 ; This file was generated Tue Mar 27 16:55:59 2012
+               00004 ; This file was generated Tue Mar 27 17:22:23 2012
                00005 ;--------------------------------------------------------
                00006 ; PIC16 port for the Microchip 16-bit core micros
                00007 ;--------------------------------------------------------
@@ -58,7 +58,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00052         extern _ESTATbits
                00053         extern _ECON2bits
                00054         extern _EIRbits
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  2
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -118,7 +118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00106         extern _TRISGbits
                00107         extern _DDRHbits
                00108         extern _TRISHbits
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  3
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -178,7 +178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00160         extern _stdout
                00161         extern _LCDText
                00162         extern _MAADR5
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  4
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -238,7 +238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00214         extern _EPMM6
                00215         extern _EPMM7
                00216         extern _EPMCS
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  5
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -298,7 +298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00268         extern _SSP2BUF
                00269         extern _ECCP2DEL
                00270         extern _ECCP2AS
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  6
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -358,7 +358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00322         extern _DDRB
                00323         extern _TRISB
                00324         extern _DDRC
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  7
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -418,7 +418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00376         extern _CCPR2L
                00377         extern _CCPR2H
                00378         extern _CCP1CON
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  8
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -478,7 +478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00430         extern _FSR0H
                00431         extern _PLUSW0
                00432         extern _PREINC0
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE  9
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -538,7 +538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00484 _position       db      0x00, 0x00
                00485 _alarmflag      db      0x00, 0x00
                00486 _refresh        db      0x01, 0x00
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 10
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -598,7 +598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 0000      00538         BANKSEL _main_string_1_1
                00539 ;       .line   87; testint.c   char string[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 0002 6B00      00540         CLRF    _main_string_1_1, B
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 11
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -658,7 +658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0054 8600      00592         BSF     _INTCON3bits, 3
                00593 ;       .line   110; testint.c  INTCON3bits.INT3E  = 1;
 0056 8A00      00594         BSF     _INTCON3bits, 5
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 12
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -718,7 +718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00646 ;       .line   140; testint.c  if ( alarmflag == 1){
 00A4 5100      00647         MOVF    _alarmflag, W, B
 00A6 0A01      00648         XORLW   0x01
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 13
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -760,10 +760,10 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0018 9400      00682         BCF     _INTCONbits, 2
                00683 ;       .line   349; testint.c  T0CONbits.TMR0ON = 1;  //enable timer0
 001A 8E00      00684         BSF     _T0CONbits, 7
-001C 00685 _00378_DS_:
+001C 00685 _00383_DS_:
                00686 ;       .line   350; testint.c  while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
 001C A400      00687         BTFSS   _INTCONbits, 2
-001E D000      00688         BRA     _00378_DS_
+001E D000      00688         BRA     _00383_DS_
                00689 ;       .line   351; testint.c  INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
 0020 9400      00690         BCF     _INTCONbits, 2
 0022 CFE4 FFD9 00691         MOVFF   PREINC1, FSR2L
@@ -778,7 +778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0008 C000 FFE5 00700         MOVFF   r0x00, POSTDEC1
 000C C000 FFE5 00701         MOVFF   r0x01, POSTDEC1
 0010 C000 FFE5 00702         MOVFF   r0x02, POSTDEC1
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 14
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -834,11 +834,11 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00B0 5000      00750         MOVF    r0x06, W
 00B2 1000      00751         IORWF   r0x07, W
 00B4 B4D8      00752         BTFSC   STATUS, 2
-00B6 D000      00753         BRA     _00358_DS_
+00B6 D000      00753         BRA     _00363_DS_
                00754 ;       .line   318; testint.c  while (--n != 0)
 00B8 C000 F000 00755         MOVFF   r0x03, r0x10
 00BC C000 F000 00756         MOVFF   r0x04, r0x11
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 15
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -847,14 +847,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00C0 C000 F000 00757         MOVFF   r0x05, r0x12
 00C4 C000 F000 00758         MOVFF   r0x06, r0x13
 00C8 C000 F000 00759         MOVFF   r0x07, r0x14
-00CC 00760 _00354_DS_:
+00CC 00760 _00359_DS_:
 00CC 0EFF      00761         MOVLW   0xff
 00CE 2600      00762         ADDWF   r0x13, F
 00D0 A0D8      00763         BTFSS   STATUS, 0
 00D2 0600      00764         DECF    r0x14, F
 00D4 5000      00765         MOVF    r0x13, W
 00D6 1000      00766         IORWF   r0x14, W
-00D8 E000      00767         BZ      _00373_DS_
+00D8 E000      00767         BZ      _00378_DS_
                00768 ;       .line   320; testint.c  if ((*d++ = *s++) == '\0')
 00DA C000 FFE9 00769         MOVFF   r0x10, FSR0L
 00DE C000 FFF3 00770         MOVFF   r0x11, PRODL
@@ -877,8 +877,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 010C B0D8      00787         BTFSC   STATUS, 0
 010E 2A00      00788         INCF    r0x02, F
 0110 5000      00789         MOVF    r0x15, W
-0112 E100      00790         BNZ     _00354_DS_
-0114 00791 _00373_DS_:
+0112 E100      00790         BNZ     _00359_DS_
+0114 00791 _00378_DS_:
                00792 ;       .line   321; testint.c  break;
 0114 C000 F000 00793         MOVFF   r0x10, r0x0b
 0118 C000 F000 00794         MOVFF   r0x11, r0x0c
@@ -888,17 +888,17 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0128 C000 F000 00798         MOVFF   r0x02, r0x0a
 012C C000 F000 00799         MOVFF   r0x13, r0x0e
 0130 C000 F000 00800         MOVFF   r0x14, r0x0f
-0134 00801 _00358_DS_:
+0134 00801 _00363_DS_:
                00802 ;       .line   326; testint.c  if (n == 0)
 0134 5000      00803         MOVF    r0x0e, W
 0136 1000      00804         IORWF   r0x0f, W
-0138 E100      00805         BNZ     _00365_DS_
+0138 E100      00805         BNZ     _00370_DS_
                00806 ;       .line   328; testint.c  if (siz != 0)
 013A 5000      00807         MOVF    r0x06, W
 013C 1000      00808         IORWF   r0x07, W
-013E E000      00809         BZ      _00372_DS_
+013E E000      00809         BZ      _00377_DS_
                00810 ;       .line   329; testint.c  *d = '\0';          /* NUL-terminate dst */
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 16
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -910,12 +910,12 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0148 C000 FFF3 00814         MOVFF   r0x09, PRODL
 014C 5000      00815         MOVF    r0x0a, W
 014E EC00 F000 00816         CALL    __gptrput1
-0152 00817 _00372_DS_:
+0152 00817 _00377_DS_:
                00818 ;       .line   330; testint.c  while (*s++)
 0152 C000 F000 00819         MOVFF   r0x0b, r0x00
 0156 C000 F000 00820         MOVFF   r0x0c, r0x01
 015A C000 F000 00821         MOVFF   r0x0d, r0x02
-015E 00822 _00361_DS_:
+015E 00822 _00366_DS_:
 015E C000 FFE9 00823         MOVFF   r0x00, FSR0L
 0162 C000 FFF3 00824         MOVFF   r0x01, PRODL
 0166 5000      00825         MOVF    r0x02, W
@@ -927,11 +927,11 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0174 B0D8      00831         BTFSC   STATUS, 0
 0176 2A00      00832         INCF    r0x02, F
 0178 5000      00833         MOVF    r0x06, W
-017A E100      00834         BNZ     _00361_DS_
+017A E100      00834         BNZ     _00366_DS_
 017C C000 F000 00835         MOVFF   r0x00, r0x0b
 0180 C000 F000 00836         MOVFF   r0x01, r0x0c
 0184 C000 F000 00837         MOVFF   r0x02, r0x0d
-0188 00838 _00365_DS_:
+0188 00838 _00370_DS_:
                00839 ;       .line   336; testint.c  return (s - src - 1);       /* count does not include NUL */
 0188 5000      00840         MOVF    r0x03, W
 018A 5C00      00841         SUBWF   r0x0b, W
@@ -958,7 +958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 01CA CFE4 F000 00862         MOVFF   PREINC1, r0x0b
 01CE CFE4 F000 00863         MOVFF   PREINC1, r0x0a
 01D2 CFE4 F000 00864         MOVFF   PREINC1, r0x09
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 17
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1018,7 +1018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00916 ;       .line   268; testint.c  strlcpy((char*)&LCDText[pos], text,(l<max)?l:max );
 0062 6A00      00917         CLRF    r0x06
 0064 0E00      00918         MOVLW   LOW(_LCDText)
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 18
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1035,9 +1035,9 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0076 6E00      00927         MOVWF   r0x07
 0078 5000      00928         MOVF    r0x05, W
 007A 5C00      00929         SUBWF   r0x04, W
-007C E300      00930         BNC     _00345_DS_
+007C E300      00930         BNC     _00350_DS_
 007E C000 F000 00931         MOVFF   r0x05, r0x04
-0082 00932 _00345_DS_:
+0082 00932 _00350_DS_:
 0082 6A00      00933         CLRF    r0x05
 0084 5000      00934         MOVF    r0x05, W
 0086 6EE5      00935         MOVWF   POSTDEC1
@@ -1078,7 +1078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 CFD9 FFE5 00970         MOVFF   FSR2L, POSTDEC1
 0004 CFE1 FFD9 00971         MOVFF   FSR1L, FSR2L
 0008 C000 FFE5 00972         MOVFF   r0x00, POSTDEC1
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 19
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1117,7 +1117,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0058 26E1      01003         ADDWF   FSR1L, F
                01004 ;       .line   251; testint.c  for(j = 0; j < strlen((char*)WDigit); j++)
 005A 6A00      01005         CLRF    r0x01
-005C 01006 _00326_DS_:
+005C 01006 _00331_DS_:
 005C 0E00      01007         MOVLW   HIGH(_display_word_WDigit_1_1)
 005E 6E00      01008         MOVWF   r0x03
 0060 0E00      01009         MOVLW   LOW(_display_word_WDigit_1_1)
@@ -1138,7 +1138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0082 C000 F000 01024         MOVFF   r0x01, r0x04
 0086 6A00      01025         CLRF    r0x05
 0088 5000      01026         MOVF    r0x05, W
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 20
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1149,11 +1149,11 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 008E 5000      01029         MOVF    r0x03, W
 0090 0F80      01030         ADDLW   0x80
 0092 5CF3      01031         SUBWF   PRODL, W
-0094 E100      01032         BNZ     _00336_DS_
+0094 E100      01032         BNZ     _00341_DS_
 0096 5000      01033         MOVF    r0x02, W
 0098 5C00      01034         SUBWF   r0x04, W
-009A 01035 _00336_DS_:
-009A E200      01036         BC      _00329_DS_
+009A 01035 _00341_DS_:
+009A E200      01036         BC      _00334_DS_
                01037 ;       .line   253; testint.c  LCDText[LCDPos++] = WDigit[j];
 009C C000 F000 01038         MOVFF   r0x00, r0x02
 00A0 2A00      01039         INCF    r0x00, F
@@ -1176,18 +1176,18 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00CC C000 FFEF 01056         MOVFF   r0x04, INDF0
                01057 ;       .line   251; testint.c  for(j = 0; j < strlen((char*)WDigit); j++)
 00D0 2A00      01058         INCF    r0x01, F
-00D2 D000      01059         BRA     _00326_DS_
-00D4 01060 _00329_DS_:
+00D2 D000      01059         BRA     _00331_DS_
+00D4 01060 _00334_DS_:
                01061 ;       .line   255; testint.c  if(LCDPos < 32u)
 00D4 C000 F000 01062         MOVFF   r0x00, r0x01
 00D8 6A00      01063         CLRF    r0x02
 00DA 0E00      01064         MOVLW   0x00
 00DC 5C00      01065         SUBWF   r0x02, W
-00DE E100      01066         BNZ     _00337_DS_
+00DE E100      01066         BNZ     _00342_DS_
 00E0 0E20      01067         MOVLW   0x20
 00E2 5C00      01068         SUBWF   r0x01, W
-00E4 01069 _00337_DS_:
-00E4 E200      01070         BC      _00325_DS_
+00E4 01069 _00342_DS_:
+00E4 E200      01070         BC      _00330_DS_
                01071 ;       .line   256; testint.c  LCDText[LCDPos] = 0;
 00E6 6A00      01072         CLRF    r0x01
 00E8 0E00      01073         MOVLW   LOW(_LCDText)
@@ -1198,13 +1198,13 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00F4 C000 FFEA 01078         MOVFF   r0x01, FSR0H
 00F8 0E00      01079         MOVLW   0x00
 00FA 6EEF      01080         MOVWF   INDF0
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 21
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-00FC 01081 _00325_DS_:
+00FC 01081 _00330_DS_:
                01082 ;       .line   257; testint.c  LCDUpdate();
 00FC EC00 F000 01083         CALL    _LCDUpdate
 0100 CFE4 F000 01084         MOVFF   PREINC1, r0x05
@@ -1244,1220 +1244,1236 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0034 0E04      01118         MOVLW   0x04
 0036 26E1      01119         ADDWF   FSR1L, F
 0038 0000      01120         BANKSEL _position
-               01121 ;       .line   228; testint.c  if(position == 0) display_string(16+position-1," ^");
+               01121 ;       .line   228; testint.c  if(position == 0 || position == 1) display_string(16+position-1," ^");
 003A 5100      01122         MOVF    _position, W, B
 003C 0000      01123         BANKSEL (_position + 1)
 003E 1100      01124         IORWF   (_position + 1), W, B
-0040 E100      01125         BNZ     _00317_DS_
+0040 E000      01125         BZ      _00316_DS_
 0042 0000      01126         BANKSEL _position
 0044 5100      01127         MOVF    _position, W, B
-0046 6E00      01128         MOVWF   r0x00
-0048 0E0F      01129         MOVLW   0x0f
-004A 2600      01130         ADDWF   r0x00, F
-004C 0E00      01131         MOVLW   UPPER(__str_2)
-004E 6EE5      01132         MOVWF   POSTDEC1
-0050 0E00      01133         MOVLW   HIGH(__str_2)
-0052 6EE5      01134         MOVWF   POSTDEC1
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 22
+0046 0A01      01128         XORLW   0x01
+0048 E100      01129         BNZ     _00323_DS_
+004A 0000      01130         BANKSEL (_position + 1)
+004C 5100      01131         MOVF    (_position + 1), W, B
+004E E000      01132         BZ      _00316_DS_
+0050 01133 _00323_DS_:
+0050 D000      01134         BRA     _00317_DS_
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 22
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0054 0E00      01135         MOVLW   LOW(__str_2)
-0056 6EE5      01136         MOVWF   POSTDEC1
-0058 5000      01137         MOVF    r0x00, W
-005A 6EE5      01138         MOVWF   POSTDEC1
-005C EC00 F000 01139         CALL    _display_string
-0060 0E04      01140         MOVLW   0x04
-0062 26E1      01141         ADDWF   FSR1L, F
-0064 D000      01142         BRA     _00319_DS_
-0066 01143 _00317_DS_:
-0066 0000      01144         BANKSEL _position
-               01145 ;       .line   229; testint.c  else display_string(16+position-3,"   ^");
-0068 5100      01146         MOVF    _position, W, B
-006A 6E00      01147         MOVWF   r0x00
-006C 0E0D      01148         MOVLW   0x0d
-006E 2600      01149         ADDWF   r0x00, F
-0070 0E00      01150         MOVLW   UPPER(__str_3)
-0072 6EE5      01151         MOVWF   POSTDEC1
-0074 0E00      01152         MOVLW   HIGH(__str_3)
-0076 6EE5      01153         MOVWF   POSTDEC1
-0078 0E00      01154         MOVLW   LOW(__str_3)
-007A 6EE5      01155         MOVWF   POSTDEC1
-007C 5000      01156         MOVF    r0x00, W
-007E 6EE5      01157         MOVWF   POSTDEC1
-0080 EC00 F000 01158         CALL    _display_string
-0084 0E04      01159         MOVLW   0x04
-0086 26E1      01160         ADDWF   FSR1L, F
-0088 01161 _00319_DS_:
-0088 CFE4 F000 01162         MOVFF   PREINC1, r0x02
-008C CFE4 F000 01163         MOVFF   PREINC1, r0x01
-0090 CFE4 F000 01164         MOVFF   PREINC1, r0x00
-0094 CFE4 FFD9 01165         MOVFF   PREINC1, FSR2L
-0098 0012      01166         RETURN  
-               01167 
-               01168 ; ; Starting pCode block
-               01169 S_testint__test_inc_current_time        code
-0000 01170 _test_inc_current_time:
-               01171 ;       .line   195; testint.c  void test_inc_current_time(){        
-0000 CFD9 FFE5 01172         MOVFF   FSR2L, POSTDEC1
-0004 CFE1 FFD9 01173         MOVFF   FSR1L, FSR2L
-0008 C000 FFE5 01174         MOVFF   r0x00, POSTDEC1
-000C C000 FFE5 01175         MOVFF   r0x01, POSTDEC1
-0010 C000 FFE5 01176         MOVFF   r0x02, POSTDEC1
-0014 C000 FFE5 01177         MOVFF   r0x03, POSTDEC1
-0018 C000 FFE5 01178         MOVFF   r0x04, POSTDEC1
-001C C000 FFE5 01179         MOVFF   r0x05, POSTDEC1
-0020 C000 FFE5 01180         MOVFF   r0x06, POSTDEC1
-0024 0000      01181         BANKSEL _currentTime
-               01182 ;       .line   196; testint.c  if(currentTime[7] == ':'){
-0026 5100      01183         MOVF    _currentTime, W, B
-0028 0F07      01184         ADDLW   0x07
-002A 6E00      01185         MOVWF   r0x00
-002C 0E00      01186         MOVLW   0x00
-002E 0000      01187         BANKSEL (_currentTime + 1)
-0030 2100      01188         ADDWFC  (_currentTime + 1), W, B
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 23
+0052 01135 _00316_DS_:
+0052 0000      01136         BANKSEL _position
+0054 5100      01137         MOVF    _position, W, B
+0056 6E00      01138         MOVWF   r0x00
+0058 0E0F      01139         MOVLW   0x0f
+005A 2600      01140         ADDWF   r0x00, F
+005C 0E00      01141         MOVLW   UPPER(__str_2)
+005E 6EE5      01142         MOVWF   POSTDEC1
+0060 0E00      01143         MOVLW   HIGH(__str_2)
+0062 6EE5      01144         MOVWF   POSTDEC1
+0064 0E00      01145         MOVLW   LOW(__str_2)
+0066 6EE5      01146         MOVWF   POSTDEC1
+0068 5000      01147         MOVF    r0x00, W
+006A 6EE5      01148         MOVWF   POSTDEC1
+006C EC00 F000 01149         CALL    _display_string
+0070 0E04      01150         MOVLW   0x04
+0072 26E1      01151         ADDWF   FSR1L, F
+0074 D000      01152         BRA     _00320_DS_
+0076 01153 _00317_DS_:
+0076 0000      01154         BANKSEL _position
+               01155 ;       .line   229; testint.c  else display_string(16+position-3,"   ^");
+0078 5100      01156         MOVF    _position, W, B
+007A 6E00      01157         MOVWF   r0x00
+007C 0E0D      01158         MOVLW   0x0d
+007E 2600      01159         ADDWF   r0x00, F
+0080 0E00      01160         MOVLW   UPPER(__str_3)
+0082 6EE5      01161         MOVWF   POSTDEC1
+0084 0E00      01162         MOVLW   HIGH(__str_3)
+0086 6EE5      01163         MOVWF   POSTDEC1
+0088 0E00      01164         MOVLW   LOW(__str_3)
+008A 6EE5      01165         MOVWF   POSTDEC1
+008C 5000      01166         MOVF    r0x00, W
+008E 6EE5      01167         MOVWF   POSTDEC1
+0090 EC00 F000 01168         CALL    _display_string
+0094 0E04      01169         MOVLW   0x04
+0096 26E1      01170         ADDWF   FSR1L, F
+0098 01171 _00320_DS_:
+0098 CFE4 F000 01172         MOVFF   PREINC1, r0x02
+009C CFE4 F000 01173         MOVFF   PREINC1, r0x01
+00A0 CFE4 F000 01174         MOVFF   PREINC1, r0x00
+00A4 CFE4 FFD9 01175         MOVFF   PREINC1, FSR2L
+00A8 0012      01176         RETURN  
+               01177 
+               01178 ; ; Starting pCode block
+               01179 S_testint__test_inc_current_time        code
+0000 01180 _test_inc_current_time:
+               01181 ;       .line   195; testint.c  void test_inc_current_time(){        
+0000 CFD9 FFE5 01182         MOVFF   FSR2L, POSTDEC1
+0004 CFE1 FFD9 01183         MOVFF   FSR1L, FSR2L
+0008 C000 FFE5 01184         MOVFF   r0x00, POSTDEC1
+000C C000 FFE5 01185         MOVFF   r0x01, POSTDEC1
+0010 C000 FFE5 01186         MOVFF   r0x02, POSTDEC1
+0014 C000 FFE5 01187         MOVFF   r0x03, POSTDEC1
+0018 C000 FFE5 01188         MOVFF   r0x04, POSTDEC1
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0032 6E00      01189         MOVWF   r0x01
-0034 0E00      01190         MOVLW   0x00
-0036 0000      01191         BANKSEL (_currentTime + 2)
-0038 2100      01192         ADDWFC  (_currentTime + 2), W, B
-003A 6E00      01193         MOVWF   r0x02
-003C C000 FFE9 01194         MOVFF   r0x00, FSR0L
-0040 C000 FFF3 01195         MOVFF   r0x01, PRODL
-0044 5000      01196         MOVF    r0x02, W
-0046 EC00 F000 01197         CALL    __gptrget1
-004A 6E00      01198         MOVWF   r0x03
-004C 5000      01199         MOVF    r0x03, W
-004E 0A3A      01200         XORLW   0x3a
-0050 E100      01201         BNZ     _00272_DS_
-               01202 ;       .line   197; testint.c  currentTime[7] = '0';
-0052 0E30      01203         MOVLW   0x30
-0054 6EE5      01204         MOVWF   POSTDEC1
-0056 C000 FFE9 01205         MOVFF   r0x00, FSR0L
-005A C000 FFF3 01206         MOVFF   r0x01, PRODL
-005E 5000      01207         MOVF    r0x02, W
-0060 EC00 F000 01208         CALL    __gptrput1
-0064 0000      01209         BANKSEL _currentTime
-               01210 ;       .line   198; testint.c  ++currentTime[6];
-0066 5100      01211         MOVF    _currentTime, W, B
-0068 0F06      01212         ADDLW   0x06
-006A 6E00      01213         MOVWF   r0x00
-006C 0E00      01214         MOVLW   0x00
-006E 0000      01215         BANKSEL (_currentTime + 1)
-0070 2100      01216         ADDWFC  (_currentTime + 1), W, B
-0072 6E00      01217         MOVWF   r0x01
-0074 0E00      01218         MOVLW   0x00
-0076 0000      01219         BANKSEL (_currentTime + 2)
-0078 2100      01220         ADDWFC  (_currentTime + 2), W, B
-007A 6E00      01221         MOVWF   r0x02
-007C C000 FFE9 01222         MOVFF   r0x00, FSR0L
-0080 C000 FFF3 01223         MOVFF   r0x01, PRODL
-0084 5000      01224         MOVF    r0x02, W
-0086 EC00 F000 01225         CALL    __gptrget1
-008A 6E00      01226         MOVWF   r0x03
-008C 2A00      01227         INCF    r0x03, F
-008E C000 FFE5 01228         MOVFF   r0x03, POSTDEC1
-0092 C000 FFE9 01229         MOVFF   r0x00, FSR0L
-0096 C000 FFF3 01230         MOVFF   r0x01, PRODL
-009A 5000      01231         MOVF    r0x02, W
-009C EC00 F000 01232         CALL    __gptrput1
-00A0 01233 _00272_DS_:
-00A0 0000      01234         BANKSEL _currentTime
-               01235 ;       .line   200; testint.c  if(currentTime[6]=='6'){
-00A2 5100      01236         MOVF    _currentTime, W, B
-00A4 0F06      01237         ADDLW   0x06
-00A6 6E00      01238         MOVWF   r0x00
-00A8 0E00      01239         MOVLW   0x00
-00AA 0000      01240         BANKSEL (_currentTime + 1)
-00AC 2100      01241         ADDWFC  (_currentTime + 1), W, B
-00AE 6E00      01242         MOVWF   r0x01
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 24
+001C C000 FFE5 01189         MOVFF   r0x05, POSTDEC1
+0020 C000 FFE5 01190         MOVFF   r0x06, POSTDEC1
+0024 0000      01191         BANKSEL _currentTime
+               01192 ;       .line   196; testint.c  if(currentTime[7] == ':'){
+0026 5100      01193         MOVF    _currentTime, W, B
+0028 0F07      01194         ADDLW   0x07
+002A 6E00      01195         MOVWF   r0x00
+002C 0E00      01196         MOVLW   0x00
+002E 0000      01197         BANKSEL (_currentTime + 1)
+0030 2100      01198         ADDWFC  (_currentTime + 1), W, B
+0032 6E00      01199         MOVWF   r0x01
+0034 0E00      01200         MOVLW   0x00
+0036 0000      01201         BANKSEL (_currentTime + 2)
+0038 2100      01202         ADDWFC  (_currentTime + 2), W, B
+003A 6E00      01203         MOVWF   r0x02
+003C C000 FFE9 01204         MOVFF   r0x00, FSR0L
+0040 C000 FFF3 01205         MOVFF   r0x01, PRODL
+0044 5000      01206         MOVF    r0x02, W
+0046 EC00 F000 01207         CALL    __gptrget1
+004A 6E00      01208         MOVWF   r0x03
+004C 5000      01209         MOVF    r0x03, W
+004E 0A3A      01210         XORLW   0x3a
+0050 E100      01211         BNZ     _00272_DS_
+               01212 ;       .line   197; testint.c  currentTime[7] = '0';
+0052 0E30      01213         MOVLW   0x30
+0054 6EE5      01214         MOVWF   POSTDEC1
+0056 C000 FFE9 01215         MOVFF   r0x00, FSR0L
+005A C000 FFF3 01216         MOVFF   r0x01, PRODL
+005E 5000      01217         MOVF    r0x02, W
+0060 EC00 F000 01218         CALL    __gptrput1
+0064 0000      01219         BANKSEL _currentTime
+               01220 ;       .line   198; testint.c  ++currentTime[6];
+0066 5100      01221         MOVF    _currentTime, W, B
+0068 0F06      01222         ADDLW   0x06
+006A 6E00      01223         MOVWF   r0x00
+006C 0E00      01224         MOVLW   0x00
+006E 0000      01225         BANKSEL (_currentTime + 1)
+0070 2100      01226         ADDWFC  (_currentTime + 1), W, B
+0072 6E00      01227         MOVWF   r0x01
+0074 0E00      01228         MOVLW   0x00
+0076 0000      01229         BANKSEL (_currentTime + 2)
+0078 2100      01230         ADDWFC  (_currentTime + 2), W, B
+007A 6E00      01231         MOVWF   r0x02
+007C C000 FFE9 01232         MOVFF   r0x00, FSR0L
+0080 C000 FFF3 01233         MOVFF   r0x01, PRODL
+0084 5000      01234         MOVF    r0x02, W
+0086 EC00 F000 01235         CALL    __gptrget1
+008A 6E00      01236         MOVWF   r0x03
+008C 2A00      01237         INCF    r0x03, F
+008E C000 FFE5 01238         MOVFF   r0x03, POSTDEC1
+0092 C000 FFE9 01239         MOVFF   r0x00, FSR0L
+0096 C000 FFF3 01240         MOVFF   r0x01, PRODL
+009A 5000      01241         MOVF    r0x02, W
+009C EC00 F000 01242         CALL    __gptrput1
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-00B0 0E00      01243         MOVLW   0x00
-00B2 0000      01244         BANKSEL (_currentTime + 2)
-00B4 2100      01245         ADDWFC  (_currentTime + 2), W, B
-00B6 6E00      01246         MOVWF   r0x02
-00B8 C000 FFE9 01247         MOVFF   r0x00, FSR0L
-00BC C000 FFF3 01248         MOVFF   r0x01, PRODL
-00C0 5000      01249         MOVF    r0x02, W
-00C2 EC00 F000 01250         CALL    __gptrget1
-00C6 6E00      01251         MOVWF   r0x03
-00C8 5000      01252         MOVF    r0x03, W
-00CA 0A36      01253         XORLW   0x36
-00CC E100      01254         BNZ     _00274_DS_
-               01255 ;       .line   201; testint.c  currentTime[6]='0';
-00CE 0E30      01256         MOVLW   0x30
-00D0 6EE5      01257         MOVWF   POSTDEC1
-00D2 C000 FFE9 01258         MOVFF   r0x00, FSR0L
-00D6 C000 FFF3 01259         MOVFF   r0x01, PRODL
-00DA 5000      01260         MOVF    r0x02, W
-00DC EC00 F000 01261         CALL    __gptrput1
-00E0 0000      01262         BANKSEL _currentTime
-               01263 ;       .line   202; testint.c  currentTime[4]++;
-00E2 5100      01264         MOVF    _currentTime, W, B
-00E4 0F04      01265         ADDLW   0x04
-00E6 6E00      01266         MOVWF   r0x00
-00E8 0E00      01267         MOVLW   0x00
-00EA 0000      01268         BANKSEL (_currentTime + 1)
-00EC 2100      01269         ADDWFC  (_currentTime + 1), W, B
-00EE 6E00      01270         MOVWF   r0x01
-00F0 0E00      01271         MOVLW   0x00
-00F2 0000      01272         BANKSEL (_currentTime + 2)
-00F4 2100      01273         ADDWFC  (_currentTime + 2), W, B
-00F6 6E00      01274         MOVWF   r0x02
-00F8 C000 FFE9 01275         MOVFF   r0x00, FSR0L
-00FC C000 FFF3 01276         MOVFF   r0x01, PRODL
-0100 5000      01277         MOVF    r0x02, W
-0102 EC00 F000 01278         CALL    __gptrget1
-0106 6E00      01279         MOVWF   r0x03
-0108 2A00      01280         INCF    r0x03, F
-010A C000 FFE5 01281         MOVFF   r0x03, POSTDEC1
-010E C000 FFE9 01282         MOVFF   r0x00, FSR0L
-0112 C000 FFF3 01283         MOVFF   r0x01, PRODL
-0116 5000      01284         MOVF    r0x02, W
-0118 EC00 F000 01285         CALL    __gptrput1
-               01286 ;       .line   203; testint.c  alarmflag = 1;
-011C 0E01      01287         MOVLW   0x01
-011E 0000      01288         BANKSEL _alarmflag
-0120 6F00      01289         MOVWF   _alarmflag, B
-0122 0000      01290         BANKSEL (_alarmflag + 1)
-0124 6B00      01291         CLRF    (_alarmflag + 1), B
-0126 01292 _00274_DS_:
-0126 0000      01293         BANKSEL _currentTime
-               01294 ;       .line   205; testint.c  if(currentTime[4] == ':'){
-0128 5100      01295         MOVF    _currentTime, W, B
-012A 0F04      01296         ADDLW   0x04
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 25
+00A0 01243 _00272_DS_:
+00A0 0000      01244         BANKSEL _currentTime
+               01245 ;       .line   200; testint.c  if(currentTime[6]=='6'){
+00A2 5100      01246         MOVF    _currentTime, W, B
+00A4 0F06      01247         ADDLW   0x06
+00A6 6E00      01248         MOVWF   r0x00
+00A8 0E00      01249         MOVLW   0x00
+00AA 0000      01250         BANKSEL (_currentTime + 1)
+00AC 2100      01251         ADDWFC  (_currentTime + 1), W, B
+00AE 6E00      01252         MOVWF   r0x01
+00B0 0E00      01253         MOVLW   0x00
+00B2 0000      01254         BANKSEL (_currentTime + 2)
+00B4 2100      01255         ADDWFC  (_currentTime + 2), W, B
+00B6 6E00      01256         MOVWF   r0x02
+00B8 C000 FFE9 01257         MOVFF   r0x00, FSR0L
+00BC C000 FFF3 01258         MOVFF   r0x01, PRODL
+00C0 5000      01259         MOVF    r0x02, W
+00C2 EC00 F000 01260         CALL    __gptrget1
+00C6 6E00      01261         MOVWF   r0x03
+00C8 5000      01262         MOVF    r0x03, W
+00CA 0A36      01263         XORLW   0x36
+00CC E100      01264         BNZ     _00274_DS_
+               01265 ;       .line   201; testint.c  currentTime[6]='0';
+00CE 0E30      01266         MOVLW   0x30
+00D0 6EE5      01267         MOVWF   POSTDEC1
+00D2 C000 FFE9 01268         MOVFF   r0x00, FSR0L
+00D6 C000 FFF3 01269         MOVFF   r0x01, PRODL
+00DA 5000      01270         MOVF    r0x02, W
+00DC EC00 F000 01271         CALL    __gptrput1
+00E0 0000      01272         BANKSEL _currentTime
+               01273 ;       .line   202; testint.c  currentTime[4]++;
+00E2 5100      01274         MOVF    _currentTime, W, B
+00E4 0F04      01275         ADDLW   0x04
+00E6 6E00      01276         MOVWF   r0x00
+00E8 0E00      01277         MOVLW   0x00
+00EA 0000      01278         BANKSEL (_currentTime + 1)
+00EC 2100      01279         ADDWFC  (_currentTime + 1), W, B
+00EE 6E00      01280         MOVWF   r0x01
+00F0 0E00      01281         MOVLW   0x00
+00F2 0000      01282         BANKSEL (_currentTime + 2)
+00F4 2100      01283         ADDWFC  (_currentTime + 2), W, B
+00F6 6E00      01284         MOVWF   r0x02
+00F8 C000 FFE9 01285         MOVFF   r0x00, FSR0L
+00FC C000 FFF3 01286         MOVFF   r0x01, PRODL
+0100 5000      01287         MOVF    r0x02, W
+0102 EC00 F000 01288         CALL    __gptrget1
+0106 6E00      01289         MOVWF   r0x03
+0108 2A00      01290         INCF    r0x03, F
+010A C000 FFE5 01291         MOVFF   r0x03, POSTDEC1
+010E C000 FFE9 01292         MOVFF   r0x00, FSR0L
+0112 C000 FFF3 01293         MOVFF   r0x01, PRODL
+0116 5000      01294         MOVF    r0x02, W
+0118 EC00 F000 01295         CALL    __gptrput1
+               01296 ;       .line   203; testint.c  alarmflag = 1;
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-012C 6E00      01297         MOVWF   r0x00
-012E 0E00      01298         MOVLW   0x00
-0130 0000      01299         BANKSEL (_currentTime + 1)
-0132 2100      01300         ADDWFC  (_currentTime + 1), W, B
-0134 6E00      01301         MOVWF   r0x01
-0136 0E00      01302         MOVLW   0x00
-0138 0000      01303         BANKSEL (_currentTime + 2)
-013A 2100      01304         ADDWFC  (_currentTime + 2), W, B
-013C 6E00      01305         MOVWF   r0x02
-013E C000 FFE9 01306         MOVFF   r0x00, FSR0L
-0142 C000 FFF3 01307         MOVFF   r0x01, PRODL
-0146 5000      01308         MOVF    r0x02, W
-0148 EC00 F000 01309         CALL    __gptrget1
-014C 6E00      01310         MOVWF   r0x03
-014E 5000      01311         MOVF    r0x03, W
-0150 0A3A      01312         XORLW   0x3a
-0152 E100      01313         BNZ     _00276_DS_
-               01314 ;       .line   206; testint.c  currentTime[4] = '0';
-0154 0E30      01315         MOVLW   0x30
-0156 6EE5      01316         MOVWF   POSTDEC1
-0158 C000 FFE9 01317         MOVFF   r0x00, FSR0L
-015C C000 FFF3 01318         MOVFF   r0x01, PRODL
-0160 5000      01319         MOVF    r0x02, W
-0162 EC00 F000 01320         CALL    __gptrput1
-0166 0000      01321         BANKSEL _currentTime
-               01322 ;       .line   207; testint.c  ++currentTime[3];
-0168 5100      01323         MOVF    _currentTime, W, B
-016A 0F03      01324         ADDLW   0x03
-016C 6E00      01325         MOVWF   r0x00
-016E 0E00      01326         MOVLW   0x00
-0170 0000      01327         BANKSEL (_currentTime + 1)
-0172 2100      01328         ADDWFC  (_currentTime + 1), W, B
-0174 6E00      01329         MOVWF   r0x01
-0176 0E00      01330         MOVLW   0x00
-0178 0000      01331         BANKSEL (_currentTime + 2)
-017A 2100      01332         ADDWFC  (_currentTime + 2), W, B
-017C 6E00      01333         MOVWF   r0x02
-017E C000 FFE9 01334         MOVFF   r0x00, FSR0L
-0182 C000 FFF3 01335         MOVFF   r0x01, PRODL
-0186 5000      01336         MOVF    r0x02, W
-0188 EC00 F000 01337         CALL    __gptrget1
-018C 6E00      01338         MOVWF   r0x03
-018E 2A00      01339         INCF    r0x03, F
-0190 C000 FFE5 01340         MOVFF   r0x03, POSTDEC1
-0194 C000 FFE9 01341         MOVFF   r0x00, FSR0L
-0198 C000 FFF3 01342         MOVFF   r0x01, PRODL
-019C 5000      01343         MOVF    r0x02, W
-019E EC00 F000 01344         CALL    __gptrput1
-01A2 01345 _00276_DS_:
-01A2 0000      01346         BANKSEL _currentTime
-               01347 ;       .line   209; testint.c  if(currentTime[3]=='6'){
-01A4 5100      01348         MOVF    _currentTime, W, B
-01A6 0F03      01349         ADDLW   0x03
-01A8 6E00      01350         MOVWF   r0x00
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 26
+011C 0E01      01297         MOVLW   0x01
+011E 0000      01298         BANKSEL _alarmflag
+0120 6F00      01299         MOVWF   _alarmflag, B
+0122 0000      01300         BANKSEL (_alarmflag + 1)
+0124 6B00      01301         CLRF    (_alarmflag + 1), B
+0126 01302 _00274_DS_:
+0126 0000      01303         BANKSEL _currentTime
+               01304 ;       .line   205; testint.c  if(currentTime[4] == ':'){
+0128 5100      01305         MOVF    _currentTime, W, B
+012A 0F04      01306         ADDLW   0x04
+012C 6E00      01307         MOVWF   r0x00
+012E 0E00      01308         MOVLW   0x00
+0130 0000      01309         BANKSEL (_currentTime + 1)
+0132 2100      01310         ADDWFC  (_currentTime + 1), W, B
+0134 6E00      01311         MOVWF   r0x01
+0136 0E00      01312         MOVLW   0x00
+0138 0000      01313         BANKSEL (_currentTime + 2)
+013A 2100      01314         ADDWFC  (_currentTime + 2), W, B
+013C 6E00      01315         MOVWF   r0x02
+013E C000 FFE9 01316         MOVFF   r0x00, FSR0L
+0142 C000 FFF3 01317         MOVFF   r0x01, PRODL
+0146 5000      01318         MOVF    r0x02, W
+0148 EC00 F000 01319         CALL    __gptrget1
+014C 6E00      01320         MOVWF   r0x03
+014E 5000      01321         MOVF    r0x03, W
+0150 0A3A      01322         XORLW   0x3a
+0152 E100      01323         BNZ     _00276_DS_
+               01324 ;       .line   206; testint.c  currentTime[4] = '0';
+0154 0E30      01325         MOVLW   0x30
+0156 6EE5      01326         MOVWF   POSTDEC1
+0158 C000 FFE9 01327         MOVFF   r0x00, FSR0L
+015C C000 FFF3 01328         MOVFF   r0x01, PRODL
+0160 5000      01329         MOVF    r0x02, W
+0162 EC00 F000 01330         CALL    __gptrput1
+0166 0000      01331         BANKSEL _currentTime
+               01332 ;       .line   207; testint.c  ++currentTime[3];
+0168 5100      01333         MOVF    _currentTime, W, B
+016A 0F03      01334         ADDLW   0x03
+016C 6E00      01335         MOVWF   r0x00
+016E 0E00      01336         MOVLW   0x00
+0170 0000      01337         BANKSEL (_currentTime + 1)
+0172 2100      01338         ADDWFC  (_currentTime + 1), W, B
+0174 6E00      01339         MOVWF   r0x01
+0176 0E00      01340         MOVLW   0x00
+0178 0000      01341         BANKSEL (_currentTime + 2)
+017A 2100      01342         ADDWFC  (_currentTime + 2), W, B
+017C 6E00      01343         MOVWF   r0x02
+017E C000 FFE9 01344         MOVFF   r0x00, FSR0L
+0182 C000 FFF3 01345         MOVFF   r0x01, PRODL
+0186 5000      01346         MOVF    r0x02, W
+0188 EC00 F000 01347         CALL    __gptrget1
+018C 6E00      01348         MOVWF   r0x03
+018E 2A00      01349         INCF    r0x03, F
+0190 C000 FFE5 01350         MOVFF   r0x03, POSTDEC1
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-01AA 0E00      01351         MOVLW   0x00
-01AC 0000      01352         BANKSEL (_currentTime + 1)
-01AE 2100      01353         ADDWFC  (_currentTime + 1), W, B
-01B0 6E00      01354         MOVWF   r0x01
-01B2 0E00      01355         MOVLW   0x00
-01B4 0000      01356         BANKSEL (_currentTime + 2)
-01B6 2100      01357         ADDWFC  (_currentTime + 2), W, B
-01B8 6E00      01358         MOVWF   r0x02
-01BA C000 FFE9 01359         MOVFF   r0x00, FSR0L
-01BE C000 FFF3 01360         MOVFF   r0x01, PRODL
-01C2 5000      01361         MOVF    r0x02, W
-01C4 EC00 F000 01362         CALL    __gptrget1
-01C8 6E00      01363         MOVWF   r0x03
-01CA 5000      01364         MOVF    r0x03, W
-01CC 0A36      01365         XORLW   0x36
-01CE E100      01366         BNZ     _00278_DS_
-               01367 ;       .line   210; testint.c  currentTime[3]='0';
-01D0 0E30      01368         MOVLW   0x30
-01D2 6EE5      01369         MOVWF   POSTDEC1
-01D4 C000 FFE9 01370         MOVFF   r0x00, FSR0L
-01D8 C000 FFF3 01371         MOVFF   r0x01, PRODL
-01DC 5000      01372         MOVF    r0x02, W
-01DE EC00 F000 01373         CALL    __gptrput1
-01E2 0000      01374         BANKSEL _currentTime
-               01375 ;       .line   211; testint.c  currentTime[1]++;
-01E4 5100      01376         MOVF    _currentTime, W, B
-01E6 0F01      01377         ADDLW   0x01
-01E8 6E00      01378         MOVWF   r0x00
-01EA 0E00      01379         MOVLW   0x00
-01EC 0000      01380         BANKSEL (_currentTime + 1)
-01EE 2100      01381         ADDWFC  (_currentTime + 1), W, B
-01F0 6E00      01382         MOVWF   r0x01
-01F2 0E00      01383         MOVLW   0x00
-01F4 0000      01384         BANKSEL (_currentTime + 2)
-01F6 2100      01385         ADDWFC  (_currentTime + 2), W, B
-01F8 6E00      01386         MOVWF   r0x02
-01FA C000 FFE9 01387         MOVFF   r0x00, FSR0L
-01FE C000 FFF3 01388         MOVFF   r0x01, PRODL
-0202 5000      01389         MOVF    r0x02, W
-0204 EC00 F000 01390         CALL    __gptrget1
-0208 6E00      01391         MOVWF   r0x03
-020A 2A00      01392         INCF    r0x03, F
-020C C000 FFE5 01393         MOVFF   r0x03, POSTDEC1
-0210 C000 FFE9 01394         MOVFF   r0x00, FSR0L
-0214 C000 FFF3 01395         MOVFF   r0x01, PRODL
-0218 5000      01396         MOVF    r0x02, W
-021A EC00 F000 01397         CALL    __gptrput1
-021E 01398 _00278_DS_:
-021E 0000      01399         BANKSEL _currentTime
-               01400 ;       .line   213; testint.c  if(currentTime[1] == ':'){
-0220 5100      01401         MOVF    _currentTime, W, B
-0222 0F01      01402         ADDLW   0x01
-0224 6E00      01403         MOVWF   r0x00
-0226 0E00      01404         MOVLW   0x00
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 27
+0194 C000 FFE9 01351         MOVFF   r0x00, FSR0L
+0198 C000 FFF3 01352         MOVFF   r0x01, PRODL
+019C 5000      01353         MOVF    r0x02, W
+019E EC00 F000 01354         CALL    __gptrput1
+01A2 01355 _00276_DS_:
+01A2 0000      01356         BANKSEL _currentTime
+               01357 ;       .line   209; testint.c  if(currentTime[3]=='6'){
+01A4 5100      01358         MOVF    _currentTime, W, B
+01A6 0F03      01359         ADDLW   0x03
+01A8 6E00      01360         MOVWF   r0x00
+01AA 0E00      01361         MOVLW   0x00
+01AC 0000      01362         BANKSEL (_currentTime + 1)
+01AE 2100      01363         ADDWFC  (_currentTime + 1), W, B
+01B0 6E00      01364         MOVWF   r0x01
+01B2 0E00      01365         MOVLW   0x00
+01B4 0000      01366         BANKSEL (_currentTime + 2)
+01B6 2100      01367         ADDWFC  (_currentTime + 2), W, B
+01B8 6E00      01368         MOVWF   r0x02
+01BA C000 FFE9 01369         MOVFF   r0x00, FSR0L
+01BE C000 FFF3 01370         MOVFF   r0x01, PRODL
+01C2 5000      01371         MOVF    r0x02, W
+01C4 EC00 F000 01372         CALL    __gptrget1
+01C8 6E00      01373         MOVWF   r0x03
+01CA 5000      01374         MOVF    r0x03, W
+01CC 0A36      01375         XORLW   0x36
+01CE E100      01376         BNZ     _00278_DS_
+               01377 ;       .line   210; testint.c  currentTime[3]='0';
+01D0 0E30      01378         MOVLW   0x30
+01D2 6EE5      01379         MOVWF   POSTDEC1
+01D4 C000 FFE9 01380         MOVFF   r0x00, FSR0L
+01D8 C000 FFF3 01381         MOVFF   r0x01, PRODL
+01DC 5000      01382         MOVF    r0x02, W
+01DE EC00 F000 01383         CALL    __gptrput1
+01E2 0000      01384         BANKSEL _currentTime
+               01385 ;       .line   211; testint.c  currentTime[1]++;
+01E4 5100      01386         MOVF    _currentTime, W, B
+01E6 0F01      01387         ADDLW   0x01
+01E8 6E00      01388         MOVWF   r0x00
+01EA 0E00      01389         MOVLW   0x00
+01EC 0000      01390         BANKSEL (_currentTime + 1)
+01EE 2100      01391         ADDWFC  (_currentTime + 1), W, B
+01F0 6E00      01392         MOVWF   r0x01
+01F2 0E00      01393         MOVLW   0x00
+01F4 0000      01394         BANKSEL (_currentTime + 2)
+01F6 2100      01395         ADDWFC  (_currentTime + 2), W, B
+01F8 6E00      01396         MOVWF   r0x02
+01FA C000 FFE9 01397         MOVFF   r0x00, FSR0L
+01FE C000 FFF3 01398         MOVFF   r0x01, PRODL
+0202 5000      01399         MOVF    r0x02, W
+0204 EC00 F000 01400         CALL    __gptrget1
+0208 6E00      01401         MOVWF   r0x03
+020A 2A00      01402         INCF    r0x03, F
+020C C000 FFE5 01403         MOVFF   r0x03, POSTDEC1
+0210 C000 FFE9 01404         MOVFF   r0x00, FSR0L
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0228 0000      01405         BANKSEL (_currentTime + 1)
-022A 2100      01406         ADDWFC  (_currentTime + 1), W, B
-022C 6E00      01407         MOVWF   r0x01
-022E 0E00      01408         MOVLW   0x00
-0230 0000      01409         BANKSEL (_currentTime + 2)
-0232 2100      01410         ADDWFC  (_currentTime + 2), W, B
-0234 6E00      01411         MOVWF   r0x02
-0236 C000 FFE9 01412         MOVFF   r0x00, FSR0L
-023A C000 FFF3 01413         MOVFF   r0x01, PRODL
-023E 5000      01414         MOVF    r0x02, W
-0240 EC00 F000 01415         CALL    __gptrget1
-0244 6E00      01416         MOVWF   r0x03
-0246 5000      01417         MOVF    r0x03, W
-0248 0A3A      01418         XORLW   0x3a
-024A E100      01419         BNZ     _00280_DS_
-               01420 ;       .line   214; testint.c  currentTime[1] = '0';
-024C 0E30      01421         MOVLW   0x30
-024E 6EE5      01422         MOVWF   POSTDEC1
-0250 C000 FFE9 01423         MOVFF   r0x00, FSR0L
-0254 C000 FFF3 01424         MOVFF   r0x01, PRODL
-0258 5000      01425         MOVF    r0x02, W
-025A EC00 F000 01426         CALL    __gptrput1
-               01427 ;       .line   215; testint.c  ++currentTime[0];
-025E C000 F000 01428         MOVFF   _currentTime, r0x03
-0262 C000 F000 01429         MOVFF   (_currentTime + 1), r0x04
-0266 C000 F000 01430         MOVFF   (_currentTime + 2), r0x05
-026A C000 FFE9 01431         MOVFF   r0x03, FSR0L
-026E C000 FFF3 01432         MOVFF   r0x04, PRODL
-0272 5000      01433         MOVF    r0x05, W
-0274 EC00 F000 01434         CALL    __gptrget1
-0278 6E00      01435         MOVWF   r0x06
-027A 2A00      01436         INCF    r0x06, F
-027C C000 FFE5 01437         MOVFF   r0x06, POSTDEC1
-0280 C000 FFE9 01438         MOVFF   r0x03, FSR0L
-0284 C000 FFF3 01439         MOVFF   r0x04, PRODL
-0288 5000      01440         MOVF    r0x05, W
-028A EC00 F000 01441         CALL    __gptrput1
-028E 01442 _00280_DS_:
-               01443 ;       .line   217; testint.c  if(currentTime[0]=='2' && currentTime[1]=='4'){
-028E C000 F000 01444         MOVFF   _currentTime, r0x03
-0292 C000 F000 01445         MOVFF   (_currentTime + 1), r0x04
-0296 C000 F000 01446         MOVFF   (_currentTime + 2), r0x05
-029A C000 FFE9 01447         MOVFF   r0x03, FSR0L
-029E C000 FFF3 01448         MOVFF   r0x04, PRODL
-02A2 5000      01449         MOVF    r0x05, W
-02A4 EC00 F000 01450         CALL    __gptrget1
-02A8 6E00      01451         MOVWF   r0x03
-02AA 5000      01452         MOVF    r0x03, W
-02AC 0A32      01453         XORLW   0x32
-02AE E100      01454         BNZ     _00282_DS_
-02B0 C000 FFE9 01455         MOVFF   r0x00, FSR0L
-02B4 C000 FFF3 01456         MOVFF   r0x01, PRODL
-02B8 5000      01457         MOVF    r0x02, W
-02BA EC00 F000 01458         CALL    __gptrget1
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 28
+0214 C000 FFF3 01405         MOVFF   r0x01, PRODL
+0218 5000      01406         MOVF    r0x02, W
+021A EC00 F000 01407         CALL    __gptrput1
+021E 01408 _00278_DS_:
+021E 0000      01409         BANKSEL _currentTime
+               01410 ;       .line   213; testint.c  if(currentTime[1] == ':'){
+0220 5100      01411         MOVF    _currentTime, W, B
+0222 0F01      01412         ADDLW   0x01
+0224 6E00      01413         MOVWF   r0x00
+0226 0E00      01414         MOVLW   0x00
+0228 0000      01415         BANKSEL (_currentTime + 1)
+022A 2100      01416         ADDWFC  (_currentTime + 1), W, B
+022C 6E00      01417         MOVWF   r0x01
+022E 0E00      01418         MOVLW   0x00
+0230 0000      01419         BANKSEL (_currentTime + 2)
+0232 2100      01420         ADDWFC  (_currentTime + 2), W, B
+0234 6E00      01421         MOVWF   r0x02
+0236 C000 FFE9 01422         MOVFF   r0x00, FSR0L
+023A C000 FFF3 01423         MOVFF   r0x01, PRODL
+023E 5000      01424         MOVF    r0x02, W
+0240 EC00 F000 01425         CALL    __gptrget1
+0244 6E00      01426         MOVWF   r0x03
+0246 5000      01427         MOVF    r0x03, W
+0248 0A3A      01428         XORLW   0x3a
+024A E100      01429         BNZ     _00280_DS_
+               01430 ;       .line   214; testint.c  currentTime[1] = '0';
+024C 0E30      01431         MOVLW   0x30
+024E 6EE5      01432         MOVWF   POSTDEC1
+0250 C000 FFE9 01433         MOVFF   r0x00, FSR0L
+0254 C000 FFF3 01434         MOVFF   r0x01, PRODL
+0258 5000      01435         MOVF    r0x02, W
+025A EC00 F000 01436         CALL    __gptrput1
+               01437 ;       .line   215; testint.c  ++currentTime[0];
+025E C000 F000 01438         MOVFF   _currentTime, r0x03
+0262 C000 F000 01439         MOVFF   (_currentTime + 1), r0x04
+0266 C000 F000 01440         MOVFF   (_currentTime + 2), r0x05
+026A C000 FFE9 01441         MOVFF   r0x03, FSR0L
+026E C000 FFF3 01442         MOVFF   r0x04, PRODL
+0272 5000      01443         MOVF    r0x05, W
+0274 EC00 F000 01444         CALL    __gptrget1
+0278 6E00      01445         MOVWF   r0x06
+027A 2A00      01446         INCF    r0x06, F
+027C C000 FFE5 01447         MOVFF   r0x06, POSTDEC1
+0280 C000 FFE9 01448         MOVFF   r0x03, FSR0L
+0284 C000 FFF3 01449         MOVFF   r0x04, PRODL
+0288 5000      01450         MOVF    r0x05, W
+028A EC00 F000 01451         CALL    __gptrput1
+028E 01452 _00280_DS_:
+               01453 ;       .line   217; testint.c  if(currentTime[0]=='2' && currentTime[1]=='4'){
+028E C000 F000 01454         MOVFF   _currentTime, r0x03
+0292 C000 F000 01455         MOVFF   (_currentTime + 1), r0x04
+0296 C000 F000 01456         MOVFF   (_currentTime + 2), r0x05
+029A C000 FFE9 01457         MOVFF   r0x03, FSR0L
+029E C000 FFF3 01458         MOVFF   r0x04, PRODL
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 28
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-02BE 6E00      01459         MOVWF   r0x03
-02C0 5000      01460         MOVF    r0x03, W
-02C2 0A34      01461         XORLW   0x34
-02C4 E100      01462         BNZ     _00282_DS_
-               01463 ;       .line   218; testint.c  currentTime[0]='0';
-02C6 C000 F000 01464         MOVFF   _currentTime, r0x03
-02CA C000 F000 01465         MOVFF   (_currentTime + 1), r0x04
-02CE C000 F000 01466         MOVFF   (_currentTime + 2), r0x05
-02D2 0E30      01467         MOVLW   0x30
-02D4 6EE5      01468         MOVWF   POSTDEC1
-02D6 C000 FFE9 01469         MOVFF   r0x03, FSR0L
-02DA C000 FFF3 01470         MOVFF   r0x04, PRODL
-02DE 5000      01471         MOVF    r0x05, W
-02E0 EC00 F000 01472         CALL    __gptrput1
-               01473 ;       .line   219; testint.c  currentTime[1]='0';
-02E4 0E30      01474         MOVLW   0x30
-02E6 6EE5      01475         MOVWF   POSTDEC1
-02E8 C000 FFE9 01476         MOVFF   r0x00, FSR0L
-02EC C000 FFF3 01477         MOVFF   r0x01, PRODL
-02F0 5000      01478         MOVF    r0x02, W
-02F2 EC00 F000 01479         CALL    __gptrput1
-02F6 01480 _00282_DS_:
-               01481 ;       .line   221; testint.c  if(currentTime[0]=='3'){
-02F6 C000 F000 01482         MOVFF   _currentTime, r0x00
-02FA C000 F000 01483         MOVFF   (_currentTime + 1), r0x01
-02FE C000 F000 01484         MOVFF   (_currentTime + 2), r0x02
-0302 C000 FFE9 01485         MOVFF   r0x00, FSR0L
-0306 C000 FFF3 01486         MOVFF   r0x01, PRODL
-030A 5000      01487         MOVF    r0x02, W
-030C EC00 F000 01488         CALL    __gptrget1
-0310 6E00      01489         MOVWF   r0x00
-0312 5000      01490         MOVF    r0x00, W
-0314 0A33      01491         XORLW   0x33
-0316 E100      01492         BNZ     _00286_DS_
-               01493 ;       .line   222; testint.c  currentTime[0]='0';
-0318 C000 F000 01494         MOVFF   _currentTime, r0x00
-031C C000 F000 01495         MOVFF   (_currentTime + 1), r0x01
-0320 C000 F000 01496         MOVFF   (_currentTime + 2), r0x02
-0324 0E30      01497         MOVLW   0x30
-0326 6EE5      01498         MOVWF   POSTDEC1
-0328 C000 FFE9 01499         MOVFF   r0x00, FSR0L
-032C C000 FFF3 01500         MOVFF   r0x01, PRODL
-0330 5000      01501         MOVF    r0x02, W
-0332 EC00 F000 01502         CALL    __gptrput1
-0336 01503 _00286_DS_:
-0336 CFE4 F000 01504         MOVFF   PREINC1, r0x06
-033A CFE4 F000 01505         MOVFF   PREINC1, r0x05
-033E CFE4 F000 01506         MOVFF   PREINC1, r0x04
-0342 CFE4 F000 01507         MOVFF   PREINC1, r0x03
-0346 CFE4 F000 01508         MOVFF   PREINC1, r0x02
-034A CFE4 F000 01509         MOVFF   PREINC1, r0x01
-034E CFE4 F000 01510         MOVFF   PREINC1, r0x00
-0352 CFE4 FFD9 01511         MOVFF   PREINC1, FSR2L
-0356 0012      01512         RETURN  
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 29
+02A2 5000      01459         MOVF    r0x05, W
+02A4 EC00 F000 01460         CALL    __gptrget1
+02A8 6E00      01461         MOVWF   r0x03
+02AA 5000      01462         MOVF    r0x03, W
+02AC 0A32      01463         XORLW   0x32
+02AE E100      01464         BNZ     _00282_DS_
+02B0 C000 FFE9 01465         MOVFF   r0x00, FSR0L
+02B4 C000 FFF3 01466         MOVFF   r0x01, PRODL
+02B8 5000      01467         MOVF    r0x02, W
+02BA EC00 F000 01468         CALL    __gptrget1
+02BE 6E00      01469         MOVWF   r0x03
+02C0 5000      01470         MOVF    r0x03, W
+02C2 0A34      01471         XORLW   0x34
+02C4 E100      01472         BNZ     _00282_DS_
+               01473 ;       .line   218; testint.c  currentTime[0]='0';
+02C6 C000 F000 01474         MOVFF   _currentTime, r0x03
+02CA C000 F000 01475         MOVFF   (_currentTime + 1), r0x04
+02CE C000 F000 01476         MOVFF   (_currentTime + 2), r0x05
+02D2 0E30      01477         MOVLW   0x30
+02D4 6EE5      01478         MOVWF   POSTDEC1
+02D6 C000 FFE9 01479         MOVFF   r0x03, FSR0L
+02DA C000 FFF3 01480         MOVFF   r0x04, PRODL
+02DE 5000      01481         MOVF    r0x05, W
+02E0 EC00 F000 01482         CALL    __gptrput1
+               01483 ;       .line   219; testint.c  currentTime[1]='0';
+02E4 0E30      01484         MOVLW   0x30
+02E6 6EE5      01485         MOVWF   POSTDEC1
+02E8 C000 FFE9 01486         MOVFF   r0x00, FSR0L
+02EC C000 FFF3 01487         MOVFF   r0x01, PRODL
+02F0 5000      01488         MOVF    r0x02, W
+02F2 EC00 F000 01489         CALL    __gptrput1
+02F6 01490 _00282_DS_:
+               01491 ;       .line   221; testint.c  if(currentTime[0]=='3'){
+02F6 C000 F000 01492         MOVFF   _currentTime, r0x00
+02FA C000 F000 01493         MOVFF   (_currentTime + 1), r0x01
+02FE C000 F000 01494         MOVFF   (_currentTime + 2), r0x02
+0302 C000 FFE9 01495         MOVFF   r0x00, FSR0L
+0306 C000 FFF3 01496         MOVFF   r0x01, PRODL
+030A 5000      01497         MOVF    r0x02, W
+030C EC00 F000 01498         CALL    __gptrget1
+0310 6E00      01499         MOVWF   r0x00
+0312 5000      01500         MOVF    r0x00, W
+0314 0A33      01501         XORLW   0x33
+0316 E100      01502         BNZ     _00286_DS_
+               01503 ;       .line   222; testint.c  currentTime[0]='0';
+0318 C000 F000 01504         MOVFF   _currentTime, r0x00
+031C C000 F000 01505         MOVFF   (_currentTime + 1), r0x01
+0320 C000 F000 01506         MOVFF   (_currentTime + 2), r0x02
+0324 0E30      01507         MOVLW   0x30
+0326 6EE5      01508         MOVWF   POSTDEC1
+0328 C000 FFE9 01509         MOVFF   r0x00, FSR0L
+032C C000 FFF3 01510         MOVFF   r0x01, PRODL
+0330 5000      01511         MOVF    r0x02, W
+0332 EC00 F000 01512         CALL    __gptrput1
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 29
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-               01513 
-               01514 ; ; Starting pCode block
-               01515 S_testint__alarm        code
-0000 01516 _alarm:
-               01517 ;       .line   171; testint.c  void alarm(){
-0000 CFD9 FFE5 01518         MOVFF   FSR2L, POSTDEC1
-0004 CFE1 FFD9 01519         MOVFF   FSR1L, FSR2L
-0008 C000 FFE5 01520         MOVFF   r0x00, POSTDEC1
-000C C000 FFE5 01521         MOVFF   r0x01, POSTDEC1
-0010 C000 FFE5 01522         MOVFF   r0x02, POSTDEC1
-0014 C000 FFE5 01523         MOVFF   r0x03, POSTDEC1
-0018 C000 FFE5 01524         MOVFF   r0x04, POSTDEC1
-001C C000 FFE5 01525         MOVFF   r0x05, POSTDEC1
-0020 C000 FFE5 01526         MOVFF   r0x06, POSTDEC1
-               01527 ;       .line   172; testint.c  int blink = 1;
-0024 0E01      01528         MOVLW   0x01
-0026 6E00      01529         MOVWF   r0x00
-0028 6A00      01530         CLRF    r0x01
-               01531 ;       .line   173; testint.c  int i = 0;
-002A 6A00      01532         CLRF    r0x02
-002C 6A00      01533         CLRF    r0x03
-002E 01534 _00240_DS_:
-               01535 ;       .line   176; testint.c  for(i; i<5; i++){
-002E 5000      01536         MOVF    r0x03, W
-0030 0F80      01537         ADDLW   0x80
-0032 0F80      01538         ADDLW   0x80
-0034 E100      01539         BNZ     _00263_DS_
-0036 0E05      01540         MOVLW   0x05
-0038 5C00      01541         SUBWF   r0x02, W
-003A 01542 _00263_DS_:
-003A E200      01543         BC      _00243_DS_
-               01544 ;       .line   177; testint.c  if(currentTime[i]!=time[i]){
-003C 5000      01545         MOVF    r0x02, W
-003E 0000      01546         BANKSEL _currentTime
-0040 2500      01547         ADDWF   _currentTime, W, B
-0042 6E00      01548         MOVWF   r0x04
-0044 5000      01549         MOVF    r0x03, W
-0046 0000      01550         BANKSEL (_currentTime + 1)
-0048 2100      01551         ADDWFC  (_currentTime + 1), W, B
-004A 6E00      01552         MOVWF   r0x05
-004C 6AE8      01553         CLRF    WREG
-004E BE00      01554         BTFSC   r0x03, 7
-0050 68E8      01555         SETF    WREG
-0052 0000      01556         BANKSEL (_currentTime + 2)
-0054 2100      01557         ADDWFC  (_currentTime + 2), W, B
-0056 6E00      01558         MOVWF   r0x06
-0058 C000 FFE9 01559         MOVFF   r0x04, FSR0L
-005C C000 FFF3 01560         MOVFF   r0x05, PRODL
-0060 5000      01561         MOVF    r0x06, W
-0062 EC00 F000 01562         CALL    __gptrget1
-0066 6E00      01563         MOVWF   r0x04
-0068 0E00      01564         MOVLW   LOW(_time)
-006A 2400      01565         ADDWF   r0x02, W
-006C 6E00      01566         MOVWF   r0x05
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 30
+0336 01513 _00286_DS_:
+0336 CFE4 F000 01514         MOVFF   PREINC1, r0x06
+033A CFE4 F000 01515         MOVFF   PREINC1, r0x05
+033E CFE4 F000 01516         MOVFF   PREINC1, r0x04
+0342 CFE4 F000 01517         MOVFF   PREINC1, r0x03
+0346 CFE4 F000 01518         MOVFF   PREINC1, r0x02
+034A CFE4 F000 01519         MOVFF   PREINC1, r0x01
+034E CFE4 F000 01520         MOVFF   PREINC1, r0x00
+0352 CFE4 FFD9 01521         MOVFF   PREINC1, FSR2L
+0356 0012      01522         RETURN  
+               01523 
+               01524 ; ; Starting pCode block
+               01525 S_testint__alarm        code
+0000 01526 _alarm:
+               01527 ;       .line   171; testint.c  void alarm(){
+0000 CFD9 FFE5 01528         MOVFF   FSR2L, POSTDEC1
+0004 CFE1 FFD9 01529         MOVFF   FSR1L, FSR2L
+0008 C000 FFE5 01530         MOVFF   r0x00, POSTDEC1
+000C C000 FFE5 01531         MOVFF   r0x01, POSTDEC1
+0010 C000 FFE5 01532         MOVFF   r0x02, POSTDEC1
+0014 C000 FFE5 01533         MOVFF   r0x03, POSTDEC1
+0018 C000 FFE5 01534         MOVFF   r0x04, POSTDEC1
+001C C000 FFE5 01535         MOVFF   r0x05, POSTDEC1
+0020 C000 FFE5 01536         MOVFF   r0x06, POSTDEC1
+               01537 ;       .line   172; testint.c  int blink = 1;
+0024 0E01      01538         MOVLW   0x01
+0026 6E00      01539         MOVWF   r0x00
+0028 6A00      01540         CLRF    r0x01
+               01541 ;       .line   173; testint.c  int i = 0;
+002A 6A00      01542         CLRF    r0x02
+002C 6A00      01543         CLRF    r0x03
+002E 01544 _00240_DS_:
+               01545 ;       .line   176; testint.c  for(i; i<5; i++){
+002E 5000      01546         MOVF    r0x03, W
+0030 0F80      01547         ADDLW   0x80
+0032 0F80      01548         ADDLW   0x80
+0034 E100      01549         BNZ     _00263_DS_
+0036 0E05      01550         MOVLW   0x05
+0038 5C00      01551         SUBWF   r0x02, W
+003A 01552 _00263_DS_:
+003A E200      01553         BC      _00243_DS_
+               01554 ;       .line   177; testint.c  if(currentTime[i]!=time[i]){
+003C 5000      01555         MOVF    r0x02, W
+003E 0000      01556         BANKSEL _currentTime
+0040 2500      01557         ADDWF   _currentTime, W, B
+0042 6E00      01558         MOVWF   r0x04
+0044 5000      01559         MOVF    r0x03, W
+0046 0000      01560         BANKSEL (_currentTime + 1)
+0048 2100      01561         ADDWFC  (_currentTime + 1), W, B
+004A 6E00      01562         MOVWF   r0x05
+004C 6AE8      01563         CLRF    WREG
+004E BE00      01564         BTFSC   r0x03, 7
+0050 68E8      01565         SETF    WREG
+0052 0000      01566         BANKSEL (_currentTime + 2)
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 30
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-006E 0E00      01567         MOVLW   HIGH(_time)
-0070 2000      01568         ADDWFC  r0x03, W
-0072 6E00      01569         MOVWF   r0x06
-0074 C000 FFE9 01570         MOVFF   r0x05, FSR0L
-0078 C000 FFEA 01571         MOVFF   r0x06, FSR0H
-007C CFEF F000 01572         MOVFF   INDF0, r0x05
-0080 5000      01573         MOVF    r0x04, W
-0082 1800      01574         XORWF   r0x05, W
-0084 E000      01575         BZ      _00242_DS_
-               01576 ;       .line   178; testint.c  blink = 0;
-0086 6A00      01577         CLRF    r0x00
-0088 6A00      01578         CLRF    r0x01
-               01579 ;       .line   179; testint.c  i = 5;
-008A 0E05      01580         MOVLW   0x05
-008C 6E00      01581         MOVWF   r0x02
-008E 6A00      01582         CLRF    r0x03
-0090 01583 _00242_DS_:
-               01584 ;       .line   176; testint.c  for(i; i<5; i++){
-0090 2A00      01585         INCF    r0x02, F
-0092 B0D8      01586         BTFSC   STATUS, 0
-0094 2A00      01587         INCF    r0x03, F
-0096 D000      01588         BRA     _00240_DS_
-0098 01589 _00243_DS_:
-               01590 ;       .line   182; testint.c  if(blink){
-0098 5000      01591         MOVF    r0x00, W
-009A 1000      01592         IORWF   r0x01, W
-009C B4D8      01593         BTFSC   STATUS, 2
-009E D000      01594         BRA     _00239_DS_
-               01595 ;       .line   183; testint.c  display_string(0,"    Wake up!    ");
-00A0 0E00      01596         MOVLW   UPPER(__str_0)
-00A2 6EE5      01597         MOVWF   POSTDEC1
-00A4 0E00      01598         MOVLW   HIGH(__str_0)
-00A6 6EE5      01599         MOVWF   POSTDEC1
-00A8 0E00      01600         MOVLW   LOW(__str_0)
-00AA 6EE5      01601         MOVWF   POSTDEC1
-00AC 0E00      01602         MOVLW   0x00
-00AE 6EE5      01603         MOVWF   POSTDEC1
-00B0 EC00 F000 01604         CALL    _display_string
-00B4 0E04      01605         MOVLW   0x04
-00B6 26E1      01606         ADDWF   FSR1L, F
-               01607 ;       .line   184; testint.c  display_string(16, "                ");
-00B8 0E00      01608         MOVLW   UPPER(__str_1)
-00BA 6EE5      01609         MOVWF   POSTDEC1
-00BC 0E00      01610         MOVLW   HIGH(__str_1)
-00BE 6EE5      01611         MOVWF   POSTDEC1
-00C0 0E00      01612         MOVLW   LOW(__str_1)
-00C2 6EE5      01613         MOVWF   POSTDEC1
-00C4 0E10      01614         MOVLW   0x10
-00C6 6EE5      01615         MOVWF   POSTDEC1
-00C8 EC00 F000 01616         CALL    _display_string
-00CC 0E04      01617         MOVLW   0x04
-00CE 26E1      01618         ADDWF   FSR1L, F
-               01619 ;       .line   185; testint.c  for(j; j<30; j++){
-00D0 6A00      01620         CLRF    r0x00
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 31
+0054 2100      01567         ADDWFC  (_currentTime + 2), W, B
+0056 6E00      01568         MOVWF   r0x06
+0058 C000 FFE9 01569         MOVFF   r0x04, FSR0L
+005C C000 FFF3 01570         MOVFF   r0x05, PRODL
+0060 5000      01571         MOVF    r0x06, W
+0062 EC00 F000 01572         CALL    __gptrget1
+0066 6E00      01573         MOVWF   r0x04
+0068 0E00      01574         MOVLW   LOW(_time)
+006A 2400      01575         ADDWF   r0x02, W
+006C 6E00      01576         MOVWF   r0x05
+006E 0E00      01577         MOVLW   HIGH(_time)
+0070 2000      01578         ADDWFC  r0x03, W
+0072 6E00      01579         MOVWF   r0x06
+0074 C000 FFE9 01580         MOVFF   r0x05, FSR0L
+0078 C000 FFEA 01581         MOVFF   r0x06, FSR0H
+007C CFEF F000 01582         MOVFF   INDF0, r0x05
+0080 5000      01583         MOVF    r0x04, W
+0082 1800      01584         XORWF   r0x05, W
+0084 E000      01585         BZ      _00242_DS_
+               01586 ;       .line   178; testint.c  blink = 0;
+0086 6A00      01587         CLRF    r0x00
+0088 6A00      01588         CLRF    r0x01
+               01589 ;       .line   179; testint.c  i = 5;
+008A 0E05      01590         MOVLW   0x05
+008C 6E00      01591         MOVWF   r0x02
+008E 6A00      01592         CLRF    r0x03
+0090 01593 _00242_DS_:
+               01594 ;       .line   176; testint.c  for(i; i<5; i++){
+0090 2A00      01595         INCF    r0x02, F
+0092 B0D8      01596         BTFSC   STATUS, 0
+0094 2A00      01597         INCF    r0x03, F
+0096 D000      01598         BRA     _00240_DS_
+0098 01599 _00243_DS_:
+               01600 ;       .line   182; testint.c  if(blink){
+0098 5000      01601         MOVF    r0x00, W
+009A 1000      01602         IORWF   r0x01, W
+009C B4D8      01603         BTFSC   STATUS, 2
+009E D000      01604         BRA     _00239_DS_
+               01605 ;       .line   183; testint.c  display_string(0,"    Wake up!    ");
+00A0 0E00      01606         MOVLW   UPPER(__str_0)
+00A2 6EE5      01607         MOVWF   POSTDEC1
+00A4 0E00      01608         MOVLW   HIGH(__str_0)
+00A6 6EE5      01609         MOVWF   POSTDEC1
+00A8 0E00      01610         MOVLW   LOW(__str_0)
+00AA 6EE5      01611         MOVWF   POSTDEC1
+00AC 0E00      01612         MOVLW   0x00
+00AE 6EE5      01613         MOVWF   POSTDEC1
+00B0 EC00 F000 01614         CALL    _display_string
+00B4 0E04      01615         MOVLW   0x04
+00B6 26E1      01616         ADDWF   FSR1L, F
+               01617 ;       .line   184; testint.c  display_string(16, "                ");
+00B8 0E00      01618         MOVLW   UPPER(__str_1)
+00BA 6EE5      01619         MOVWF   POSTDEC1
+00BC 0E00      01620         MOVLW   HIGH(__str_1)
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 31
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-00D2 6A00      01621         CLRF    r0x01
-00D4 01622 _00247_DS_:
-00D4 5000      01623         MOVF    r0x01, W
-00D6 0F80      01624         ADDLW   0x80
-00D8 0F80      01625         ADDLW   0x80
-00DA E100      01626         BNZ     _00266_DS_
-00DC 0E1E      01627         MOVLW   0x1e
-00DE 5C00      01628         SUBWF   r0x00, W
-00E0 01629 _00266_DS_:
-00E0 E200      01630         BC      _00250_DS_
-               01631 ;       .line   186; testint.c  LED1_IO ^=1;
-00E2 6A00      01632         CLRF    r0x02
-00E4 B200      01633         BTFSC   _LATJbits, 1
-00E6 2A00      01634         INCF    r0x02, F
-00E8 0E01      01635         MOVLW   0x01
-00EA 1A00      01636         XORWF   r0x02, F
-00EC 5000      01637         MOVF    r0x02, W
-00EE 0B01      01638         ANDLW   0x01
-00F0 44E8      01639         RLNCF   WREG, W
-00F2 6EF4      01640         MOVWF   PRODH
-00F4 5000      01641         MOVF    _LATJbits, W
-00F6 0BFD      01642         ANDLW   0xfd
-00F8 10F4      01643         IORWF   PRODH, W
-00FA 6E00      01644         MOVWF   _LATJbits
-               01645 ;       .line   187; testint.c  for(k=0; k<40;++k) 
-00FC 0E28      01646         MOVLW   0x28
-00FE 6E00      01647         MOVWF   r0x02
-0100 6A00      01648         CLRF    r0x03
-0102 01649 _00246_DS_:
-               01650 ;       .line   188; testint.c  dumb_delay1ms();
-0102 EC00 F000 01651         CALL    _dumb_delay1ms
-0106 0EFF      01652         MOVLW   0xff
-0108 2600      01653         ADDWF   r0x02, F
-010A A0D8      01654         BTFSS   STATUS, 0
-010C 0600      01655         DECF    r0x03, F
-               01656 ;       .line   187; testint.c  for(k=0; k<40;++k) 
-010E 5000      01657         MOVF    r0x02, W
-0110 1000      01658         IORWF   r0x03, W
-0112 E100      01659         BNZ     _00246_DS_
-               01660 ;       .line   185; testint.c  for(j; j<30; j++){
-0114 2A00      01661         INCF    r0x00, F
-0116 B0D8      01662         BTFSC   STATUS, 0
-0118 2A00      01663         INCF    r0x01, F
-011A D000      01664         BRA     _00247_DS_
-011C 01665 _00250_DS_:
-               01666 ;       .line   190; testint.c  LED1_IO ^=1;
-011C 6A00      01667         CLRF    r0x00
-011E B200      01668         BTFSC   _LATJbits, 1
-0120 2A00      01669         INCF    r0x00, F
-0122 0E01      01670         MOVLW   0x01
-0124 1A00      01671         XORWF   r0x00, F
-0126 5000      01672         MOVF    r0x00, W
-0128 0B01      01673         ANDLW   0x01
-012A 44E8      01674         RLNCF   WREG, W
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 32
+00BE 6EE5      01621         MOVWF   POSTDEC1
+00C0 0E00      01622         MOVLW   LOW(__str_1)
+00C2 6EE5      01623         MOVWF   POSTDEC1
+00C4 0E10      01624         MOVLW   0x10
+00C6 6EE5      01625         MOVWF   POSTDEC1
+00C8 EC00 F000 01626         CALL    _display_string
+00CC 0E04      01627         MOVLW   0x04
+00CE 26E1      01628         ADDWF   FSR1L, F
+               01629 ;       .line   185; testint.c  for(j; j<30; j++){
+00D0 6A00      01630         CLRF    r0x00
+00D2 6A00      01631         CLRF    r0x01
+00D4 01632 _00247_DS_:
+00D4 5000      01633         MOVF    r0x01, W
+00D6 0F80      01634         ADDLW   0x80
+00D8 0F80      01635         ADDLW   0x80
+00DA E100      01636         BNZ     _00266_DS_
+00DC 0E1E      01637         MOVLW   0x1e
+00DE 5C00      01638         SUBWF   r0x00, W
+00E0 01639 _00266_DS_:
+00E0 E200      01640         BC      _00250_DS_
+               01641 ;       .line   186; testint.c  LED1_IO ^=1;
+00E2 6A00      01642         CLRF    r0x02
+00E4 B200      01643         BTFSC   _LATJbits, 1
+00E6 2A00      01644         INCF    r0x02, F
+00E8 0E01      01645         MOVLW   0x01
+00EA 1A00      01646         XORWF   r0x02, F
+00EC 5000      01647         MOVF    r0x02, W
+00EE 0B01      01648         ANDLW   0x01
+00F0 44E8      01649         RLNCF   WREG, W
+00F2 6EF4      01650         MOVWF   PRODH
+00F4 5000      01651         MOVF    _LATJbits, W
+00F6 0BFD      01652         ANDLW   0xfd
+00F8 10F4      01653         IORWF   PRODH, W
+00FA 6E00      01654         MOVWF   _LATJbits
+               01655 ;       .line   187; testint.c  for(k=0; k<40;++k) 
+00FC 0E28      01656         MOVLW   0x28
+00FE 6E00      01657         MOVWF   r0x02
+0100 6A00      01658         CLRF    r0x03
+0102 01659 _00246_DS_:
+               01660 ;       .line   188; testint.c  dumb_delay1ms();
+0102 EC00 F000 01661         CALL    _dumb_delay1ms
+0106 0EFF      01662         MOVLW   0xff
+0108 2600      01663         ADDWF   r0x02, F
+010A A0D8      01664         BTFSS   STATUS, 0
+010C 0600      01665         DECF    r0x03, F
+               01666 ;       .line   187; testint.c  for(k=0; k<40;++k) 
+010E 5000      01667         MOVF    r0x02, W
+0110 1000      01668         IORWF   r0x03, W
+0112 E100      01669         BNZ     _00246_DS_
+               01670 ;       .line   185; testint.c  for(j; j<30; j++){
+0114 2A00      01671         INCF    r0x00, F
+0116 B0D8      01672         BTFSC   STATUS, 0
+0118 2A00      01673         INCF    r0x01, F
+011A D000      01674         BRA     _00247_DS_
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 32
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-012C 6EF4      01675         MOVWF   PRODH
-012E 5000      01676         MOVF    _LATJbits, W
-0130 0BFD      01677         ANDLW   0xfd
-0132 10F4      01678         IORWF   PRODH, W
-0134 6E00      01679         MOVWF   _LATJbits
-0136 01680 _00239_DS_:
-0136 0000      01681         BANKSEL _alarmflag
-               01682 ;       .line   192; testint.c  alarmflag = 0;
-0138 6B00      01683         CLRF    _alarmflag, B
-013A 0000      01684         BANKSEL (_alarmflag + 1)
-013C 6B00      01685         CLRF    (_alarmflag + 1), B
-013E CFE4 F000 01686         MOVFF   PREINC1, r0x06
-0142 CFE4 F000 01687         MOVFF   PREINC1, r0x05
-0146 CFE4 F000 01688         MOVFF   PREINC1, r0x04
-014A CFE4 F000 01689         MOVFF   PREINC1, r0x03
-014E CFE4 F000 01690         MOVFF   PREINC1, r0x02
-0152 CFE4 F000 01691         MOVFF   PREINC1, r0x01
-0156 CFE4 F000 01692         MOVFF   PREINC1, r0x00
-015A CFE4 FFD9 01693         MOVFF   PREINC1, FSR2L
-015E 0012      01694         RETURN  
-               01695 
-               01696 ; ; Starting pCode block
-               01697 S_testint__increment_time       code
-0000 01698 _increment_time:
-               01699 ;       .line   147; testint.c  void increment_time(){
-0000 CFD9 FFE5 01700         MOVFF   FSR2L, POSTDEC1
-0004 CFE1 FFD9 01701         MOVFF   FSR1L, FSR2L
-0008 C000 FFE5 01702         MOVFF   r0x00, POSTDEC1
-000C C000 FFE5 01703         MOVFF   r0x01, POSTDEC1
-0010 C000 FFE5 01704         MOVFF   r0x02, POSTDEC1
-               01705 ;       .line   148; testint.c  time[position]++;
-0014 0E00      01706         MOVLW   LOW(_time)
-0016 0000      01707         BANKSEL _position
-0018 2500      01708         ADDWF   _position, W, B
-001A 6E00      01709         MOVWF   r0x00
-001C 0E00      01710         MOVLW   HIGH(_time)
-001E 0000      01711         BANKSEL (_position + 1)
-0020 2100      01712         ADDWFC  (_position + 1), W, B
-0022 6E00      01713         MOVWF   r0x01
-0024 C000 FFE9 01714         MOVFF   r0x00, FSR0L
-0028 C000 FFEA 01715         MOVFF   r0x01, FSR0H
-002C CFEF F000 01716         MOVFF   INDF0, r0x02
-0030 2A00      01717         INCF    r0x02, F
-0032 C000 FFE9 01718         MOVFF   r0x00, FSR0L
-0036 C000 FFEA 01719         MOVFF   r0x01, FSR0H
-003A C000 FFEF 01720         MOVFF   r0x02, INDF0
-003E 0000      01721         BANKSEL (_time + 4)
-               01722 ;       .line   149; testint.c  if(time[4] == ':'){
-0040 5100      01723         MOVF    (_time + 4), W, B
-0042 0A3A      01724         XORLW   0x3a
-0044 E100      01725         BNZ     _00201_DS_
-               01726 ;       .line   150; testint.c  time[4] = '0';
-0046 0E30      01727         MOVLW   0x30
-0048 0000      01728         BANKSEL (_time + 4)
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 33
+011C 01675 _00250_DS_:
+               01676 ;       .line   190; testint.c  LED1_IO ^=1;
+011C 6A00      01677         CLRF    r0x00
+011E B200      01678         BTFSC   _LATJbits, 1
+0120 2A00      01679         INCF    r0x00, F
+0122 0E01      01680         MOVLW   0x01
+0124 1A00      01681         XORWF   r0x00, F
+0126 5000      01682         MOVF    r0x00, W
+0128 0B01      01683         ANDLW   0x01
+012A 44E8      01684         RLNCF   WREG, W
+012C 6EF4      01685         MOVWF   PRODH
+012E 5000      01686         MOVF    _LATJbits, W
+0130 0BFD      01687         ANDLW   0xfd
+0132 10F4      01688         IORWF   PRODH, W
+0134 6E00      01689         MOVWF   _LATJbits
+0136 01690 _00239_DS_:
+0136 0000      01691         BANKSEL _alarmflag
+               01692 ;       .line   192; testint.c  alarmflag = 0;
+0138 6B00      01693         CLRF    _alarmflag, B
+013A 0000      01694         BANKSEL (_alarmflag + 1)
+013C 6B00      01695         CLRF    (_alarmflag + 1), B
+013E CFE4 F000 01696         MOVFF   PREINC1, r0x06
+0142 CFE4 F000 01697         MOVFF   PREINC1, r0x05
+0146 CFE4 F000 01698         MOVFF   PREINC1, r0x04
+014A CFE4 F000 01699         MOVFF   PREINC1, r0x03
+014E CFE4 F000 01700         MOVFF   PREINC1, r0x02
+0152 CFE4 F000 01701         MOVFF   PREINC1, r0x01
+0156 CFE4 F000 01702         MOVFF   PREINC1, r0x00
+015A CFE4 FFD9 01703         MOVFF   PREINC1, FSR2L
+015E 0012      01704         RETURN  
+               01705 
+               01706 ; ; Starting pCode block
+               01707 S_testint__increment_time       code
+0000 01708 _increment_time:
+               01709 ;       .line   147; testint.c  void increment_time(){
+0000 CFD9 FFE5 01710         MOVFF   FSR2L, POSTDEC1
+0004 CFE1 FFD9 01711         MOVFF   FSR1L, FSR2L
+0008 C000 FFE5 01712         MOVFF   r0x00, POSTDEC1
+000C C000 FFE5 01713         MOVFF   r0x01, POSTDEC1
+0010 C000 FFE5 01714         MOVFF   r0x02, POSTDEC1
+               01715 ;       .line   148; testint.c  time[position]++;
+0014 0E00      01716         MOVLW   LOW(_time)
+0016 0000      01717         BANKSEL _position
+0018 2500      01718         ADDWF   _position, W, B
+001A 6E00      01719         MOVWF   r0x00
+001C 0E00      01720         MOVLW   HIGH(_time)
+001E 0000      01721         BANKSEL (_position + 1)
+0020 2100      01722         ADDWFC  (_position + 1), W, B
+0022 6E00      01723         MOVWF   r0x01
+0024 C000 FFE9 01724         MOVFF   r0x00, FSR0L
+0028 C000 FFEA 01725         MOVFF   r0x01, FSR0H
+002C CFEF F000 01726         MOVFF   INDF0, r0x02
+0030 2A00      01727         INCF    r0x02, F
+0032 C000 FFE9 01728         MOVFF   r0x00, FSR0L
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 33
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-004A 6F00      01729         MOVWF   (_time + 4), B
-004C 0000      01730         BANKSEL (_time + 3)
-               01731 ;       .line   151; testint.c  ++time[3];
-004E 2900      01732         INCF    (_time + 3), W, B
-0050 6E00      01733         MOVWF   r0x00
-0052 5000      01734         MOVF    r0x00, W
-0054 0000      01735         BANKSEL (_time + 3)
-0056 6F00      01736         MOVWF   (_time + 3), B
-0058 01737 _00201_DS_:
-0058 0000      01738         BANKSEL (_time + 3)
-               01739 ;       .line   153; testint.c  if(time[3]=='6'){
-005A 5100      01740         MOVF    (_time + 3), W, B
-005C 0A36      01741         XORLW   0x36
-005E E100      01742         BNZ     _00203_DS_
-               01743 ;       .line   154; testint.c  time[3]='0';
-0060 0E30      01744         MOVLW   0x30
-0062 0000      01745         BANKSEL (_time + 3)
-0064 6F00      01746         MOVWF   (_time + 3), B
-               01747 ;       .line   155; testint.c  time[1]++;
-0066 C000 F000 01748         MOVFF   (_time + 1), r0x00
-006A 2A00      01749         INCF    r0x00, F
-006C 5000      01750         MOVF    r0x00, W
-006E 0000      01751         BANKSEL (_time + 1)
-0070 6F00      01752         MOVWF   (_time + 1), B
-0072 01753 _00203_DS_:
-               01754 ;       .line   157; testint.c  if(time[1] == ':'){
-0072 C000 F000 01755         MOVFF   (_time + 1), r0x00
-0076 5000      01756         MOVF    r0x00, W
-0078 0A3A      01757         XORLW   0x3a
-007A E100      01758         BNZ     _00211_DS_
-               01759 ;       .line   158; testint.c  time[1] = '0';
-007C 0E30      01760         MOVLW   0x30
-007E 0000      01761         BANKSEL (_time + 1)
-0080 6F00      01762         MOVWF   (_time + 1), B
-0082 0000      01763         BANKSEL _time
-               01764 ;       .line   159; testint.c  ++time[0];
-0084 2900      01765         INCF    _time, W, B
-0086 6E00      01766         MOVWF   r0x01
-0088 5000      01767         MOVF    r0x01, W
-008A 0000      01768         BANKSEL _time
-008C 6F00      01769         MOVWF   _time, B
-008E D000      01770         BRA     _00213_DS_
-0090 01771 _00211_DS_:
-               01772 ;       .line   161; testint.c  else if(time[0]=='2' && time[1]>='4'){
-0090 C000 F000 01773         MOVFF   _time, r0x01
-0094 5000      01774         MOVF    r0x01, W
-0096 0A32      01775         XORLW   0x32
-0098 E100      01776         BNZ     _00207_DS_
-009A 5000      01777         MOVF    r0x00, W
-009C 0F80      01778         ADDLW   0x80
-009E 0F4C      01779         ADDLW   0x4c
-00A0 E300      01780         BNC     _00207_DS_
-               01781 ;       .line   162; testint.c  time[0]='0';
-00A2 0E30      01782         MOVLW   0x30
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 34
+0036 C000 FFEA 01729         MOVFF   r0x01, FSR0H
+003A C000 FFEF 01730         MOVFF   r0x02, INDF0
+003E 0000      01731         BANKSEL (_time + 4)
+               01732 ;       .line   149; testint.c  if(time[4] == ':'){
+0040 5100      01733         MOVF    (_time + 4), W, B
+0042 0A3A      01734         XORLW   0x3a
+0044 E100      01735         BNZ     _00201_DS_
+               01736 ;       .line   150; testint.c  time[4] = '0';
+0046 0E30      01737         MOVLW   0x30
+0048 0000      01738         BANKSEL (_time + 4)
+004A 6F00      01739         MOVWF   (_time + 4), B
+004C 0000      01740         BANKSEL (_time + 3)
+               01741 ;       .line   151; testint.c  ++time[3];
+004E 2900      01742         INCF    (_time + 3), W, B
+0050 6E00      01743         MOVWF   r0x00
+0052 5000      01744         MOVF    r0x00, W
+0054 0000      01745         BANKSEL (_time + 3)
+0056 6F00      01746         MOVWF   (_time + 3), B
+0058 01747 _00201_DS_:
+0058 0000      01748         BANKSEL (_time + 3)
+               01749 ;       .line   153; testint.c  if(time[3]=='6'){
+005A 5100      01750         MOVF    (_time + 3), W, B
+005C 0A36      01751         XORLW   0x36
+005E E100      01752         BNZ     _00203_DS_
+               01753 ;       .line   154; testint.c  time[3]='0';
+0060 0E30      01754         MOVLW   0x30
+0062 0000      01755         BANKSEL (_time + 3)
+0064 6F00      01756         MOVWF   (_time + 3), B
+               01757 ;       .line   155; testint.c  time[1]++;
+0066 C000 F000 01758         MOVFF   (_time + 1), r0x00
+006A 2A00      01759         INCF    r0x00, F
+006C 5000      01760         MOVF    r0x00, W
+006E 0000      01761         BANKSEL (_time + 1)
+0070 6F00      01762         MOVWF   (_time + 1), B
+0072 01763 _00203_DS_:
+               01764 ;       .line   157; testint.c  if(time[1] == ':'){
+0072 C000 F000 01765         MOVFF   (_time + 1), r0x00
+0076 5000      01766         MOVF    r0x00, W
+0078 0A3A      01767         XORLW   0x3a
+007A E100      01768         BNZ     _00211_DS_
+               01769 ;       .line   158; testint.c  time[1] = '0';
+007C 0E30      01770         MOVLW   0x30
+007E 0000      01771         BANKSEL (_time + 1)
+0080 6F00      01772         MOVWF   (_time + 1), B
+0082 0000      01773         BANKSEL _time
+               01774 ;       .line   159; testint.c  ++time[0];
+0084 2900      01775         INCF    _time, W, B
+0086 6E00      01776         MOVWF   r0x01
+0088 5000      01777         MOVF    r0x01, W
+008A 0000      01778         BANKSEL _time
+008C 6F00      01779         MOVWF   _time, B
+008E D000      01780         BRA     _00213_DS_
+0090 01781 _00211_DS_:
+               01782 ;       .line   161; testint.c  else if(time[0]=='2' && time[1]>='4'){
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 34
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-00A4 0000      01783         BANKSEL _time
-00A6 6F00      01784         MOVWF   _time, B
-               01785 ;       .line   163; testint.c  time[1]='0';
-00A8 0E30      01786         MOVLW   0x30
-00AA 0000      01787         BANKSEL (_time + 1)
-00AC 6F00      01788         MOVWF   (_time + 1), B
-00AE D000      01789         BRA     _00213_DS_
-00B0 01790 _00207_DS_:
-               01791 ;       .line   165; testint.c  else if(time[0]=='3'){
-00B0 5000      01792         MOVF    r0x01, W
-00B2 0A33      01793         XORLW   0x33
-00B4 E100      01794         BNZ     _00213_DS_
-               01795 ;       .line   166; testint.c  time[0]='0';
-00B6 0E30      01796         MOVLW   0x30
-00B8 0000      01797         BANKSEL _time
-00BA 6F00      01798         MOVWF   _time, B
-00BC 01799 _00213_DS_:
-00BC CFE4 F000 01800         MOVFF   PREINC1, r0x02
-00C0 CFE4 F000 01801         MOVFF   PREINC1, r0x01
-00C4 CFE4 F000 01802         MOVFF   PREINC1, r0x00
-00C8 CFE4 FFD9 01803         MOVFF   PREINC1, FSR2L
-00CC 0012      01804         RETURN  
-               01805 
-               01806 ; ; Starting pCode block
-               01807 S_testint__high_isr     code
-0000 01808 _high_isr:
-               01809 ;       .line   38; testint.c   void high_isr (void) __interrupt 1
-0000 CFE8 FFE5 01810         MOVFF   WREG, POSTDEC1
-0004 CFD8 FFE5 01811         MOVFF   STATUS, POSTDEC1
-0008 CFE0 FFE5 01812         MOVFF   BSR, POSTDEC1
-000C CFF3 FFE5 01813         MOVFF   PRODL, POSTDEC1
-0010 CFF4 FFE5 01814         MOVFF   PRODH, POSTDEC1
-0014 CFE9 FFE5 01815         MOVFF   FSR0L, POSTDEC1
-0018 CFEA FFE5 01816         MOVFF   FSR0H, POSTDEC1
-001C CFFA FFE5 01817         MOVFF   PCLATH, POSTDEC1
-0020 CFFB FFE5 01818         MOVFF   PCLATU, POSTDEC1
-0024 CFD9 FFE5 01819         MOVFF   FSR2L, POSTDEC1
-0028 CFE1 FFD9 01820         MOVFF   FSR1L, FSR2L
-002C C000 FFE5 01821         MOVFF   r0x00, POSTDEC1
-0030 C000 FFE5 01822         MOVFF   r0x01, POSTDEC1
-0034 C000 FFE5 01823         MOVFF   r0x02, POSTDEC1
-0038 C000 FFE5 01824         MOVFF   r0x03, POSTDEC1
-               01825 ;       .line   41; testint.c   if (INT3F)
-003C A400      01826         BTFSS   _INTCON3bits, 2
-003E D000      01827         BRA     _00117_DS_
-0040 0000      01828         BANKSEL (_position + 1)
-               01829 ;       .line   43; testint.c   if(position<2 || (position>2 && position<5))
-0042 5100      01830         MOVF    (_position + 1), W, B
-0044 0F80      01831         ADDLW   0x80
-0046 0F80      01832         ADDLW   0x80
-0048 E100      01833         BNZ     _00150_DS_
-004A 0E02      01834         MOVLW   0x02
-004C 0000      01835         BANKSEL _position
-004E 5D00      01836         SUBWF   _position, W, B
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 35
+0090 C000 F000 01783         MOVFF   _time, r0x01
+0094 5000      01784         MOVF    r0x01, W
+0096 0A32      01785         XORLW   0x32
+0098 E100      01786         BNZ     _00207_DS_
+009A 5000      01787         MOVF    r0x00, W
+009C 0F80      01788         ADDLW   0x80
+009E 0F4C      01789         ADDLW   0x4c
+00A0 E300      01790         BNC     _00207_DS_
+               01791 ;       .line   162; testint.c  time[0]='0';
+00A2 0E30      01792         MOVLW   0x30
+00A4 0000      01793         BANKSEL _time
+00A6 6F00      01794         MOVWF   _time, B
+               01795 ;       .line   163; testint.c  time[1]='0';
+00A8 0E30      01796         MOVLW   0x30
+00AA 0000      01797         BANKSEL (_time + 1)
+00AC 6F00      01798         MOVWF   (_time + 1), B
+00AE D000      01799         BRA     _00213_DS_
+00B0 01800 _00207_DS_:
+               01801 ;       .line   165; testint.c  else if(time[0]=='3'){
+00B0 5000      01802         MOVF    r0x01, W
+00B2 0A33      01803         XORLW   0x33
+00B4 E100      01804         BNZ     _00213_DS_
+               01805 ;       .line   166; testint.c  time[0]='0';
+00B6 0E30      01806         MOVLW   0x30
+00B8 0000      01807         BANKSEL _time
+00BA 6F00      01808         MOVWF   _time, B
+00BC 01809 _00213_DS_:
+00BC CFE4 F000 01810         MOVFF   PREINC1, r0x02
+00C0 CFE4 F000 01811         MOVFF   PREINC1, r0x01
+00C4 CFE4 F000 01812         MOVFF   PREINC1, r0x00
+00C8 CFE4 FFD9 01813         MOVFF   PREINC1, FSR2L
+00CC 0012      01814         RETURN  
+               01815 
+               01816 ; ; Starting pCode block
+               01817 S_testint__high_isr     code
+0000 01818 _high_isr:
+               01819 ;       .line   38; testint.c   void high_isr (void) __interrupt 1
+0000 CFE8 FFE5 01820         MOVFF   WREG, POSTDEC1
+0004 CFD8 FFE5 01821         MOVFF   STATUS, POSTDEC1
+0008 CFE0 FFE5 01822         MOVFF   BSR, POSTDEC1
+000C CFF3 FFE5 01823         MOVFF   PRODL, POSTDEC1
+0010 CFF4 FFE5 01824         MOVFF   PRODH, POSTDEC1
+0014 CFE9 FFE5 01825         MOVFF   FSR0L, POSTDEC1
+0018 CFEA FFE5 01826         MOVFF   FSR0H, POSTDEC1
+001C CFFA FFE5 01827         MOVFF   PCLATH, POSTDEC1
+0020 CFFB FFE5 01828         MOVFF   PCLATU, POSTDEC1
+0024 CFD9 FFE5 01829         MOVFF   FSR2L, POSTDEC1
+0028 CFE1 FFD9 01830         MOVFF   FSR1L, FSR2L
+002C C000 FFE5 01831         MOVFF   r0x00, POSTDEC1
+0030 C000 FFE5 01832         MOVFF   r0x01, POSTDEC1
+0034 C000 FFE5 01833         MOVFF   r0x02, POSTDEC1
+0038 C000 FFE5 01834         MOVFF   r0x03, POSTDEC1
+               01835 ;       .line   41; testint.c   if (INT3F)
+003C A400      01836         BTFSS   _INTCON3bits, 2
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 35
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0050 01837 _00150_DS_:
-0050 E300      01838         BNC     _00105_DS_
-0052 0000      01839         BANKSEL (_position + 1)
-0054 5100      01840         MOVF    (_position + 1), W, B
-0056 0F80      01841         ADDLW   0x80
-0058 0F80      01842         ADDLW   0x80
-005A E100      01843         BNZ     _00151_DS_
-005C 0E03      01844         MOVLW   0x03
-005E 0000      01845         BANKSEL _position
-0060 5D00      01846         SUBWF   _position, W, B
-0062 01847 _00151_DS_:
-0062 E300      01848         BNC     _00106_DS_
-0064 0000      01849         BANKSEL (_position + 1)
-0066 5100      01850         MOVF    (_position + 1), W, B
-0068 0F80      01851         ADDLW   0x80
-006A 0F80      01852         ADDLW   0x80
-006C E100      01853         BNZ     _00152_DS_
-006E 0E05      01854         MOVLW   0x05
-0070 0000      01855         BANKSEL _position
-0072 5D00      01856         SUBWF   _position, W, B
-0074 01857 _00152_DS_:
-0074 E200      01858         BC      _00106_DS_
-0076 01859 _00105_DS_:
-               01860 ;       .line   44; testint.c   increment_time();
-0076 EC00 F000 01861         CALL    _increment_time
-007A 01862 _00106_DS_:
-007A 0000      01863         BANKSEL (_position + 1)
-               01864 ;       .line   46; testint.c   if((position>6 && position<9) || (position>9 && position<12) || (position>12 && position<15)){
-007C 5100      01865         MOVF    (_position + 1), W, B
-007E 0F80      01866         ADDLW   0x80
-0080 0F80      01867         ADDLW   0x80
-0082 E100      01868         BNZ     _00153_DS_
-0084 0E07      01869         MOVLW   0x07
-0086 0000      01870         BANKSEL _position
-0088 5D00      01871         SUBWF   _position, W, B
-008A 01872 _00153_DS_:
-008A E300      01873         BNC     _00113_DS_
-008C 0000      01874         BANKSEL (_position + 1)
-008E 5100      01875         MOVF    (_position + 1), W, B
-0090 0F80      01876         ADDLW   0x80
-0092 0F80      01877         ADDLW   0x80
-0094 E100      01878         BNZ     _00154_DS_
-0096 0E09      01879         MOVLW   0x09
-0098 0000      01880         BANKSEL _position
-009A 5D00      01881         SUBWF   _position, W, B
-009C 01882 _00154_DS_:
-009C E300      01883         BNC     _00109_DS_
-009E 01884 _00113_DS_:
-009E 0000      01885         BANKSEL (_position + 1)
-00A0 5100      01886         MOVF    (_position + 1), W, B
-00A2 0F80      01887         ADDLW   0x80
-00A4 0F80      01888         ADDLW   0x80
-00A6 E100      01889         BNZ     _00155_DS_
-00A8 0E0A      01890         MOVLW   0x0a
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 36
+003E D000      01837         BRA     _00117_DS_
+0040 0000      01838         BANKSEL (_position + 1)
+               01839 ;       .line   43; testint.c   if(position<2 || (position>2 && position<5))
+0042 5100      01840         MOVF    (_position + 1), W, B
+0044 0F80      01841         ADDLW   0x80
+0046 0F80      01842         ADDLW   0x80
+0048 E100      01843         BNZ     _00150_DS_
+004A 0E02      01844         MOVLW   0x02
+004C 0000      01845         BANKSEL _position
+004E 5D00      01846         SUBWF   _position, W, B
+0050 01847 _00150_DS_:
+0050 E300      01848         BNC     _00105_DS_
+0052 0000      01849         BANKSEL (_position + 1)
+0054 5100      01850         MOVF    (_position + 1), W, B
+0056 0F80      01851         ADDLW   0x80
+0058 0F80      01852         ADDLW   0x80
+005A E100      01853         BNZ     _00151_DS_
+005C 0E03      01854         MOVLW   0x03
+005E 0000      01855         BANKSEL _position
+0060 5D00      01856         SUBWF   _position, W, B
+0062 01857 _00151_DS_:
+0062 E300      01858         BNC     _00106_DS_
+0064 0000      01859         BANKSEL (_position + 1)
+0066 5100      01860         MOVF    (_position + 1), W, B
+0068 0F80      01861         ADDLW   0x80
+006A 0F80      01862         ADDLW   0x80
+006C E100      01863         BNZ     _00152_DS_
+006E 0E05      01864         MOVLW   0x05
+0070 0000      01865         BANKSEL _position
+0072 5D00      01866         SUBWF   _position, W, B
+0074 01867 _00152_DS_:
+0074 E200      01868         BC      _00106_DS_
+0076 01869 _00105_DS_:
+               01870 ;       .line   44; testint.c   increment_time();
+0076 EC00 F000 01871         CALL    _increment_time
+007A 01872 _00106_DS_:
+007A 0000      01873         BANKSEL (_position + 1)
+               01874 ;       .line   46; testint.c   if((position>6 && position<9) || (position>9 && position<12) || (position>12 && position<15)){
+007C 5100      01875         MOVF    (_position + 1), W, B
+007E 0F80      01876         ADDLW   0x80
+0080 0F80      01877         ADDLW   0x80
+0082 E100      01878         BNZ     _00153_DS_
+0084 0E07      01879         MOVLW   0x07
+0086 0000      01880         BANKSEL _position
+0088 5D00      01881         SUBWF   _position, W, B
+008A 01882 _00153_DS_:
+008A E300      01883         BNC     _00113_DS_
+008C 0000      01884         BANKSEL (_position + 1)
+008E 5100      01885         MOVF    (_position + 1), W, B
+0090 0F80      01886         ADDLW   0x80
+0092 0F80      01887         ADDLW   0x80
+0094 E100      01888         BNZ     _00154_DS_
+0096 0E09      01889         MOVLW   0x09
+0098 0000      01890         BANKSEL _position
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 36
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-00AA 0000      01891         BANKSEL _position
-00AC 5D00      01892         SUBWF   _position, W, B
-00AE 01893 _00155_DS_:
-00AE E300      01894         BNC     _00115_DS_
-00B0 0000      01895         BANKSEL (_position + 1)
-00B2 5100      01896         MOVF    (_position + 1), W, B
-00B4 0F80      01897         ADDLW   0x80
-00B6 0F80      01898         ADDLW   0x80
-00B8 E100      01899         BNZ     _00156_DS_
-00BA 0E0C      01900         MOVLW   0x0c
-00BC 0000      01901         BANKSEL _position
-00BE 5D00      01902         SUBWF   _position, W, B
-00C0 01903 _00156_DS_:
-00C0 E300      01904         BNC     _00109_DS_
-00C2 01905 _00115_DS_:
-00C2 0000      01906         BANKSEL (_position + 1)
-00C4 5100      01907         MOVF    (_position + 1), W, B
-00C6 0F80      01908         ADDLW   0x80
-00C8 0F80      01909         ADDLW   0x80
-00CA E100      01910         BNZ     _00157_DS_
-00CC 0E0D      01911         MOVLW   0x0d
-00CE 0000      01912         BANKSEL _position
-00D0 5D00      01913         SUBWF   _position, W, B
-00D2 01914 _00157_DS_:
-00D2 E300      01915         BNC     _00110_DS_
-00D4 0000      01916         BANKSEL (_position + 1)
-00D6 5100      01917         MOVF    (_position + 1), W, B
-00D8 0F80      01918         ADDLW   0x80
-00DA 0F80      01919         ADDLW   0x80
-00DC E100      01920         BNZ     _00158_DS_
-00DE 0E0F      01921         MOVLW   0x0f
-00E0 0000      01922         BANKSEL _position
-00E2 5D00      01923         SUBWF   _position, W, B
-00E4 01924 _00158_DS_:
-00E4 E200      01925         BC      _00110_DS_
-00E6 01926 _00109_DS_:
-00E6 0000      01927         BANKSEL _position
-               01928 ;       .line   47; testint.c   currentTime[position-7]++;
-00E8 5100      01929         MOVF    _position, W, B
-00EA 0FF9      01930         ADDLW   0xf9
-00EC 6E00      01931         MOVWF   r0x00
-00EE 0EFF      01932         MOVLW   0xff
-00F0 0000      01933         BANKSEL (_position + 1)
-00F2 2100      01934         ADDWFC  (_position + 1), W, B
-00F4 6E00      01935         MOVWF   r0x01
-00F6 6A00      01936         CLRF    r0x02
-00F8 BE00      01937         BTFSC   r0x01, 7
-00FA 6800      01938         SETF    r0x02
-00FC 0000      01939         BANKSEL _currentTime
-00FE 5100      01940         MOVF    _currentTime, W, B
-0100 2600      01941         ADDWF   r0x00, F
-0102 0000      01942         BANKSEL (_currentTime + 1)
-0104 5100      01943         MOVF    (_currentTime + 1), W, B
-0106 2200      01944         ADDWFC  r0x01, F
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 37
+009A 5D00      01891         SUBWF   _position, W, B
+009C 01892 _00154_DS_:
+009C E300      01893         BNC     _00109_DS_
+009E 01894 _00113_DS_:
+009E 0000      01895         BANKSEL (_position + 1)
+00A0 5100      01896         MOVF    (_position + 1), W, B
+00A2 0F80      01897         ADDLW   0x80
+00A4 0F80      01898         ADDLW   0x80
+00A6 E100      01899         BNZ     _00155_DS_
+00A8 0E0A      01900         MOVLW   0x0a
+00AA 0000      01901         BANKSEL _position
+00AC 5D00      01902         SUBWF   _position, W, B
+00AE 01903 _00155_DS_:
+00AE E300      01904         BNC     _00115_DS_
+00B0 0000      01905         BANKSEL (_position + 1)
+00B2 5100      01906         MOVF    (_position + 1), W, B
+00B4 0F80      01907         ADDLW   0x80
+00B6 0F80      01908         ADDLW   0x80
+00B8 E100      01909         BNZ     _00156_DS_
+00BA 0E0C      01910         MOVLW   0x0c
+00BC 0000      01911         BANKSEL _position
+00BE 5D00      01912         SUBWF   _position, W, B
+00C0 01913 _00156_DS_:
+00C0 E300      01914         BNC     _00109_DS_
+00C2 01915 _00115_DS_:
+00C2 0000      01916         BANKSEL (_position + 1)
+00C4 5100      01917         MOVF    (_position + 1), W, B
+00C6 0F80      01918         ADDLW   0x80
+00C8 0F80      01919         ADDLW   0x80
+00CA E100      01920         BNZ     _00157_DS_
+00CC 0E0D      01921         MOVLW   0x0d
+00CE 0000      01922         BANKSEL _position
+00D0 5D00      01923         SUBWF   _position, W, B
+00D2 01924 _00157_DS_:
+00D2 E300      01925         BNC     _00110_DS_
+00D4 0000      01926         BANKSEL (_position + 1)
+00D6 5100      01927         MOVF    (_position + 1), W, B
+00D8 0F80      01928         ADDLW   0x80
+00DA 0F80      01929         ADDLW   0x80
+00DC E100      01930         BNZ     _00158_DS_
+00DE 0E0F      01931         MOVLW   0x0f
+00E0 0000      01932         BANKSEL _position
+00E2 5D00      01933         SUBWF   _position, W, B
+00E4 01934 _00158_DS_:
+00E4 E200      01935         BC      _00110_DS_
+00E6 01936 _00109_DS_:
+00E6 0000      01937         BANKSEL _position
+               01938 ;       .line   47; testint.c   currentTime[position-7]++;
+00E8 5100      01939         MOVF    _position, W, B
+00EA 0FF9      01940         ADDLW   0xf9
+00EC 6E00      01941         MOVWF   r0x00
+00EE 0EFF      01942         MOVLW   0xff
+00F0 0000      01943         BANKSEL (_position + 1)
+00F2 2100      01944         ADDWFC  (_position + 1), W, B
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 37
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0108 0000      01945         BANKSEL (_currentTime + 2)
-010A 5100      01946         MOVF    (_currentTime + 2), W, B
-010C 2200      01947         ADDWFC  r0x02, F
-010E C000 FFE9 01948         MOVFF   r0x00, FSR0L
-0112 C000 FFF3 01949         MOVFF   r0x01, PRODL
-0116 5000      01950         MOVF    r0x02, W
-0118 EC00 F000 01951         CALL    __gptrget1
-011C 6E00      01952         MOVWF   r0x03
-011E 2A00      01953         INCF    r0x03, F
-0120 C000 FFE5 01954         MOVFF   r0x03, POSTDEC1
-0124 C000 FFE9 01955         MOVFF   r0x00, FSR0L
-0128 C000 FFF3 01956         MOVFF   r0x01, PRODL
-012C 5000      01957         MOVF    r0x02, W
-012E EC00 F000 01958         CALL    __gptrput1
-               01959 ;       .line   48; testint.c   test_inc_current_time();
-0132 EC00 F000 01960         CALL    _test_inc_current_time
-0136 01961 _00110_DS_:
-               01962 ;       .line   51; testint.c   INT3F = 0;
-0136 9400      01963         BCF     _INTCON3bits, 2
-               01964 ;       .line   52; testint.c   refresh = 1;
-0138 0E01      01965         MOVLW   0x01
-013A 0000      01966         BANKSEL _refresh
-013C 6F00      01967         MOVWF   _refresh, B
-013E 0000      01968         BANKSEL (_refresh + 1)
-0140 6B00      01969         CLRF    (_refresh + 1), B
-0142 01970 _00117_DS_:
-               01971 ;       .line   55; testint.c   if ( INT1F ) {
-0142 A000      01972         BTFSS   _INTCON3bits, 0
-0144 D000      01973         BRA     _00129_DS_
-0146 0000      01974         BANKSEL _position
-               01975 ;       .line   57; testint.c   position++;
-0148 2B00      01976         INCF    _position, F, B
-014A E300      01977         BNC     _10378_DS_
-014C 0000      01978         BANKSEL (_position + 1)
-014E 2B00      01979         INCF    (_position + 1), F, B
-0150 01980 _10378_DS_:
-0150 0000      01981         BANKSEL _position
-               01982 ;       .line   58; testint.c   if(position == 2) position = 3;
-0152 5100      01983         MOVF    _position, W, B
-0154 0A02      01984         XORLW   0x02
-0156 E100      01985         BNZ     _00159_DS_
-0158 0000      01986         BANKSEL (_position + 1)
-015A 5100      01987         MOVF    (_position + 1), W, B
-015C E000      01988         BZ      _00160_DS_
-015E 01989 _00159_DS_:
-015E D000      01990         BRA     _00119_DS_
-0160 01991 _00160_DS_:
-0160 0E03      01992         MOVLW   0x03
-0162 0000      01993         BANKSEL _position
-0164 6F00      01994         MOVWF   _position, B
-0166 0000      01995         BANKSEL (_position + 1)
-0168 6B00      01996         CLRF    (_position + 1), B
-016A 01997 _00119_DS_:
-016A 0000      01998         BANKSEL _position
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 38
+00F4 6E00      01945         MOVWF   r0x01
+00F6 6A00      01946         CLRF    r0x02
+00F8 BE00      01947         BTFSC   r0x01, 7
+00FA 6800      01948         SETF    r0x02
+00FC 0000      01949         BANKSEL _currentTime
+00FE 5100      01950         MOVF    _currentTime, W, B
+0100 2600      01951         ADDWF   r0x00, F
+0102 0000      01952         BANKSEL (_currentTime + 1)
+0104 5100      01953         MOVF    (_currentTime + 1), W, B
+0106 2200      01954         ADDWFC  r0x01, F
+0108 0000      01955         BANKSEL (_currentTime + 2)
+010A 5100      01956         MOVF    (_currentTime + 2), W, B
+010C 2200      01957         ADDWFC  r0x02, F
+010E C000 FFE9 01958         MOVFF   r0x00, FSR0L
+0112 C000 FFF3 01959         MOVFF   r0x01, PRODL
+0116 5000      01960         MOVF    r0x02, W
+0118 EC00 F000 01961         CALL    __gptrget1
+011C 6E00      01962         MOVWF   r0x03
+011E 2A00      01963         INCF    r0x03, F
+0120 C000 FFE5 01964         MOVFF   r0x03, POSTDEC1
+0124 C000 FFE9 01965         MOVFF   r0x00, FSR0L
+0128 C000 FFF3 01966         MOVFF   r0x01, PRODL
+012C 5000      01967         MOVF    r0x02, W
+012E EC00 F000 01968         CALL    __gptrput1
+               01969 ;       .line   48; testint.c   test_inc_current_time();
+0132 EC00 F000 01970         CALL    _test_inc_current_time
+0136 01971 _00110_DS_:
+               01972 ;       .line   51; testint.c   INT3F = 0;
+0136 9400      01973         BCF     _INTCON3bits, 2
+               01974 ;       .line   52; testint.c   refresh = 1;
+0138 0E01      01975         MOVLW   0x01
+013A 0000      01976         BANKSEL _refresh
+013C 6F00      01977         MOVWF   _refresh, B
+013E 0000      01978         BANKSEL (_refresh + 1)
+0140 6B00      01979         CLRF    (_refresh + 1), B
+0142 01980 _00117_DS_:
+               01981 ;       .line   55; testint.c   if ( INT1F ) {
+0142 A000      01982         BTFSS   _INTCON3bits, 0
+0144 D000      01983         BRA     _00129_DS_
+0146 0000      01984         BANKSEL _position
+               01985 ;       .line   57; testint.c   position++;
+0148 2B00      01986         INCF    _position, F, B
+014A E300      01987         BNC     _10383_DS_
+014C 0000      01988         BANKSEL (_position + 1)
+014E 2B00      01989         INCF    (_position + 1), F, B
+0150 01990 _10383_DS_:
+0150 0000      01991         BANKSEL _position
+               01992 ;       .line   58; testint.c   if(position == 2) position = 3;
+0152 5100      01993         MOVF    _position, W, B
+0154 0A02      01994         XORLW   0x02
+0156 E100      01995         BNZ     _00159_DS_
+0158 0000      01996         BANKSEL (_position + 1)
+015A 5100      01997         MOVF    (_position + 1), W, B
+015C E000      01998         BZ      _00160_DS_
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 38
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-               01999 ;       .line   59; testint.c   if(position == 5) position = 7;
-016C 5100      02000         MOVF    _position, W, B
-016E 0A05      02001         XORLW   0x05
-0170 E100      02002         BNZ     _00161_DS_
-0172 0000      02003         BANKSEL (_position + 1)
-0174 5100      02004         MOVF    (_position + 1), W, B
-0176 E000      02005         BZ      _00162_DS_
-0178 02006 _00161_DS_:
-0178 D000      02007         BRA     _00121_DS_
-017A 02008 _00162_DS_:
-017A 0E07      02009         MOVLW   0x07
-017C 0000      02010         BANKSEL _position
-017E 6F00      02011         MOVWF   _position, B
-0180 0000      02012         BANKSEL (_position + 1)
-0182 6B00      02013         CLRF    (_position + 1), B
-0184 02014 _00121_DS_:
-0184 0000      02015         BANKSEL _position
-               02016 ;       .line   60; testint.c   if(position == 9) position = 10;
-0186 5100      02017         MOVF    _position, W, B
-0188 0A09      02018         XORLW   0x09
-018A E100      02019         BNZ     _00163_DS_
-018C 0000      02020         BANKSEL (_position + 1)
-018E 5100      02021         MOVF    (_position + 1), W, B
-0190 E000      02022         BZ      _00164_DS_
-0192 02023 _00163_DS_:
-0192 D000      02024         BRA     _00123_DS_
-0194 02025 _00164_DS_:
-0194 0E0A      02026         MOVLW   0x0a
-0196 0000      02027         BANKSEL _position
-0198 6F00      02028         MOVWF   _position, B
-019A 0000      02029         BANKSEL (_position + 1)
-019C 6B00      02030         CLRF    (_position + 1), B
-019E 02031 _00123_DS_:
-019E 0000      02032         BANKSEL _position
-               02033 ;       .line   61; testint.c   if(position == 12) position = 13;
-01A0 5100      02034         MOVF    _position, W, B
-01A2 0A0C      02035         XORLW   0x0c
-01A4 E100      02036         BNZ     _00165_DS_
-01A6 0000      02037         BANKSEL (_position + 1)
-01A8 5100      02038         MOVF    (_position + 1), W, B
-01AA E000      02039         BZ      _00166_DS_
-01AC 02040 _00165_DS_:
-01AC D000      02041         BRA     _00125_DS_
-01AE 02042 _00166_DS_:
-01AE 0E0D      02043         MOVLW   0x0d
-01B0 0000      02044         BANKSEL _position
-01B2 6F00      02045         MOVWF   _position, B
-01B4 0000      02046         BANKSEL (_position + 1)
-01B6 6B00      02047         CLRF    (_position + 1), B
-01B8 02048 _00125_DS_:
-01B8 0000      02049         BANKSEL _position
-               02050 ;       .line   62; testint.c   if(position == 15) position = 0;
-01BA 5100      02051         MOVF    _position, W, B
-01BC 0A0F      02052         XORLW   0x0f
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 39
+015E 01999 _00159_DS_:
+015E D000      02000         BRA     _00119_DS_
+0160 02001 _00160_DS_:
+0160 0E03      02002         MOVLW   0x03
+0162 0000      02003         BANKSEL _position
+0164 6F00      02004         MOVWF   _position, B
+0166 0000      02005         BANKSEL (_position + 1)
+0168 6B00      02006         CLRF    (_position + 1), B
+016A 02007 _00119_DS_:
+016A 0000      02008         BANKSEL _position
+               02009 ;       .line   59; testint.c   if(position == 5) position = 7;
+016C 5100      02010         MOVF    _position, W, B
+016E 0A05      02011         XORLW   0x05
+0170 E100      02012         BNZ     _00161_DS_
+0172 0000      02013         BANKSEL (_position + 1)
+0174 5100      02014         MOVF    (_position + 1), W, B
+0176 E000      02015         BZ      _00162_DS_
+0178 02016 _00161_DS_:
+0178 D000      02017         BRA     _00121_DS_
+017A 02018 _00162_DS_:
+017A 0E07      02019         MOVLW   0x07
+017C 0000      02020         BANKSEL _position
+017E 6F00      02021         MOVWF   _position, B
+0180 0000      02022         BANKSEL (_position + 1)
+0182 6B00      02023         CLRF    (_position + 1), B
+0184 02024 _00121_DS_:
+0184 0000      02025         BANKSEL _position
+               02026 ;       .line   60; testint.c   if(position == 9) position = 10;
+0186 5100      02027         MOVF    _position, W, B
+0188 0A09      02028         XORLW   0x09
+018A E100      02029         BNZ     _00163_DS_
+018C 0000      02030         BANKSEL (_position + 1)
+018E 5100      02031         MOVF    (_position + 1), W, B
+0190 E000      02032         BZ      _00164_DS_
+0192 02033 _00163_DS_:
+0192 D000      02034         BRA     _00123_DS_
+0194 02035 _00164_DS_:
+0194 0E0A      02036         MOVLW   0x0a
+0196 0000      02037         BANKSEL _position
+0198 6F00      02038         MOVWF   _position, B
+019A 0000      02039         BANKSEL (_position + 1)
+019C 6B00      02040         CLRF    (_position + 1), B
+019E 02041 _00123_DS_:
+019E 0000      02042         BANKSEL _position
+               02043 ;       .line   61; testint.c   if(position == 12) position = 13;
+01A0 5100      02044         MOVF    _position, W, B
+01A2 0A0C      02045         XORLW   0x0c
+01A4 E100      02046         BNZ     _00165_DS_
+01A6 0000      02047         BANKSEL (_position + 1)
+01A8 5100      02048         MOVF    (_position + 1), W, B
+01AA E000      02049         BZ      _00166_DS_
+01AC 02050 _00165_DS_:
+01AC D000      02051         BRA     _00125_DS_
+01AE 02052 _00166_DS_:
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 39
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-01BE E100      02053         BNZ     _00167_DS_
-01C0 0000      02054         BANKSEL (_position + 1)
-01C2 5100      02055         MOVF    (_position + 1), W, B
-01C4 E000      02056         BZ      _00168_DS_
-01C6 02057 _00167_DS_:
-01C6 D000      02058         BRA     _00127_DS_
-01C8 02059 _00168_DS_:
-01C8 0000      02060         BANKSEL _position
-01CA 6B00      02061         CLRF    _position, B
-01CC 0000      02062         BANKSEL (_position + 1)
-01CE 6B00      02063         CLRF    (_position + 1), B
-01D0 02064 _00127_DS_:
-               02065 ;       .line   63; testint.c   refresh = 1;
-01D0 0E01      02066         MOVLW   0x01
-01D2 0000      02067         BANKSEL _refresh
-01D4 6F00      02068         MOVWF   _refresh, B
-01D6 0000      02069         BANKSEL (_refresh + 1)
-01D8 6B00      02070         CLRF    (_refresh + 1), B
-               02071 ;       .line   65; testint.c   INT1F  = 0;     
-01DA 9000      02072         BCF     _INTCON3bits, 0
-01DC 02073 _00129_DS_:
-               02074 ;       .line   69; testint.c   if ( TMR0F ){        
-01DC A400      02075         BTFSS   _INTCONbits, 2
-01DE D000      02076         BRA     _00134_DS_
-               02077 ;       .line   70; testint.c   bres += 4096;  
-01E0 0E10      02078         MOVLW   0x10
-01E2 0000      02079         BANKSEL (_bres + 1)
-01E4 2700      02080         ADDWF   (_bres + 1), F, B
-01E6 0E00      02081         MOVLW   0x00
-01E8 0000      02082         BANKSEL (_bres + 2)
-01EA 2300      02083         ADDWFC  (_bres + 2), F, B
-01EC 0E00      02084         MOVLW   0x00
-01EE 0000      02085         BANKSEL (_bres + 3)
-01F0 2300      02086         ADDWFC  (_bres + 3), F, B
-               02087 ;       .line   71; testint.c   if(bres >= 390625)
-01F2 0E00      02088         MOVLW   0x00
-01F4 0000      02089         BANKSEL (_bres + 3)
-01F6 5D00      02090         SUBWF   (_bres + 3), W, B
-01F8 E100      02091         BNZ     _00169_DS_
-01FA 0E05      02092         MOVLW   0x05
-01FC 0000      02093         BANKSEL (_bres + 2)
-01FE 5D00      02094         SUBWF   (_bres + 2), W, B
-0200 E100      02095         BNZ     _00169_DS_
-0202 0EF5      02096         MOVLW   0xf5
-0204 0000      02097         BANKSEL (_bres + 1)
-0206 5D00      02098         SUBWF   (_bres + 1), W, B
-0208 E100      02099         BNZ     _00169_DS_
-020A 0EE1      02100         MOVLW   0xe1
-020C 0000      02101         BANKSEL _bres
-020E 5D00      02102         SUBWF   _bres, W, B
-0210 02103 _00169_DS_:
-0210 A0D8      02104         BTFSS   STATUS, 0
-0212 D000      02105         BRA     _00131_DS_
-               02106 ;       .line   73; testint.c   bres -= 390625; 
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 40
+01AE 0E0D      02053         MOVLW   0x0d
+01B0 0000      02054         BANKSEL _position
+01B2 6F00      02055         MOVWF   _position, B
+01B4 0000      02056         BANKSEL (_position + 1)
+01B6 6B00      02057         CLRF    (_position + 1), B
+01B8 02058 _00125_DS_:
+01B8 0000      02059         BANKSEL _position
+               02060 ;       .line   62; testint.c   if(position == 15) position = 0;
+01BA 5100      02061         MOVF    _position, W, B
+01BC 0A0F      02062         XORLW   0x0f
+01BE E100      02063         BNZ     _00167_DS_
+01C0 0000      02064         BANKSEL (_position + 1)
+01C2 5100      02065         MOVF    (_position + 1), W, B
+01C4 E000      02066         BZ      _00168_DS_
+01C6 02067 _00167_DS_:
+01C6 D000      02068         BRA     _00127_DS_
+01C8 02069 _00168_DS_:
+01C8 0000      02070         BANKSEL _position
+01CA 6B00      02071         CLRF    _position, B
+01CC 0000      02072         BANKSEL (_position + 1)
+01CE 6B00      02073         CLRF    (_position + 1), B
+01D0 02074 _00127_DS_:
+               02075 ;       .line   63; testint.c   refresh = 1;
+01D0 0E01      02076         MOVLW   0x01
+01D2 0000      02077         BANKSEL _refresh
+01D4 6F00      02078         MOVWF   _refresh, B
+01D6 0000      02079         BANKSEL (_refresh + 1)
+01D8 6B00      02080         CLRF    (_refresh + 1), B
+               02081 ;       .line   65; testint.c   INT1F  = 0;     
+01DA 9000      02082         BCF     _INTCON3bits, 0
+01DC 02083 _00129_DS_:
+               02084 ;       .line   69; testint.c   if ( TMR0F ){        
+01DC A400      02085         BTFSS   _INTCONbits, 2
+01DE D000      02086         BRA     _00134_DS_
+               02087 ;       .line   70; testint.c   bres += 4096;  
+01E0 0E10      02088         MOVLW   0x10
+01E2 0000      02089         BANKSEL (_bres + 1)
+01E4 2700      02090         ADDWF   (_bres + 1), F, B
+01E6 0E00      02091         MOVLW   0x00
+01E8 0000      02092         BANKSEL (_bres + 2)
+01EA 2300      02093         ADDWFC  (_bres + 2), F, B
+01EC 0E00      02094         MOVLW   0x00
+01EE 0000      02095         BANKSEL (_bres + 3)
+01F0 2300      02096         ADDWFC  (_bres + 3), F, B
+               02097 ;       .line   71; testint.c   if(bres >= 390625)
+01F2 0E00      02098         MOVLW   0x00
+01F4 0000      02099         BANKSEL (_bres + 3)
+01F6 5D00      02100         SUBWF   (_bres + 3), W, B
+01F8 E100      02101         BNZ     _00169_DS_
+01FA 0E05      02102         MOVLW   0x05
+01FC 0000      02103         BANKSEL (_bres + 2)
+01FE 5D00      02104         SUBWF   (_bres + 2), W, B
+0200 E100      02105         BNZ     _00169_DS_
+0202 0EF5      02106         MOVLW   0xf5
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 40
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0214 0E1F      02107         MOVLW   0x1f
-0216 0000      02108         BANKSEL _bres
-0218 2700      02109         ADDWF   _bres, F, B
-021A 0E0A      02110         MOVLW   0x0a
-021C 0000      02111         BANKSEL (_bres + 1)
-021E 2300      02112         ADDWFC  (_bres + 1), F, B
-0220 0EFA      02113         MOVLW   0xfa
-0222 0000      02114         BANKSEL (_bres + 2)
-0224 2300      02115         ADDWFC  (_bres + 2), F, B
-0226 0EFF      02116         MOVLW   0xff
-0228 0000      02117         BANKSEL (_bres + 3)
-022A 2300      02118         ADDWFC  (_bres + 3), F, B
-               02119 ;       .line   74; testint.c   LED0_IO ^= 1;
-022C 6A00      02120         CLRF    r0x00
-022E B000      02121         BTFSC   _LATJbits, 0
-0230 2A00      02122         INCF    r0x00, F
-0232 0E01      02123         MOVLW   0x01
-0234 1A00      02124         XORWF   r0x00, F
-0236 5000      02125         MOVF    r0x00, W
-0238 0B01      02126         ANDLW   0x01
-023A 6EF4      02127         MOVWF   PRODH
-023C 5000      02128         MOVF    _LATJbits, W
-023E 0BFE      02129         ANDLW   0xfe
-0240 10F4      02130         IORWF   PRODH, W
-0242 6E00      02131         MOVWF   _LATJbits
-0244 0000      02132         BANKSEL _currentTime
-               02133 ;       .line   75; testint.c   currentTime[7]++;
-0246 5100      02134         MOVF    _currentTime, W, B
-0248 0F07      02135         ADDLW   0x07
-024A 6E00      02136         MOVWF   r0x00
-024C 0E00      02137         MOVLW   0x00
-024E 0000      02138         BANKSEL (_currentTime + 1)
-0250 2100      02139         ADDWFC  (_currentTime + 1), W, B
-0252 6E00      02140         MOVWF   r0x01
-0254 0E00      02141         MOVLW   0x00
-0256 0000      02142         BANKSEL (_currentTime + 2)
-0258 2100      02143         ADDWFC  (_currentTime + 2), W, B
-025A 6E00      02144         MOVWF   r0x02
-025C C000 FFE9 02145         MOVFF   r0x00, FSR0L
-0260 C000 FFF3 02146         MOVFF   r0x01, PRODL
-0264 5000      02147         MOVF    r0x02, W
-0266 EC00 F000 02148         CALL    __gptrget1
-026A 6E00      02149         MOVWF   r0x03
-026C 2A00      02150         INCF    r0x03, F
-026E C000 FFE5 02151         MOVFF   r0x03, POSTDEC1
-0272 C000 FFE9 02152         MOVFF   r0x00, FSR0L
-0276 C000 FFF3 02153         MOVFF   r0x01, PRODL
-027A 5000      02154         MOVF    r0x02, W
-027C EC00 F000 02155         CALL    __gptrput1
-               02156 ;       .line   76; testint.c   test_inc_current_time();
-0280 EC00 F000 02157         CALL    _test_inc_current_time
-0284 02158 _00131_DS_:
-               02159 ;       .line   78; testint.c   refresh = 1;
-0284 0E01      02160         MOVLW   0x01
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 41
+0204 0000      02107         BANKSEL (_bres + 1)
+0206 5D00      02108         SUBWF   (_bres + 1), W, B
+0208 E100      02109         BNZ     _00169_DS_
+020A 0EE1      02110         MOVLW   0xe1
+020C 0000      02111         BANKSEL _bres
+020E 5D00      02112         SUBWF   _bres, W, B
+0210 02113 _00169_DS_:
+0210 A0D8      02114         BTFSS   STATUS, 0
+0212 D000      02115         BRA     _00131_DS_
+               02116 ;       .line   73; testint.c   bres -= 390625; 
+0214 0E1F      02117         MOVLW   0x1f
+0216 0000      02118         BANKSEL _bres
+0218 2700      02119         ADDWF   _bres, F, B
+021A 0E0A      02120         MOVLW   0x0a
+021C 0000      02121         BANKSEL (_bres + 1)
+021E 2300      02122         ADDWFC  (_bres + 1), F, B
+0220 0EFA      02123         MOVLW   0xfa
+0222 0000      02124         BANKSEL (_bres + 2)
+0224 2300      02125         ADDWFC  (_bres + 2), F, B
+0226 0EFF      02126         MOVLW   0xff
+0228 0000      02127         BANKSEL (_bres + 3)
+022A 2300      02128         ADDWFC  (_bres + 3), F, B
+               02129 ;       .line   74; testint.c   LED0_IO ^= 1;
+022C 6A00      02130         CLRF    r0x00
+022E B000      02131         BTFSC   _LATJbits, 0
+0230 2A00      02132         INCF    r0x00, F
+0232 0E01      02133         MOVLW   0x01
+0234 1A00      02134         XORWF   r0x00, F
+0236 5000      02135         MOVF    r0x00, W
+0238 0B01      02136         ANDLW   0x01
+023A 6EF4      02137         MOVWF   PRODH
+023C 5000      02138         MOVF    _LATJbits, W
+023E 0BFE      02139         ANDLW   0xfe
+0240 10F4      02140         IORWF   PRODH, W
+0242 6E00      02141         MOVWF   _LATJbits
+0244 0000      02142         BANKSEL _currentTime
+               02143 ;       .line   75; testint.c   currentTime[7]++;
+0246 5100      02144         MOVF    _currentTime, W, B
+0248 0F07      02145         ADDLW   0x07
+024A 6E00      02146         MOVWF   r0x00
+024C 0E00      02147         MOVLW   0x00
+024E 0000      02148         BANKSEL (_currentTime + 1)
+0250 2100      02149         ADDWFC  (_currentTime + 1), W, B
+0252 6E00      02150         MOVWF   r0x01
+0254 0E00      02151         MOVLW   0x00
+0256 0000      02152         BANKSEL (_currentTime + 2)
+0258 2100      02153         ADDWFC  (_currentTime + 2), W, B
+025A 6E00      02154         MOVWF   r0x02
+025C C000 FFE9 02155         MOVFF   r0x00, FSR0L
+0260 C000 FFF3 02156         MOVFF   r0x01, PRODL
+0264 5000      02157         MOVF    r0x02, W
+0266 EC00 F000 02158         CALL    __gptrget1
+026A 6E00      02159         MOVWF   r0x03
+026C 2A00      02160         INCF    r0x03, F
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 41
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
-0286 0000      02161         BANKSEL _refresh
-0288 6F00      02162         MOVWF   _refresh, B
-028A 0000      02163         BANKSEL (_refresh + 1)
-028C 6B00      02164         CLRF    (_refresh + 1), B
-               02165 ;       .line   79; testint.c   TMR0F = 0; 
-028E 9400      02166         BCF     _INTCONbits, 2
-0290 02167 _00134_DS_:
-0290 CFE4 F000 02168         MOVFF   PREINC1, r0x03
-0294 CFE4 F000 02169         MOVFF   PREINC1, r0x02
-0298 CFE4 F000 02170         MOVFF   PREINC1, r0x01
-029C CFE4 F000 02171         MOVFF   PREINC1, r0x00
-02A0 CFE4 FFD9 02172         MOVFF   PREINC1, FSR2L
-02A4 CFE4 FFFB 02173         MOVFF   PREINC1, PCLATU
-02A8 CFE4 FFFA 02174         MOVFF   PREINC1, PCLATH
-02AC CFE4 FFEA 02175         MOVFF   PREINC1, FSR0H
-02B0 CFE4 FFE9 02176         MOVFF   PREINC1, FSR0L
-02B4 CFE4 FFF4 02177         MOVFF   PREINC1, PRODH
-02B8 CFE4 FFF3 02178         MOVFF   PREINC1, PRODL
-02BC CFE4 FFE0 02179         MOVFF   PREINC1, BSR
-02C0 CFE4 FFD8 02180         MOVFF   PREINC1, STATUS
-02C4 CFE4 FFE8 02181         MOVFF   PREINC1, WREG
-02C8 0010      02182         RETFIE  
-               02183 
-               02184 ; ; Starting pCode block
-02CA 02185 __str_0:
-02CA 2020 2020 02186         DB      0x20, 0x20, 0x20, 0x20, 0x57, 0x61, 0x6b, 0x65, 0x20, 0x75, 0x70, 0x21
+026E C000 FFE5 02161         MOVFF   r0x03, POSTDEC1
+0272 C000 FFE9 02162         MOVFF   r0x00, FSR0L
+0276 C000 FFF3 02163         MOVFF   r0x01, PRODL
+027A 5000      02164         MOVF    r0x02, W
+027C EC00 F000 02165         CALL    __gptrput1
+               02166 ;       .line   76; testint.c   test_inc_current_time();
+0280 EC00 F000 02167         CALL    _test_inc_current_time
+0284 02168 _00131_DS_:
+               02169 ;       .line   78; testint.c   refresh = 1;
+0284 0E01      02170         MOVLW   0x01
+0286 0000      02171         BANKSEL _refresh
+0288 6F00      02172         MOVWF   _refresh, B
+028A 0000      02173         BANKSEL (_refresh + 1)
+028C 6B00      02174         CLRF    (_refresh + 1), B
+               02175 ;       .line   79; testint.c   TMR0F = 0; 
+028E 9400      02176         BCF     _INTCONbits, 2
+0290 02177 _00134_DS_:
+0290 CFE4 F000 02178         MOVFF   PREINC1, r0x03
+0294 CFE4 F000 02179         MOVFF   PREINC1, r0x02
+0298 CFE4 F000 02180         MOVFF   PREINC1, r0x01
+029C CFE4 F000 02181         MOVFF   PREINC1, r0x00
+02A0 CFE4 FFD9 02182         MOVFF   PREINC1, FSR2L
+02A4 CFE4 FFFB 02183         MOVFF   PREINC1, PCLATU
+02A8 CFE4 FFFA 02184         MOVFF   PREINC1, PCLATH
+02AC CFE4 FFEA 02185         MOVFF   PREINC1, FSR0H
+02B0 CFE4 FFE9 02186         MOVFF   PREINC1, FSR0L
+02B4 CFE4 FFF4 02187         MOVFF   PREINC1, PRODH
+02B8 CFE4 FFF3 02188         MOVFF   PREINC1, PRODL
+02BC CFE4 FFE0 02189         MOVFF   PREINC1, BSR
+02C0 CFE4 FFD8 02190         MOVFF   PREINC1, STATUS
+02C4 CFE4 FFE8 02191         MOVFF   PREINC1, WREG
+02C8 0010      02192         RETFIE  
+               02193 
+               02194 ; ; Starting pCode block
+02CA 02195 __str_0:
+02CA 2020 2020 02196         DB      0x20, 0x20, 0x20, 0x20, 0x57, 0x61, 0x6b, 0x65, 0x20, 0x75, 0x70, 0x21
      6157 656B 
      7520 2170 
-02D6 2020 2020 02187         DB      0x20, 0x20, 0x20, 0x20, 0x00
+02D6 2020 2020 02197         DB      0x20, 0x20, 0x20, 0x20, 0x00
      0000      
-               02188 ; ; Starting pCode block
-02DC 02189 __str_1:
-02DC 2020 2020 02190         DB      0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20
+               02198 ; ; Starting pCode block
+02DC 02199 __str_1:
+02DC 2020 2020 02200         DB      0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20
      2020 2020 
      2020 2020 
-02E8 2020 2020 02191         DB      0x20, 0x20, 0x20, 0x20, 0x00
+02E8 2020 2020 02201         DB      0x20, 0x20, 0x20, 0x20, 0x00
      0000      
-               02192 ; ; Starting pCode block
-02EE 02193 __str_2:
-02EE 5E20 0000 02194         DB      0x20, 0x5e, 0x00
-               02195 ; ; Starting pCode block
-02F2 02196 __str_3:
-02F2 2020 5E20 02197         DB      0x20, 0x20, 0x20, 0x5e, 0x00
+               02202 ; ; Starting pCode block
+02EE 02203 __str_2:
+02EE 5E20 0000 02204         DB      0x20, 0x5e, 0x00
+               02205 ; ; Starting pCode block
+02F2 02206 __str_3:
+02F2 2020 5E20 02207         DB      0x20, 0x20, 0x20, 0x5e, 0x00
      0000      
-               02198 
-               02199 
-               02200 ; Statistics:
-               02201 ; code size:     3534 (0x0dce) bytes ( 2.70%)
-               02202 ;                1767 (0x06e7) words
-               02203 ; udata size:      22 (0x0016) bytes ( 0.57%)
-               02204 ; access size:     22 (0x0016) bytes
-               02205 
-               02206 
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 42
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 42
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+ 
+               02208 
+               02209 
+               02210 ; Statistics:
+               02211 ; code size:     3550 (0x0dde) bytes ( 2.71%)
+               02212 ;                1775 (0x06ef) words
+               02213 ; udata size:      22 (0x0016) bytes ( 0.57%)
+               02214 ; access size:     22 (0x0016) bytes
+               02215 
+               02216 
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 43
 
 
 SYMBOL TABLE
@@ -2516,7 +2532,7 @@ _00169_DS_                        00000210
 _00179_DS_                        00000086
 _00183_DS_                        00000064
 _00192_DS_                        00000094
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 43
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 44
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2546,22 +2562,24 @@ _00278_DS_                        0000021E
 _00280_DS_                        0000028E
 _00282_DS_                        000002F6
 _00286_DS_                        00000336
-_00317_DS_                        00000066
-_00319_DS_                        00000088
-_00325_DS_                        000000FC
-_00326_DS_                        0000005C
-_00329_DS_                        000000D4
-_00336_DS_                        0000009A
-_00337_DS_                        000000E4
-_00345_DS_                        00000082
-_00354_DS_                        000000CC
-_00358_DS_                        00000134
-_00361_DS_                        0000015E
-_00365_DS_                        00000188
-_00372_DS_                        00000152
-_00373_DS_                        00000114
-_00378_DS_                        0000001C
-_10378_DS_                        00000150
+_00316_DS_                        00000052
+_00317_DS_                        00000076
+_00320_DS_                        00000098
+_00323_DS_                        00000050
+_00330_DS_                        000000FC
+_00331_DS_                        0000005C
+_00334_DS_                        000000D4
+_00341_DS_                        0000009A
+_00342_DS_                        000000E4
+_00350_DS_                        00000082
+_00359_DS_                        000000CC
+_00363_DS_                        00000134
+_00366_DS_                        0000015E
+_00370_DS_                        00000188
+_00377_DS_                        00000152
+_00378_DS_                        00000114
+_00383_DS_                        0000001C
+_10383_DS_                        00000150
 _ADCON0                           00000000
 _ADCON0bits                       00000000
 _ADCON1                           00000000
@@ -2574,14 +2592,14 @@ _ADRESL                           00000000
 _BAUDCON                          00000000
 _BAUDCON1                         00000000
 _BAUDCON1bits                     00000000
-_BAUDCON2                         00000000
-_BAUDCON2bits                     00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 44
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 45
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_BAUDCON2                         00000000
+_BAUDCON2bits                     00000000
 _BAUDCONbits                      00000000
 _BAUDCTL                          00000000
 _BAUDCTL1                         00000000
@@ -2634,14 +2652,14 @@ _DDRFbits                         00000000
 _DDRG                             00000000
 _DDRGbits                         00000000
 _DDRH                             00000000
-_DDRHbits                         00000000
-_DDRJ                             00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 45
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 46
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_DDRHbits                         00000000
+_DDRJ                             00000000
 _DDRJbits                         00000000
 _EBSTCON                          00000000
 _EBSTCONbits                      00000000
@@ -2694,14 +2712,14 @@ _EHT0                             00000000
 _EHT1                             00000000
 _EHT2                             00000000
 _EHT3                             00000000
-_EHT4                             00000000
-_EHT5                             00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 46
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 47
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_EHT4                             00000000
+_EHT5                             00000000
 _EHT6                             00000000
 _EHT7                             00000000
 _EIE                              00000000
@@ -2754,14 +2772,14 @@ _ETXSTL                           00000000
 _EWOLIE                           00000000
 _EWOLIEbits                       00000000
 _EWOLIR                           00000000
-_EWOLIRbits                       00000000
-_EWRPT                            00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 47
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 48
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_EWOLIRbits                       00000000
+_EWRPT                            00000000
 _EWRPTH                           00000000
 _EWRPTL                           00000000
 _FSR0H                            00000000
@@ -2814,14 +2832,14 @@ _MAADR5                           00000000
 _MAADR6                           00000000
 _MABBIPG                          00000000
 _MACLCON1                         00000000
-_MACLCON1bits                     00000000
-_MACLCON2                         00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 48
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 49
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_MACLCON1bits                     00000000
+_MACLCON2                         00000000
 _MACLCON2bits                     00000000
 _MACON1                           00000000
 _MACON1bits                       00000000
@@ -2874,14 +2892,14 @@ _PIR3                             00000000
 _PIR3bits                         00000000
 _PLUSW0                           00000000
 _PLUSW1                           00000000
-_PLUSW2                           00000000
-_PORTA                            00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 49
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 50
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_PLUSW2                           00000000
+_PORTA                            00000000
 _PORTAbits                        00000000
 _PORTB                            00000000
 _PORTBbits                        00000000
@@ -2934,14 +2952,14 @@ _SPBRGH1                          00000000
 _SPBRGH2                          00000000
 _SSP1ADD                          00000000
 _SSP1BUF                          00000000
-_SSP1CON1                         00000000
-_SSP1CON1bits                     00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 50
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 51
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_SSP1CON1                         00000000
+_SSP1CON1bits                     00000000
 _SSP1CON2                         00000000
 _SSP1CON2bits                     00000000
 _SSP1STAT                         00000000
@@ -2994,14 +3012,14 @@ _TOSH                             00000000
 _TOSL                             00000000
 _TOSU                             00000000
 _TRISA                            00000000
-_TRISAbits                        00000000
-_TRISB                            00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 51
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 52
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_TRISAbits                        00000000
+_TRISB                            00000000
 _TRISBbits                        00000000
 _TRISC                            00000000
 _TRISCbits                        00000000
@@ -3054,14 +3072,14 @@ _refresh                          00000017
 _stdin                            00000000
 _stdout                           00000000
 _strlcpy                          00000000
-_strlen                           00000000
-_test_inc_current_time            00000000
-gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  16:55:59          PAGE 52
+gpasm-0.13.7 beta               Objects/testint.asm3-27-2012  17:22:23          PAGE 53
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
+_strlen                           00000000
+_test_inc_current_time            00000000
 _time                             00000000
 _ultoa                            00000000
 ivec_0x1_high_isr                 00000008

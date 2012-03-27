@@ -1,7 +1,7 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
 ; Version 2.9.4 #5595 (Mar 13 2012) (UNIX)
-; This file was generated Tue Mar 27 16:55:59 2012
+; This file was generated Tue Mar 27 17:22:23 2012
 ;--------------------------------------------------------
 ; PIC16 port for the Microchip 16-bit core micros
 ;--------------------------------------------------------
@@ -682,10 +682,10 @@ _dumb_delay1ms:
 	BCF	_INTCONbits, 2
 ;	.line	349; testint.c	T0CONbits.TMR0ON = 1;  //enable timer0
 	BSF	_T0CONbits, 7
-_00378_DS_:
+_00383_DS_:
 ;	.line	350; testint.c	while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
 	BTFSS	_INTCONbits, 2
-	BRA	_00378_DS_
+	BRA	_00383_DS_
 ;	.line	351; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
 	BCF	_INTCONbits, 2
 	MOVFF	PREINC1, FSR2L
@@ -750,21 +750,21 @@ _strlcpy:
 	MOVF	r0x06, W
 	IORWF	r0x07, W
 	BTFSC	STATUS, 2
-	BRA	_00358_DS_
+	BRA	_00363_DS_
 ;	.line	318; testint.c	while (--n != 0)
 	MOVFF	r0x03, r0x10
 	MOVFF	r0x04, r0x11
 	MOVFF	r0x05, r0x12
 	MOVFF	r0x06, r0x13
 	MOVFF	r0x07, r0x14
-_00354_DS_:
+_00359_DS_:
 	MOVLW	0xff
 	ADDWF	r0x13, F
 	BTFSS	STATUS, 0
 	DECF	r0x14, F
 	MOVF	r0x13, W
 	IORWF	r0x14, W
-	BZ	_00373_DS_
+	BZ	_00378_DS_
 ;	.line	320; testint.c	if ((*d++ = *s++) == '\0')
 	MOVFF	r0x10, FSR0L
 	MOVFF	r0x11, PRODL
@@ -787,8 +787,8 @@ _00354_DS_:
 	BTFSC	STATUS, 0
 	INCF	r0x02, F
 	MOVF	r0x15, W
-	BNZ	_00354_DS_
-_00373_DS_:
+	BNZ	_00359_DS_
+_00378_DS_:
 ;	.line	321; testint.c	break;
 	MOVFF	r0x10, r0x0b
 	MOVFF	r0x11, r0x0c
@@ -798,15 +798,15 @@ _00373_DS_:
 	MOVFF	r0x02, r0x0a
 	MOVFF	r0x13, r0x0e
 	MOVFF	r0x14, r0x0f
-_00358_DS_:
+_00363_DS_:
 ;	.line	326; testint.c	if (n == 0)
 	MOVF	r0x0e, W
 	IORWF	r0x0f, W
-	BNZ	_00365_DS_
+	BNZ	_00370_DS_
 ;	.line	328; testint.c	if (siz != 0)
 	MOVF	r0x06, W
 	IORWF	r0x07, W
-	BZ	_00372_DS_
+	BZ	_00377_DS_
 ;	.line	329; testint.c	*d = '\0';          /* NUL-terminate dst */
 	MOVLW	0x00
 	MOVWF	POSTDEC1
@@ -814,12 +814,12 @@ _00358_DS_:
 	MOVFF	r0x09, PRODL
 	MOVF	r0x0a, W
 	CALL	__gptrput1
-_00372_DS_:
+_00377_DS_:
 ;	.line	330; testint.c	while (*s++)
 	MOVFF	r0x0b, r0x00
 	MOVFF	r0x0c, r0x01
 	MOVFF	r0x0d, r0x02
-_00361_DS_:
+_00366_DS_:
 	MOVFF	r0x00, FSR0L
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
@@ -831,11 +831,11 @@ _00361_DS_:
 	BTFSC	STATUS, 0
 	INCF	r0x02, F
 	MOVF	r0x06, W
-	BNZ	_00361_DS_
+	BNZ	_00366_DS_
 	MOVFF	r0x00, r0x0b
 	MOVFF	r0x01, r0x0c
 	MOVFF	r0x02, r0x0d
-_00365_DS_:
+_00370_DS_:
 ;	.line	336; testint.c	return (s - src - 1);       /* count does not include NUL */
 	MOVF	r0x03, W
 	SUBWF	r0x0b, W
@@ -927,9 +927,9 @@ _display_string:
 	MOVWF	r0x07
 	MOVF	r0x05, W
 	SUBWF	r0x04, W
-	BNC	_00345_DS_
+	BNC	_00350_DS_
 	MOVFF	r0x05, r0x04
-_00345_DS_:
+_00350_DS_:
 	CLRF	r0x05
 	MOVF	r0x05, W
 	MOVWF	POSTDEC1
@@ -1003,7 +1003,7 @@ _display_word:
 	ADDWF	FSR1L, F
 ;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 	CLRF	r0x01
-_00326_DS_:
+_00331_DS_:
 	MOVLW	HIGH(_display_word_WDigit_1_1)
 	MOVWF	r0x03
 	MOVLW	LOW(_display_word_WDigit_1_1)
@@ -1029,11 +1029,11 @@ _00326_DS_:
 	MOVF	r0x03, W
 	ADDLW	0x80
 	SUBWF	PRODL, W
-	BNZ	_00336_DS_
+	BNZ	_00341_DS_
 	MOVF	r0x02, W
 	SUBWF	r0x04, W
-_00336_DS_:
-	BC	_00329_DS_
+_00341_DS_:
+	BC	_00334_DS_
 ;	.line	253; testint.c	LCDText[LCDPos++] = WDigit[j];
 	MOVFF	r0x00, r0x02
 	INCF	r0x00, F
@@ -1056,18 +1056,18 @@ _00336_DS_:
 	MOVFF	r0x04, INDF0
 ;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 	INCF	r0x01, F
-	BRA	_00326_DS_
-_00329_DS_:
+	BRA	_00331_DS_
+_00334_DS_:
 ;	.line	255; testint.c	if(LCDPos < 32u)
 	MOVFF	r0x00, r0x01
 	CLRF	r0x02
 	MOVLW	0x00
 	SUBWF	r0x02, W
-	BNZ	_00337_DS_
+	BNZ	_00342_DS_
 	MOVLW	0x20
 	SUBWF	r0x01, W
-_00337_DS_:
-	BC	_00325_DS_
+_00342_DS_:
+	BC	_00330_DS_
 ;	.line	256; testint.c	LCDText[LCDPos] = 0;
 	CLRF	r0x01
 	MOVLW	LOW(_LCDText)
@@ -1078,7 +1078,7 @@ _00337_DS_:
 	MOVFF	r0x01, FSR0H
 	MOVLW	0x00
 	MOVWF	INDF0
-_00325_DS_:
+_00330_DS_:
 ;	.line	257; testint.c	LCDUpdate();
 	CALL	_LCDUpdate
 	MOVFF	PREINC1, r0x05
@@ -1118,11 +1118,21 @@ _display_time:
 	MOVLW	0x04
 	ADDWF	FSR1L, F
 	BANKSEL	_position
-;	.line	228; testint.c	if(position == 0) display_string(16+position-1," ^");
+;	.line	228; testint.c	if(position == 0 || position == 1) display_string(16+position-1," ^");
 	MOVF	_position, W, B
 	BANKSEL	(_position + 1)
 	IORWF	(_position + 1), W, B
-	BNZ	_00317_DS_
+	BZ	_00316_DS_
+	BANKSEL	_position
+	MOVF	_position, W, B
+	XORLW	0x01
+	BNZ	_00323_DS_
+	BANKSEL	(_position + 1)
+	MOVF	(_position + 1), W, B
+	BZ	_00316_DS_
+_00323_DS_:
+	BRA	_00317_DS_
+_00316_DS_:
 	BANKSEL	_position
 	MOVF	_position, W, B
 	MOVWF	r0x00
@@ -1139,7 +1149,7 @@ _display_time:
 	CALL	_display_string
 	MOVLW	0x04
 	ADDWF	FSR1L, F
-	BRA	_00319_DS_
+	BRA	_00320_DS_
 _00317_DS_:
 	BANKSEL	_position
 ;	.line	229; testint.c	else display_string(16+position-3,"   ^");
@@ -1158,7 +1168,7 @@ _00317_DS_:
 	CALL	_display_string
 	MOVLW	0x04
 	ADDWF	FSR1L, F
-_00319_DS_:
+_00320_DS_:
 	MOVFF	PREINC1, r0x02
 	MOVFF	PREINC1, r0x01
 	MOVFF	PREINC1, r0x00
@@ -1974,10 +1984,10 @@ _00117_DS_:
 	BANKSEL	_position
 ;	.line	57; testint.c	position++;
 	INCF	_position, F, B
-	BNC	_10378_DS_
+	BNC	_10383_DS_
 	BANKSEL	(_position + 1)
 	INCF	(_position + 1), F, B
-_10378_DS_:
+_10383_DS_:
 	BANKSEL	_position
 ;	.line	58; testint.c	if(position == 2) position = 3;
 	MOVF	_position, W, B
@@ -2198,8 +2208,8 @@ __str_3:
 
 
 ; Statistics:
-; code size:	 3534 (0x0dce) bytes ( 2.70%)
-;           	 1767 (0x06e7) words
+; code size:	 3550 (0x0dde) bytes ( 2.71%)
+;           	 1775 (0x06ef) words
 ; udata size:	   22 (0x0016) bytes ( 0.57%)
 ; access size:	   22 (0x0016) bytes
 
