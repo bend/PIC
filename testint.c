@@ -53,11 +53,13 @@ void high_isr (void) __interrupt 1
     }
     /*  Interruption of button 2 */
     if ( INT1F ) {
-        LED2_IO ^= 1; 
+        //LED2_IO ^= 1; 
         position++;
-        if(position == 15){
-            position = 0;
-        }
+        if(position == 2) position = 3;
+        if(position == 5) position = 7;
+        if(position == 9) position = 10;
+        if(position == 12) position = 13;
+        if(position == 15) position = 0;
         refresh = 1;
         /*  Reset flag of interruption */
         INT1F  = 0;	
@@ -222,8 +224,9 @@ void test_inc_current_time(){
 }
 
 void display_time(){    
-    display_string(0,time);             
-    display_string(16+position-1," ^");
+    display_string(0,time);         
+    if(position == 0) display_string(16+position-1," ^");
+    else display_string(16+position-3,"   ^");
 }
  
 /*************************************************

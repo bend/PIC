@@ -1,7 +1,7 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
 ; Version 2.9.4 #5595 (Mar 13 2012) (UNIX)
-; This file was generated Tue Mar 27 14:46:20 2012
+; This file was generated Tue Mar 27 16:55:59 2012
 ;--------------------------------------------------------
 ; PIC16 port for the Microchip 16-bit core micros
 ;--------------------------------------------------------
@@ -536,7 +536,7 @@ ivec_0x1_high_isr:
 S_testint__main	code
 _main:
 	BANKSEL	_main_string_1_1
-;	.line	85; testint.c	char string[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+;	.line	87; testint.c	char string[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	CLRF	_main_string_1_1, B
 	BANKSEL	(_main_string_1_1 + 1)
 	CLRF	(_main_string_1_1 + 1), B
@@ -568,39 +568,39 @@ _main:
 	CLRF	(_main_string_1_1 + 14), B
 	BANKSEL	(_main_string_1_1 + 15)
 	CLRF	(_main_string_1_1 + 15), B
-;	.line	87; testint.c	LED0_TRIS = 0; //configure 1st led pin as output (yellow)
+;	.line	89; testint.c	LED0_TRIS = 0; //configure 1st led pin as output (yellow)
 	BCF	_TRISJbits, 0
-;	.line	88; testint.c	LED1_TRIS = 0; //configure 2nd led pin as output (red)
+;	.line	90; testint.c	LED1_TRIS = 0; //configure 2nd led pin as output (red)
 	BCF	_TRISJbits, 1
-;	.line	89; testint.c	LED2_TRIS = 0; //configure 3rd led pin as output (red)
+;	.line	91; testint.c	LED2_TRIS = 0; //configure 3rd led pin as output (red)
 	BCF	_TRISJbits, 2
-;	.line	91; testint.c	BUTTON0_TRIS = 1; //configure button0 as input
+;	.line	93; testint.c	BUTTON0_TRIS = 1; //configure button0 as input
 	BSF	_TRISBbits, 3
-;	.line	92; testint.c	BUTTON1_TRIS = 1; //configure button1 as input 
+;	.line	94; testint.c	BUTTON1_TRIS = 1; //configure button1 as input 
 	BSF	_TRISBbits, 1
-;	.line	94; testint.c	RCONbits.IPEN      = 1;   // Interrupts Priority ENable
+;	.line	96; testint.c	RCONbits.IPEN      = 1;   // Interrupts Priority ENable
 	BSF	_RCONbits, 7
-;	.line	96; testint.c	INT1F  = 0;   //clear INT1 flag
+;	.line	98; testint.c	INT1F  = 0;   //clear INT1 flag
 	BCF	_INTCON3bits, 0
-;	.line	99; testint.c	INTCON3bits.INT1P  = 1; 
+;	.line	101; testint.c	INTCON3bits.INT1P  = 1; 
 	BSF	_INTCON3bits, 6
-;	.line	101; testint.c	INTCON2bits.INTEDG1= 0;
+;	.line	103; testint.c	INTCON2bits.INTEDG1= 0;
 	BCF	_INTCON2bits, 5
-;	.line	104; testint.c	INTCONbits.GIE     = 1;
+;	.line	106; testint.c	INTCONbits.GIE     = 1;
 	BSF	_INTCONbits, 7
-;	.line	107; testint.c	INTCON3bits.INT1E  = 1;
+;	.line	109; testint.c	INTCON3bits.INT1E  = 1;
 	BSF	_INTCON3bits, 3
-;	.line	108; testint.c	INTCON3bits.INT3E  = 1;
+;	.line	110; testint.c	INTCON3bits.INT3E  = 1;
 	BSF	_INTCON3bits, 5
-;	.line	110; testint.c	T0CONbits.T0CS     = 1;
+;	.line	112; testint.c	T0CONbits.T0CS     = 1;
 	BSF	_T0CONbits, 5
-;	.line	112; testint.c	LCDInit();
+;	.line	114; testint.c	LCDInit();
 	CALL	_LCDInit
-;	.line	113; testint.c	for(i=0;i<100;i++) dumb_delay1ms();
+;	.line	115; testint.c	for(i=0;i<100;i++) dumb_delay1ms();
 	MOVLW	0x64
 	MOVWF	r0x00
 	CLRF	r0x01
-_00164_DS_:
+_00183_DS_:
 	CALL	_dumb_delay1ms
 	MOVLW	0xff
 	ADDWF	r0x00, F
@@ -608,85 +608,85 @@ _00164_DS_:
 	DECF	r0x01, F
 	MOVF	r0x00, W
 	IORWF	r0x01, W
-	BNZ	_00164_DS_
-;	.line	115; testint.c	display_time (); 
+	BNZ	_00183_DS_
+;	.line	117; testint.c	display_time (); 
 	CALL	_display_time
-;	.line	118; testint.c	INTCON2bits.TMR0IP	 = 1; 
+;	.line	120; testint.c	INTCON2bits.TMR0IP	 = 1; 
 	BSF	_INTCON2bits, 2
-;	.line	121; testint.c	TMR0F    = 0;
+;	.line	123; testint.c	TMR0F    = 0;
 	BCF	_INTCONbits, 2
-;	.line	124; testint.c	T0CONbits.T08BIT    = 0;
+;	.line	126; testint.c	T0CONbits.T08BIT    = 0;
 	BCF	_T0CONbits, 6
-;	.line	126; testint.c	T0CONbits.PSA       = 1;
+;	.line	128; testint.c	T0CONbits.PSA       = 1;
 	BSF	_T0CONbits, 3
-;	.line	128; testint.c	INTCONbits.TMR0IE   = 1;
+;	.line	130; testint.c	INTCONbits.TMR0IE   = 1;
 	BSF	_INTCONbits, 5
-;	.line	130; testint.c	T0CONbits.TMR0ON    = 1;
+;	.line	132; testint.c	T0CONbits.TMR0ON    = 1;
 	BSF	_T0CONbits, 7
-_00160_DS_:
+_00179_DS_:
 	BANKSEL	_refresh
-;	.line	135; testint.c	if ( refresh == 1){
+;	.line	137; testint.c	if ( refresh == 1){
 	MOVF	_refresh, W, B
 	XORLW	0x01
-	BNZ	_00173_DS_
+	BNZ	_00192_DS_
 	BANKSEL	(_refresh + 1)
 	MOVF	(_refresh + 1), W, B
-	BZ	_00174_DS_
-_00173_DS_:
-	BRA	_00160_DS_
-_00174_DS_:
+	BZ	_00193_DS_
+_00192_DS_:
+	BRA	_00179_DS_
+_00193_DS_:
 	BANKSEL	_refresh
-;	.line	136; testint.c	refresh = 0;
+;	.line	138; testint.c	refresh = 0;
 	CLRF	_refresh, B
 	BANKSEL	(_refresh + 1)
 	CLRF	(_refresh + 1), B
-;	.line	137; testint.c	display_time();
+;	.line	139; testint.c	display_time();
 	CALL	_display_time
 	BANKSEL	_alarmflag
-;	.line	138; testint.c	if ( alarmflag == 1){
+;	.line	140; testint.c	if ( alarmflag == 1){
 	MOVF	_alarmflag, W, B
 	XORLW	0x01
-	BNZ	_00175_DS_
+	BNZ	_00194_DS_
 	BANKSEL	(_alarmflag + 1)
 	MOVF	(_alarmflag + 1), W, B
-	BZ	_00176_DS_
-_00175_DS_:
-	BRA	_00160_DS_
-_00176_DS_:
-;	.line	139; testint.c	alarm();
+	BZ	_00195_DS_
+_00194_DS_:
+	BRA	_00179_DS_
+_00195_DS_:
+;	.line	141; testint.c	alarm();
 	CALL	_alarm
-	BRA	_00160_DS_
+	BRA	_00179_DS_
 	RETURN	
 
 ; ; Starting pCode block
 S_testint__dumb_delay1ms	code
 _dumb_delay1ms:
-;	.line	337; testint.c	void dumb_delay1ms (void)
+;	.line	340; testint.c	void dumb_delay1ms (void)
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
-;	.line	339; testint.c	TMR0H = HIGH (0x10000-EXEC_FREQ/1000);
+;	.line	342; testint.c	TMR0H = HIGH (0x10000-EXEC_FREQ/1000);
 	MOVLW	0xd8
 	MOVWF	_TMR0H
-;	.line	340; testint.c	TMR0L = LOW  (0x10000-EXEC_FREQ/1000);
+;	.line	343; testint.c	TMR0L = LOW  (0x10000-EXEC_FREQ/1000);
 	MOVLW	0xf0
 	MOVWF	_TMR0L
-;	.line	341; testint.c	T0CONbits.TMR0ON = 0;  //disable timer0
+;	.line	344; testint.c	T0CONbits.TMR0ON = 0;  //disable timer0
 	BCF	_T0CONbits, 7
-;	.line	342; testint.c	T0CONbits.T08BIT = 0;  //use timer0 16-bit counter
+;	.line	345; testint.c	T0CONbits.T08BIT = 0;  //use timer0 16-bit counter
 	BCF	_T0CONbits, 6
-;	.line	343; testint.c	T0CONbits.T0CS   = 0;  //use timer0 instruction cycle clock
+;	.line	346; testint.c	T0CONbits.T0CS   = 0;  //use timer0 instruction cycle clock
 	BCF	_T0CONbits, 5
-;	.line	344; testint.c	T0CONbits.PSA    = 1;  //disable timer0 prescaler
+;	.line	347; testint.c	T0CONbits.PSA    = 1;  //disable timer0 prescaler
 	BSF	_T0CONbits, 3
-;	.line	345; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
-	BCF	_INTCONbits, 2
-;	.line	346; testint.c	T0CONbits.TMR0ON = 1;  //enable timer0
-	BSF	_T0CONbits, 7
-_00356_DS_:
-;	.line	347; testint.c	while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
-	BTFSS	_INTCONbits, 2
-	BRA	_00356_DS_
 ;	.line	348; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
+	BCF	_INTCONbits, 2
+;	.line	349; testint.c	T0CONbits.TMR0ON = 1;  //enable timer0
+	BSF	_T0CONbits, 7
+_00378_DS_:
+;	.line	350; testint.c	while(!INTCONbits.T0IF){} //busy wait for timer0 to overflow
+	BTFSS	_INTCONbits, 2
+	BRA	_00378_DS_
+;	.line	351; testint.c	INTCONbits.T0IF   = 0;  //clear timer0 overflow bit
 	BCF	_INTCONbits, 2
 	MOVFF	PREINC1, FSR2L
 	RETURN	
@@ -694,7 +694,7 @@ _00356_DS_:
 ; ; Starting pCode block
 S_testint__strlcpy	code
 _strlcpy:
-;	.line	306; testint.c	strlcpy(char *dst, const char *src, size_t siz)
+;	.line	309; testint.c	strlcpy(char *dst, const char *src, size_t siz)
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
@@ -735,37 +735,37 @@ _strlcpy:
 	MOVFF	PLUSW2, r0x06
 	MOVLW	0x09
 	MOVFF	PLUSW2, r0x07
-;	.line	308; testint.c	char       *d = dst;
+;	.line	311; testint.c	char       *d = dst;
 	MOVFF	r0x00, r0x08
 	MOVFF	r0x01, r0x09
 	MOVFF	r0x02, r0x0a
-;	.line	309; testint.c	const char *s = src;
+;	.line	312; testint.c	const char *s = src;
 	MOVFF	r0x03, r0x0b
 	MOVFF	r0x04, r0x0c
 	MOVFF	r0x05, r0x0d
-;	.line	310; testint.c	size_t      n = siz;
+;	.line	313; testint.c	size_t      n = siz;
 	MOVFF	r0x06, r0x0e
 	MOVFF	r0x07, r0x0f
-;	.line	313; testint.c	if (n != 0)
+;	.line	316; testint.c	if (n != 0)
 	MOVF	r0x06, W
 	IORWF	r0x07, W
 	BTFSC	STATUS, 2
-	BRA	_00336_DS_
-;	.line	315; testint.c	while (--n != 0)
+	BRA	_00358_DS_
+;	.line	318; testint.c	while (--n != 0)
 	MOVFF	r0x03, r0x10
 	MOVFF	r0x04, r0x11
 	MOVFF	r0x05, r0x12
 	MOVFF	r0x06, r0x13
 	MOVFF	r0x07, r0x14
-_00332_DS_:
+_00354_DS_:
 	MOVLW	0xff
 	ADDWF	r0x13, F
 	BTFSS	STATUS, 0
 	DECF	r0x14, F
 	MOVF	r0x13, W
 	IORWF	r0x14, W
-	BZ	_00351_DS_
-;	.line	317; testint.c	if ((*d++ = *s++) == '\0')
+	BZ	_00373_DS_
+;	.line	320; testint.c	if ((*d++ = *s++) == '\0')
 	MOVFF	r0x10, FSR0L
 	MOVFF	r0x11, PRODL
 	MOVF	r0x12, W
@@ -787,9 +787,9 @@ _00332_DS_:
 	BTFSC	STATUS, 0
 	INCF	r0x02, F
 	MOVF	r0x15, W
-	BNZ	_00332_DS_
-_00351_DS_:
-;	.line	318; testint.c	break;
+	BNZ	_00354_DS_
+_00373_DS_:
+;	.line	321; testint.c	break;
 	MOVFF	r0x10, r0x0b
 	MOVFF	r0x11, r0x0c
 	MOVFF	r0x12, r0x0d
@@ -798,28 +798,28 @@ _00351_DS_:
 	MOVFF	r0x02, r0x0a
 	MOVFF	r0x13, r0x0e
 	MOVFF	r0x14, r0x0f
-_00336_DS_:
-;	.line	323; testint.c	if (n == 0)
+_00358_DS_:
+;	.line	326; testint.c	if (n == 0)
 	MOVF	r0x0e, W
 	IORWF	r0x0f, W
-	BNZ	_00343_DS_
-;	.line	325; testint.c	if (siz != 0)
+	BNZ	_00365_DS_
+;	.line	328; testint.c	if (siz != 0)
 	MOVF	r0x06, W
 	IORWF	r0x07, W
-	BZ	_00350_DS_
-;	.line	326; testint.c	*d = '\0';          /* NUL-terminate dst */
+	BZ	_00372_DS_
+;	.line	329; testint.c	*d = '\0';          /* NUL-terminate dst */
 	MOVLW	0x00
 	MOVWF	POSTDEC1
 	MOVFF	r0x08, FSR0L
 	MOVFF	r0x09, PRODL
 	MOVF	r0x0a, W
 	CALL	__gptrput1
-_00350_DS_:
-;	.line	327; testint.c	while (*s++)
+_00372_DS_:
+;	.line	330; testint.c	while (*s++)
 	MOVFF	r0x0b, r0x00
 	MOVFF	r0x0c, r0x01
 	MOVFF	r0x0d, r0x02
-_00339_DS_:
+_00361_DS_:
 	MOVFF	r0x00, FSR0L
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
@@ -831,12 +831,12 @@ _00339_DS_:
 	BTFSC	STATUS, 0
 	INCF	r0x02, F
 	MOVF	r0x06, W
-	BNZ	_00339_DS_
+	BNZ	_00361_DS_
 	MOVFF	r0x00, r0x0b
 	MOVFF	r0x01, r0x0c
 	MOVFF	r0x02, r0x0d
-_00343_DS_:
-;	.line	333; testint.c	return (s - src - 1);       /* count does not include NUL */
+_00365_DS_:
+;	.line	336; testint.c	return (s - src - 1);       /* count does not include NUL */
 	MOVF	r0x03, W
 	SUBWF	r0x0b, W
 	MOVWF	r0x03
@@ -877,7 +877,7 @@ _00343_DS_:
 ; ; Starting pCode block
 S_testint__display_string	code
 _display_string:
-;	.line	261; testint.c	void display_string(BYTE pos, char* text)
+;	.line	264; testint.c	void display_string(BYTE pos, char* text)
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
@@ -896,7 +896,7 @@ _display_string:
 	MOVFF	PLUSW2, r0x02
 	MOVLW	0x05
 	MOVFF	PLUSW2, r0x03
-;	.line	263; testint.c	BYTE l= strlen(text)+1;
+;	.line	266; testint.c	BYTE l= strlen(text)+1;
 	MOVF	r0x03, W
 	MOVWF	POSTDEC1
 	MOVF	r0x02, W
@@ -909,11 +909,11 @@ _display_string:
 	MOVLW	0x03
 	ADDWF	FSR1L, F
 	INCF	r0x04, F
-;	.line	264; testint.c	BYTE max= 32-pos;
+;	.line	267; testint.c	BYTE max= 32-pos;
 	MOVF	r0x00, W
 	SUBLW	0x20
 	MOVWF	r0x05
-;	.line	265; testint.c	strlcpy((char*)&LCDText[pos], text,(l<max)?l:max );
+;	.line	268; testint.c	strlcpy((char*)&LCDText[pos], text,(l<max)?l:max );
 	CLRF	r0x06
 	MOVLW	LOW(_LCDText)
 	ADDWF	r0x00, F
@@ -927,9 +927,9 @@ _display_string:
 	MOVWF	r0x07
 	MOVF	r0x05, W
 	SUBWF	r0x04, W
-	BNC	_00323_DS_
+	BNC	_00345_DS_
 	MOVFF	r0x05, r0x04
-_00323_DS_:
+_00345_DS_:
 	CLRF	r0x05
 	MOVF	r0x05, W
 	MOVWF	POSTDEC1
@@ -950,7 +950,7 @@ _00323_DS_:
 	CALL	_strlcpy
 	MOVLW	0x08
 	ADDWF	FSR1L, F
-;	.line	266; testint.c	LCDUpdate();
+;	.line	269; testint.c	LCDUpdate();
 	CALL	_LCDUpdate
 	MOVFF	PREINC1, r0x07
 	MOVFF	PREINC1, r0x06
@@ -966,7 +966,7 @@ _00323_DS_:
 ; ; Starting pCode block
 S_testint__display_word	code
 _display_word:
-;	.line	239; testint.c	void display_word(BYTE pos, WORD w) //WORD is a 16 bits unsigned
+;	.line	242; testint.c	void display_word(BYTE pos, WORD w) //WORD is a 16 bits unsigned
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
@@ -981,7 +981,7 @@ _display_word:
 	MOVFF	PLUSW2, r0x01
 	MOVLW	0x04
 	MOVFF	PLUSW2, r0x02
-;	.line	247; testint.c	ultoa(w, WDigit, radix);      
+;	.line	250; testint.c	ultoa(w, WDigit, radix);      
 	CLRF	r0x03
 	CLRF	r0x04
 	MOVLW	0x0a
@@ -1001,9 +1001,9 @@ _display_word:
 	CALL	_ultoa
 	MOVLW	0x07
 	ADDWF	FSR1L, F
-;	.line	248; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
+;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 	CLRF	r0x01
-_00304_DS_:
+_00326_DS_:
 	MOVLW	HIGH(_display_word_WDigit_1_1)
 	MOVWF	r0x03
 	MOVLW	LOW(_display_word_WDigit_1_1)
@@ -1029,12 +1029,12 @@ _00304_DS_:
 	MOVF	r0x03, W
 	ADDLW	0x80
 	SUBWF	PRODL, W
-	BNZ	_00314_DS_
+	BNZ	_00336_DS_
 	MOVF	r0x02, W
 	SUBWF	r0x04, W
-_00314_DS_:
-	BC	_00307_DS_
-;	.line	250; testint.c	LCDText[LCDPos++] = WDigit[j];
+_00336_DS_:
+	BC	_00329_DS_
+;	.line	253; testint.c	LCDText[LCDPos++] = WDigit[j];
 	MOVFF	r0x00, r0x02
 	INCF	r0x00, F
 	CLRF	r0x03
@@ -1054,21 +1054,21 @@ _00314_DS_:
 	MOVFF	r0x02, FSR0L
 	MOVFF	r0x03, FSR0H
 	MOVFF	r0x04, INDF0
-;	.line	248; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
+;	.line	251; testint.c	for(j = 0; j < strlen((char*)WDigit); j++)
 	INCF	r0x01, F
-	BRA	_00304_DS_
-_00307_DS_:
-;	.line	252; testint.c	if(LCDPos < 32u)
+	BRA	_00326_DS_
+_00329_DS_:
+;	.line	255; testint.c	if(LCDPos < 32u)
 	MOVFF	r0x00, r0x01
 	CLRF	r0x02
 	MOVLW	0x00
 	SUBWF	r0x02, W
-	BNZ	_00315_DS_
+	BNZ	_00337_DS_
 	MOVLW	0x20
 	SUBWF	r0x01, W
-_00315_DS_:
-	BC	_00303_DS_
-;	.line	253; testint.c	LCDText[LCDPos] = 0;
+_00337_DS_:
+	BC	_00325_DS_
+;	.line	256; testint.c	LCDText[LCDPos] = 0;
 	CLRF	r0x01
 	MOVLW	LOW(_LCDText)
 	ADDWF	r0x00, F
@@ -1078,8 +1078,8 @@ _00315_DS_:
 	MOVFF	r0x01, FSR0H
 	MOVLW	0x00
 	MOVWF	INDF0
-_00303_DS_:
-;	.line	254; testint.c	LCDUpdate();
+_00325_DS_:
+;	.line	257; testint.c	LCDUpdate();
 	CALL	_LCDUpdate
 	MOVFF	PREINC1, r0x05
 	MOVFF	PREINC1, r0x04
@@ -1093,13 +1093,13 @@ _00303_DS_:
 ; ; Starting pCode block
 S_testint__display_time	code
 _display_time:
-;	.line	224; testint.c	void display_time(){    
+;	.line	226; testint.c	void display_time(){    
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
 	MOVFF	r0x01, POSTDEC1
 	MOVFF	r0x02, POSTDEC1
-;	.line	225; testint.c	display_string(0,time);             
+;	.line	227; testint.c	display_string(0,time);         
 	MOVLW	HIGH(_time)
 	MOVWF	r0x01
 	MOVLW	LOW(_time)
@@ -1118,7 +1118,12 @@ _display_time:
 	MOVLW	0x04
 	ADDWF	FSR1L, F
 	BANKSEL	_position
-;	.line	226; testint.c	display_string(16+position-1," ^");
+;	.line	228; testint.c	if(position == 0) display_string(16+position-1," ^");
+	MOVF	_position, W, B
+	BANKSEL	(_position + 1)
+	IORWF	(_position + 1), W, B
+	BNZ	_00317_DS_
+	BANKSEL	_position
 	MOVF	_position, W, B
 	MOVWF	r0x00
 	MOVLW	0x0f
@@ -1134,6 +1139,26 @@ _display_time:
 	CALL	_display_string
 	MOVLW	0x04
 	ADDWF	FSR1L, F
+	BRA	_00319_DS_
+_00317_DS_:
+	BANKSEL	_position
+;	.line	229; testint.c	else display_string(16+position-3,"   ^");
+	MOVF	_position, W, B
+	MOVWF	r0x00
+	MOVLW	0x0d
+	ADDWF	r0x00, F
+	MOVLW	UPPER(__str_3)
+	MOVWF	POSTDEC1
+	MOVLW	HIGH(__str_3)
+	MOVWF	POSTDEC1
+	MOVLW	LOW(__str_3)
+	MOVWF	POSTDEC1
+	MOVF	r0x00, W
+	MOVWF	POSTDEC1
+	CALL	_display_string
+	MOVLW	0x04
+	ADDWF	FSR1L, F
+_00319_DS_:
 	MOVFF	PREINC1, r0x02
 	MOVFF	PREINC1, r0x01
 	MOVFF	PREINC1, r0x00
@@ -1143,7 +1168,7 @@ _display_time:
 ; ; Starting pCode block
 S_testint__test_inc_current_time	code
 _test_inc_current_time:
-;	.line	193; testint.c	void test_inc_current_time(){        
+;	.line	195; testint.c	void test_inc_current_time(){        
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
@@ -1154,7 +1179,7 @@ _test_inc_current_time:
 	MOVFF	r0x05, POSTDEC1
 	MOVFF	r0x06, POSTDEC1
 	BANKSEL	_currentTime
-;	.line	194; testint.c	if(currentTime[7] == ':'){
+;	.line	196; testint.c	if(currentTime[7] == ':'){
 	MOVF	_currentTime, W, B
 	ADDLW	0x07
 	MOVWF	r0x00
@@ -1173,8 +1198,8 @@ _test_inc_current_time:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x3a
-	BNZ	_00253_DS_
-;	.line	195; testint.c	currentTime[7] = '0';
+	BNZ	_00272_DS_
+;	.line	197; testint.c	currentTime[7] = '0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
@@ -1182,7 +1207,7 @@ _test_inc_current_time:
 	MOVF	r0x02, W
 	CALL	__gptrput1
 	BANKSEL	_currentTime
-;	.line	196; testint.c	++currentTime[6];
+;	.line	198; testint.c	++currentTime[6];
 	MOVF	_currentTime, W, B
 	ADDLW	0x06
 	MOVWF	r0x00
@@ -1205,9 +1230,9 @@ _test_inc_current_time:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-_00253_DS_:
+_00272_DS_:
 	BANKSEL	_currentTime
-;	.line	198; testint.c	if(currentTime[6]=='6'){
+;	.line	200; testint.c	if(currentTime[6]=='6'){
 	MOVF	_currentTime, W, B
 	ADDLW	0x06
 	MOVWF	r0x00
@@ -1226,8 +1251,8 @@ _00253_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x36
-	BNZ	_00255_DS_
-;	.line	199; testint.c	currentTime[6]='0';
+	BNZ	_00274_DS_
+;	.line	201; testint.c	currentTime[6]='0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
@@ -1235,7 +1260,7 @@ _00253_DS_:
 	MOVF	r0x02, W
 	CALL	__gptrput1
 	BANKSEL	_currentTime
-;	.line	200; testint.c	currentTime[4]++;
+;	.line	202; testint.c	currentTime[4]++;
 	MOVF	_currentTime, W, B
 	ADDLW	0x04
 	MOVWF	r0x00
@@ -1258,15 +1283,15 @@ _00253_DS_:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-;	.line	201; testint.c	alarmflag = 1;
+;	.line	203; testint.c	alarmflag = 1;
 	MOVLW	0x01
 	BANKSEL	_alarmflag
 	MOVWF	_alarmflag, B
 	BANKSEL	(_alarmflag + 1)
 	CLRF	(_alarmflag + 1), B
-_00255_DS_:
+_00274_DS_:
 	BANKSEL	_currentTime
-;	.line	203; testint.c	if(currentTime[4] == ':'){
+;	.line	205; testint.c	if(currentTime[4] == ':'){
 	MOVF	_currentTime, W, B
 	ADDLW	0x04
 	MOVWF	r0x00
@@ -1285,8 +1310,8 @@ _00255_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x3a
-	BNZ	_00257_DS_
-;	.line	204; testint.c	currentTime[4] = '0';
+	BNZ	_00276_DS_
+;	.line	206; testint.c	currentTime[4] = '0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
@@ -1294,7 +1319,7 @@ _00255_DS_:
 	MOVF	r0x02, W
 	CALL	__gptrput1
 	BANKSEL	_currentTime
-;	.line	205; testint.c	++currentTime[3];
+;	.line	207; testint.c	++currentTime[3];
 	MOVF	_currentTime, W, B
 	ADDLW	0x03
 	MOVWF	r0x00
@@ -1317,9 +1342,9 @@ _00255_DS_:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-_00257_DS_:
+_00276_DS_:
 	BANKSEL	_currentTime
-;	.line	207; testint.c	if(currentTime[3]=='6'){
+;	.line	209; testint.c	if(currentTime[3]=='6'){
 	MOVF	_currentTime, W, B
 	ADDLW	0x03
 	MOVWF	r0x00
@@ -1338,8 +1363,8 @@ _00257_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x36
-	BNZ	_00259_DS_
-;	.line	208; testint.c	currentTime[3]='0';
+	BNZ	_00278_DS_
+;	.line	210; testint.c	currentTime[3]='0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
@@ -1347,7 +1372,7 @@ _00257_DS_:
 	MOVF	r0x02, W
 	CALL	__gptrput1
 	BANKSEL	_currentTime
-;	.line	209; testint.c	currentTime[1]++;
+;	.line	211; testint.c	currentTime[1]++;
 	MOVF	_currentTime, W, B
 	ADDLW	0x01
 	MOVWF	r0x00
@@ -1370,9 +1395,9 @@ _00257_DS_:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-_00259_DS_:
+_00278_DS_:
 	BANKSEL	_currentTime
-;	.line	211; testint.c	if(currentTime[1] == ':'){
+;	.line	213; testint.c	if(currentTime[1] == ':'){
 	MOVF	_currentTime, W, B
 	ADDLW	0x01
 	MOVWF	r0x00
@@ -1391,15 +1416,15 @@ _00259_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x3a
-	BNZ	_00261_DS_
-;	.line	212; testint.c	currentTime[1] = '0';
+	BNZ	_00280_DS_
+;	.line	214; testint.c	currentTime[1] = '0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-;	.line	213; testint.c	++currentTime[0];
+;	.line	215; testint.c	++currentTime[0];
 	MOVFF	_currentTime, r0x03
 	MOVFF	(_currentTime + 1), r0x04
 	MOVFF	(_currentTime + 2), r0x05
@@ -1414,8 +1439,8 @@ _00259_DS_:
 	MOVFF	r0x04, PRODL
 	MOVF	r0x05, W
 	CALL	__gptrput1
-_00261_DS_:
-;	.line	215; testint.c	if(currentTime[0]=='2' && currentTime[1]=='4'){
+_00280_DS_:
+;	.line	217; testint.c	if(currentTime[0]=='2' && currentTime[1]=='4'){
 	MOVFF	_currentTime, r0x03
 	MOVFF	(_currentTime + 1), r0x04
 	MOVFF	(_currentTime + 2), r0x05
@@ -1426,7 +1451,7 @@ _00261_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x32
-	BNZ	_00263_DS_
+	BNZ	_00282_DS_
 	MOVFF	r0x00, FSR0L
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
@@ -1434,8 +1459,8 @@ _00261_DS_:
 	MOVWF	r0x03
 	MOVF	r0x03, W
 	XORLW	0x34
-	BNZ	_00263_DS_
-;	.line	216; testint.c	currentTime[0]='0';
+	BNZ	_00282_DS_
+;	.line	218; testint.c	currentTime[0]='0';
 	MOVFF	_currentTime, r0x03
 	MOVFF	(_currentTime + 1), r0x04
 	MOVFF	(_currentTime + 2), r0x05
@@ -1445,15 +1470,15 @@ _00261_DS_:
 	MOVFF	r0x04, PRODL
 	MOVF	r0x05, W
 	CALL	__gptrput1
-;	.line	217; testint.c	currentTime[1]='0';
+;	.line	219; testint.c	currentTime[1]='0';
 	MOVLW	0x30
 	MOVWF	POSTDEC1
 	MOVFF	r0x00, FSR0L
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-_00263_DS_:
-;	.line	219; testint.c	if(currentTime[0]=='3'){
+_00282_DS_:
+;	.line	221; testint.c	if(currentTime[0]=='3'){
 	MOVFF	_currentTime, r0x00
 	MOVFF	(_currentTime + 1), r0x01
 	MOVFF	(_currentTime + 2), r0x02
@@ -1464,8 +1489,8 @@ _00263_DS_:
 	MOVWF	r0x00
 	MOVF	r0x00, W
 	XORLW	0x33
-	BNZ	_00267_DS_
-;	.line	220; testint.c	currentTime[0]='0';
+	BNZ	_00286_DS_
+;	.line	222; testint.c	currentTime[0]='0';
 	MOVFF	_currentTime, r0x00
 	MOVFF	(_currentTime + 1), r0x01
 	MOVFF	(_currentTime + 2), r0x02
@@ -1475,7 +1500,7 @@ _00263_DS_:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-_00267_DS_:
+_00286_DS_:
 	MOVFF	PREINC1, r0x06
 	MOVFF	PREINC1, r0x05
 	MOVFF	PREINC1, r0x04
@@ -1489,7 +1514,7 @@ _00267_DS_:
 ; ; Starting pCode block
 S_testint__alarm	code
 _alarm:
-;	.line	169; testint.c	void alarm(){
+;	.line	171; testint.c	void alarm(){
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
@@ -1499,24 +1524,24 @@ _alarm:
 	MOVFF	r0x04, POSTDEC1
 	MOVFF	r0x05, POSTDEC1
 	MOVFF	r0x06, POSTDEC1
-;	.line	170; testint.c	int blink = 1;
+;	.line	172; testint.c	int blink = 1;
 	MOVLW	0x01
 	MOVWF	r0x00
 	CLRF	r0x01
-;	.line	171; testint.c	int i = 0;
+;	.line	173; testint.c	int i = 0;
 	CLRF	r0x02
 	CLRF	r0x03
-_00221_DS_:
-;	.line	174; testint.c	for(i; i<5; i++){
+_00240_DS_:
+;	.line	176; testint.c	for(i; i<5; i++){
 	MOVF	r0x03, W
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00244_DS_
+	BNZ	_00263_DS_
 	MOVLW	0x05
 	SUBWF	r0x02, W
-_00244_DS_:
-	BC	_00224_DS_
-;	.line	175; testint.c	if(currentTime[i]!=time[i]){
+_00263_DS_:
+	BC	_00243_DS_
+;	.line	177; testint.c	if(currentTime[i]!=time[i]){
 	MOVF	r0x02, W
 	BANKSEL	_currentTime
 	ADDWF	_currentTime, W, B
@@ -1547,27 +1572,27 @@ _00244_DS_:
 	MOVFF	INDF0, r0x05
 	MOVF	r0x04, W
 	XORWF	r0x05, W
-	BZ	_00223_DS_
-;	.line	176; testint.c	blink = 0;
+	BZ	_00242_DS_
+;	.line	178; testint.c	blink = 0;
 	CLRF	r0x00
 	CLRF	r0x01
-;	.line	177; testint.c	i = 5;
+;	.line	179; testint.c	i = 5;
 	MOVLW	0x05
 	MOVWF	r0x02
 	CLRF	r0x03
-_00223_DS_:
-;	.line	174; testint.c	for(i; i<5; i++){
+_00242_DS_:
+;	.line	176; testint.c	for(i; i<5; i++){
 	INCF	r0x02, F
 	BTFSC	STATUS, 0
 	INCF	r0x03, F
-	BRA	_00221_DS_
-_00224_DS_:
-;	.line	180; testint.c	if(blink){
+	BRA	_00240_DS_
+_00243_DS_:
+;	.line	182; testint.c	if(blink){
 	MOVF	r0x00, W
 	IORWF	r0x01, W
 	BTFSC	STATUS, 2
-	BRA	_00220_DS_
-;	.line	181; testint.c	display_string(0,"    Wake up!    ");
+	BRA	_00239_DS_
+;	.line	183; testint.c	display_string(0,"    Wake up!    ");
 	MOVLW	UPPER(__str_0)
 	MOVWF	POSTDEC1
 	MOVLW	HIGH(__str_0)
@@ -1579,7 +1604,7 @@ _00224_DS_:
 	CALL	_display_string
 	MOVLW	0x04
 	ADDWF	FSR1L, F
-;	.line	182; testint.c	display_string(16, "                ");
+;	.line	184; testint.c	display_string(16, "                ");
 	MOVLW	UPPER(__str_1)
 	MOVWF	POSTDEC1
 	MOVLW	HIGH(__str_1)
@@ -1591,19 +1616,19 @@ _00224_DS_:
 	CALL	_display_string
 	MOVLW	0x04
 	ADDWF	FSR1L, F
-;	.line	183; testint.c	for(j; j<30; j++){
+;	.line	185; testint.c	for(j; j<30; j++){
 	CLRF	r0x00
 	CLRF	r0x01
-_00228_DS_:
+_00247_DS_:
 	MOVF	r0x01, W
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00247_DS_
+	BNZ	_00266_DS_
 	MOVLW	0x1e
 	SUBWF	r0x00, W
-_00247_DS_:
-	BC	_00231_DS_
-;	.line	184; testint.c	LED1_IO ^=1;
+_00266_DS_:
+	BC	_00250_DS_
+;	.line	186; testint.c	LED1_IO ^=1;
 	CLRF	r0x02
 	BTFSC	_LATJbits, 1
 	INCF	r0x02, F
@@ -1617,28 +1642,28 @@ _00247_DS_:
 	ANDLW	0xfd
 	IORWF	PRODH, W
 	MOVWF	_LATJbits
-;	.line	185; testint.c	for(k=0; k<40;++k) 
+;	.line	187; testint.c	for(k=0; k<40;++k) 
 	MOVLW	0x28
 	MOVWF	r0x02
 	CLRF	r0x03
-_00227_DS_:
-;	.line	186; testint.c	dumb_delay1ms();
+_00246_DS_:
+;	.line	188; testint.c	dumb_delay1ms();
 	CALL	_dumb_delay1ms
 	MOVLW	0xff
 	ADDWF	r0x02, F
 	BTFSS	STATUS, 0
 	DECF	r0x03, F
-;	.line	185; testint.c	for(k=0; k<40;++k) 
+;	.line	187; testint.c	for(k=0; k<40;++k) 
 	MOVF	r0x02, W
 	IORWF	r0x03, W
-	BNZ	_00227_DS_
-;	.line	183; testint.c	for(j; j<30; j++){
+	BNZ	_00246_DS_
+;	.line	185; testint.c	for(j; j<30; j++){
 	INCF	r0x00, F
 	BTFSC	STATUS, 0
 	INCF	r0x01, F
-	BRA	_00228_DS_
-_00231_DS_:
-;	.line	188; testint.c	LED1_IO ^=1;
+	BRA	_00247_DS_
+_00250_DS_:
+;	.line	190; testint.c	LED1_IO ^=1;
 	CLRF	r0x00
 	BTFSC	_LATJbits, 1
 	INCF	r0x00, F
@@ -1652,9 +1677,9 @@ _00231_DS_:
 	ANDLW	0xfd
 	IORWF	PRODH, W
 	MOVWF	_LATJbits
-_00220_DS_:
+_00239_DS_:
 	BANKSEL	_alarmflag
-;	.line	190; testint.c	alarmflag = 0;
+;	.line	192; testint.c	alarmflag = 0;
 	CLRF	_alarmflag, B
 	BANKSEL	(_alarmflag + 1)
 	CLRF	(_alarmflag + 1), B
@@ -1671,13 +1696,13 @@ _00220_DS_:
 ; ; Starting pCode block
 S_testint__increment_time	code
 _increment_time:
-;	.line	145; testint.c	void increment_time(){
+;	.line	147; testint.c	void increment_time(){
 	MOVFF	FSR2L, POSTDEC1
 	MOVFF	FSR1L, FSR2L
 	MOVFF	r0x00, POSTDEC1
 	MOVFF	r0x01, POSTDEC1
 	MOVFF	r0x02, POSTDEC1
-;	.line	146; testint.c	time[position]++;
+;	.line	148; testint.c	time[position]++;
 	MOVLW	LOW(_time)
 	BANKSEL	_position
 	ADDWF	_position, W, B
@@ -1694,84 +1719,84 @@ _increment_time:
 	MOVFF	r0x01, FSR0H
 	MOVFF	r0x02, INDF0
 	BANKSEL	(_time + 4)
-;	.line	147; testint.c	if(time[4] == ':'){
+;	.line	149; testint.c	if(time[4] == ':'){
 	MOVF	(_time + 4), W, B
 	XORLW	0x3a
-	BNZ	_00182_DS_
-;	.line	148; testint.c	time[4] = '0';
+	BNZ	_00201_DS_
+;	.line	150; testint.c	time[4] = '0';
 	MOVLW	0x30
 	BANKSEL	(_time + 4)
 	MOVWF	(_time + 4), B
 	BANKSEL	(_time + 3)
-;	.line	149; testint.c	++time[3];
+;	.line	151; testint.c	++time[3];
 	INCF	(_time + 3), W, B
 	MOVWF	r0x00
 	MOVF	r0x00, W
 	BANKSEL	(_time + 3)
 	MOVWF	(_time + 3), B
-_00182_DS_:
+_00201_DS_:
 	BANKSEL	(_time + 3)
-;	.line	151; testint.c	if(time[3]=='6'){
+;	.line	153; testint.c	if(time[3]=='6'){
 	MOVF	(_time + 3), W, B
 	XORLW	0x36
-	BNZ	_00184_DS_
-;	.line	152; testint.c	time[3]='0';
+	BNZ	_00203_DS_
+;	.line	154; testint.c	time[3]='0';
 	MOVLW	0x30
 	BANKSEL	(_time + 3)
 	MOVWF	(_time + 3), B
-;	.line	153; testint.c	time[1]++;
+;	.line	155; testint.c	time[1]++;
 	MOVFF	(_time + 1), r0x00
 	INCF	r0x00, F
 	MOVF	r0x00, W
 	BANKSEL	(_time + 1)
 	MOVWF	(_time + 1), B
-_00184_DS_:
-;	.line	155; testint.c	if(time[1] == ':'){
+_00203_DS_:
+;	.line	157; testint.c	if(time[1] == ':'){
 	MOVFF	(_time + 1), r0x00
 	MOVF	r0x00, W
 	XORLW	0x3a
-	BNZ	_00192_DS_
-;	.line	156; testint.c	time[1] = '0';
+	BNZ	_00211_DS_
+;	.line	158; testint.c	time[1] = '0';
 	MOVLW	0x30
 	BANKSEL	(_time + 1)
 	MOVWF	(_time + 1), B
 	BANKSEL	_time
-;	.line	157; testint.c	++time[0];
+;	.line	159; testint.c	++time[0];
 	INCF	_time, W, B
 	MOVWF	r0x01
 	MOVF	r0x01, W
 	BANKSEL	_time
 	MOVWF	_time, B
-	BRA	_00194_DS_
-_00192_DS_:
-;	.line	159; testint.c	else if(time[0]=='2' && time[1]>='4'){
+	BRA	_00213_DS_
+_00211_DS_:
+;	.line	161; testint.c	else if(time[0]=='2' && time[1]>='4'){
 	MOVFF	_time, r0x01
 	MOVF	r0x01, W
 	XORLW	0x32
-	BNZ	_00188_DS_
+	BNZ	_00207_DS_
 	MOVF	r0x00, W
 	ADDLW	0x80
 	ADDLW	0x4c
-	BNC	_00188_DS_
-;	.line	160; testint.c	time[0]='0';
+	BNC	_00207_DS_
+;	.line	162; testint.c	time[0]='0';
 	MOVLW	0x30
 	BANKSEL	_time
 	MOVWF	_time, B
-;	.line	161; testint.c	time[1]='0';
+;	.line	163; testint.c	time[1]='0';
 	MOVLW	0x30
 	BANKSEL	(_time + 1)
 	MOVWF	(_time + 1), B
-	BRA	_00194_DS_
-_00188_DS_:
-;	.line	163; testint.c	else if(time[0]=='3'){
+	BRA	_00213_DS_
+_00207_DS_:
+;	.line	165; testint.c	else if(time[0]=='3'){
 	MOVF	r0x01, W
 	XORLW	0x33
-	BNZ	_00194_DS_
-;	.line	164; testint.c	time[0]='0';
+	BNZ	_00213_DS_
+;	.line	166; testint.c	time[0]='0';
 	MOVLW	0x30
 	BANKSEL	_time
 	MOVWF	_time, B
-_00194_DS_:
+_00213_DS_:
 	MOVFF	PREINC1, r0x02
 	MOVFF	PREINC1, r0x01
 	MOVFF	PREINC1, r0x00
@@ -1805,31 +1830,31 @@ _high_isr:
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00138_DS_
+	BNZ	_00150_DS_
 	MOVLW	0x02
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00138_DS_:
+_00150_DS_:
 	BNC	_00105_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00139_DS_
+	BNZ	_00151_DS_
 	MOVLW	0x03
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00139_DS_:
+_00151_DS_:
 	BNC	_00106_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00140_DS_
+	BNZ	_00152_DS_
 	MOVLW	0x05
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00140_DS_:
+_00152_DS_:
 	BC	_00106_DS_
 _00105_DS_:
 ;	.line	44; testint.c	increment_time();
@@ -1840,63 +1865,63 @@ _00106_DS_:
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00141_DS_
+	BNZ	_00153_DS_
 	MOVLW	0x07
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00141_DS_:
+_00153_DS_:
 	BNC	_00113_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00142_DS_
+	BNZ	_00154_DS_
 	MOVLW	0x09
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00142_DS_:
+_00154_DS_:
 	BNC	_00109_DS_
 _00113_DS_:
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00143_DS_
+	BNZ	_00155_DS_
 	MOVLW	0x0a
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00143_DS_:
+_00155_DS_:
 	BNC	_00115_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00144_DS_
+	BNZ	_00156_DS_
 	MOVLW	0x0c
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00144_DS_:
+_00156_DS_:
 	BNC	_00109_DS_
 _00115_DS_:
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00145_DS_
+	BNZ	_00157_DS_
 	MOVLW	0x0d
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00145_DS_:
+_00157_DS_:
 	BNC	_00110_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
 	ADDLW	0x80
 	ADDLW	0x80
-	BNZ	_00146_DS_
+	BNZ	_00158_DS_
 	MOVLW	0x0f
 	BANKSEL	_position
 	SUBWF	_position, W, B
-_00146_DS_:
+_00158_DS_:
 	BC	_00110_DS_
 _00109_DS_:
 	BANKSEL	_position
@@ -1945,59 +1970,111 @@ _00110_DS_:
 _00117_DS_:
 ;	.line	55; testint.c	if ( INT1F ) {
 	BTFSS	_INTCON3bits, 0
-	BRA	_00121_DS_
-;	.line	56; testint.c	LED2_IO ^= 1; 
-	CLRF	r0x00
-	BTFSC	_LATJbits, 2
-	INCF	r0x00, F
-	MOVLW	0x01
-	XORWF	r0x00, F
-	MOVF	r0x00, W
-	ANDLW	0x01
-	RLNCF	WREG, W
-	RLNCF	WREG, W
-	MOVWF	PRODH
-	MOVF	_LATJbits, W
-	ANDLW	0xfb
-	IORWF	PRODH, W
-	MOVWF	_LATJbits
+	BRA	_00129_DS_
 	BANKSEL	_position
 ;	.line	57; testint.c	position++;
 	INCF	_position, F, B
-	BNC	_10356_DS_
+	BNC	_10378_DS_
 	BANKSEL	(_position + 1)
 	INCF	(_position + 1), F, B
-_10356_DS_:
+_10378_DS_:
 	BANKSEL	_position
-;	.line	58; testint.c	if(position == 15){
+;	.line	58; testint.c	if(position == 2) position = 3;
 	MOVF	_position, W, B
-	XORLW	0x0f
-	BNZ	_00148_DS_
+	XORLW	0x02
+	BNZ	_00159_DS_
 	BANKSEL	(_position + 1)
 	MOVF	(_position + 1), W, B
-	BZ	_00149_DS_
-_00148_DS_:
+	BZ	_00160_DS_
+_00159_DS_:
 	BRA	_00119_DS_
-_00149_DS_:
+_00160_DS_:
+	MOVLW	0x03
 	BANKSEL	_position
-;	.line	59; testint.c	position = 0;
-	CLRF	_position, B
+	MOVWF	_position, B
 	BANKSEL	(_position + 1)
 	CLRF	(_position + 1), B
 _00119_DS_:
-;	.line	61; testint.c	refresh = 1;
+	BANKSEL	_position
+;	.line	59; testint.c	if(position == 5) position = 7;
+	MOVF	_position, W, B
+	XORLW	0x05
+	BNZ	_00161_DS_
+	BANKSEL	(_position + 1)
+	MOVF	(_position + 1), W, B
+	BZ	_00162_DS_
+_00161_DS_:
+	BRA	_00121_DS_
+_00162_DS_:
+	MOVLW	0x07
+	BANKSEL	_position
+	MOVWF	_position, B
+	BANKSEL	(_position + 1)
+	CLRF	(_position + 1), B
+_00121_DS_:
+	BANKSEL	_position
+;	.line	60; testint.c	if(position == 9) position = 10;
+	MOVF	_position, W, B
+	XORLW	0x09
+	BNZ	_00163_DS_
+	BANKSEL	(_position + 1)
+	MOVF	(_position + 1), W, B
+	BZ	_00164_DS_
+_00163_DS_:
+	BRA	_00123_DS_
+_00164_DS_:
+	MOVLW	0x0a
+	BANKSEL	_position
+	MOVWF	_position, B
+	BANKSEL	(_position + 1)
+	CLRF	(_position + 1), B
+_00123_DS_:
+	BANKSEL	_position
+;	.line	61; testint.c	if(position == 12) position = 13;
+	MOVF	_position, W, B
+	XORLW	0x0c
+	BNZ	_00165_DS_
+	BANKSEL	(_position + 1)
+	MOVF	(_position + 1), W, B
+	BZ	_00166_DS_
+_00165_DS_:
+	BRA	_00125_DS_
+_00166_DS_:
+	MOVLW	0x0d
+	BANKSEL	_position
+	MOVWF	_position, B
+	BANKSEL	(_position + 1)
+	CLRF	(_position + 1), B
+_00125_DS_:
+	BANKSEL	_position
+;	.line	62; testint.c	if(position == 15) position = 0;
+	MOVF	_position, W, B
+	XORLW	0x0f
+	BNZ	_00167_DS_
+	BANKSEL	(_position + 1)
+	MOVF	(_position + 1), W, B
+	BZ	_00168_DS_
+_00167_DS_:
+	BRA	_00127_DS_
+_00168_DS_:
+	BANKSEL	_position
+	CLRF	_position, B
+	BANKSEL	(_position + 1)
+	CLRF	(_position + 1), B
+_00127_DS_:
+;	.line	63; testint.c	refresh = 1;
 	MOVLW	0x01
 	BANKSEL	_refresh
 	MOVWF	_refresh, B
 	BANKSEL	(_refresh + 1)
 	CLRF	(_refresh + 1), B
-;	.line	63; testint.c	INT1F  = 0;	
+;	.line	65; testint.c	INT1F  = 0;	
 	BCF	_INTCON3bits, 0
-_00121_DS_:
-;	.line	67; testint.c	if ( TMR0F ){        
+_00129_DS_:
+;	.line	69; testint.c	if ( TMR0F ){        
 	BTFSS	_INTCONbits, 2
-	BRA	_00126_DS_
-;	.line	68; testint.c	bres += 4096;  
+	BRA	_00134_DS_
+;	.line	70; testint.c	bres += 4096;  
 	MOVLW	0x10
 	BANKSEL	(_bres + 1)
 	ADDWF	(_bres + 1), F, B
@@ -2007,26 +2084,26 @@ _00121_DS_:
 	MOVLW	0x00
 	BANKSEL	(_bres + 3)
 	ADDWFC	(_bres + 3), F, B
-;	.line	69; testint.c	if(bres >= 390625)
+;	.line	71; testint.c	if(bres >= 390625)
 	MOVLW	0x00
 	BANKSEL	(_bres + 3)
 	SUBWF	(_bres + 3), W, B
-	BNZ	_00150_DS_
+	BNZ	_00169_DS_
 	MOVLW	0x05
 	BANKSEL	(_bres + 2)
 	SUBWF	(_bres + 2), W, B
-	BNZ	_00150_DS_
+	BNZ	_00169_DS_
 	MOVLW	0xf5
 	BANKSEL	(_bres + 1)
 	SUBWF	(_bres + 1), W, B
-	BNZ	_00150_DS_
+	BNZ	_00169_DS_
 	MOVLW	0xe1
 	BANKSEL	_bres
 	SUBWF	_bres, W, B
-_00150_DS_:
+_00169_DS_:
 	BTFSS	STATUS, 0
-	BRA	_00123_DS_
-;	.line	71; testint.c	bres -= 390625;	
+	BRA	_00131_DS_
+;	.line	73; testint.c	bres -= 390625;	
 	MOVLW	0x1f
 	BANKSEL	_bres
 	ADDWF	_bres, F, B
@@ -2039,7 +2116,7 @@ _00150_DS_:
 	MOVLW	0xff
 	BANKSEL	(_bres + 3)
 	ADDWFC	(_bres + 3), F, B
-;	.line	72; testint.c	LED0_IO ^= 1;
+;	.line	74; testint.c	LED0_IO ^= 1;
 	CLRF	r0x00
 	BTFSC	_LATJbits, 0
 	INCF	r0x00, F
@@ -2053,7 +2130,7 @@ _00150_DS_:
 	IORWF	PRODH, W
 	MOVWF	_LATJbits
 	BANKSEL	_currentTime
-;	.line	73; testint.c	currentTime[7]++;
+;	.line	75; testint.c	currentTime[7]++;
 	MOVF	_currentTime, W, B
 	ADDLW	0x07
 	MOVWF	r0x00
@@ -2076,18 +2153,18 @@ _00150_DS_:
 	MOVFF	r0x01, PRODL
 	MOVF	r0x02, W
 	CALL	__gptrput1
-;	.line	74; testint.c	test_inc_current_time();
+;	.line	76; testint.c	test_inc_current_time();
 	CALL	_test_inc_current_time
-_00123_DS_:
-;	.line	76; testint.c	refresh = 1;
+_00131_DS_:
+;	.line	78; testint.c	refresh = 1;
 	MOVLW	0x01
 	BANKSEL	_refresh
 	MOVWF	_refresh, B
 	BANKSEL	(_refresh + 1)
 	CLRF	(_refresh + 1), B
-;	.line	77; testint.c	TMR0F = 0; 
+;	.line	79; testint.c	TMR0F = 0; 
 	BCF	_INTCONbits, 2
-_00126_DS_:
+_00134_DS_:
 	MOVFF	PREINC1, r0x03
 	MOVFF	PREINC1, r0x02
 	MOVFF	PREINC1, r0x01
@@ -2115,11 +2192,14 @@ __str_1:
 ; ; Starting pCode block
 __str_2:
 	DB	0x20, 0x5e, 0x00
+; ; Starting pCode block
+__str_3:
+	DB	0x20, 0x20, 0x20, 0x5e, 0x00
 
 
 ; Statistics:
-; code size:	 3410 (0x0d52) bytes ( 2.60%)
-;           	 1705 (0x06a9) words
+; code size:	 3534 (0x0dce) bytes ( 2.70%)
+;           	 1767 (0x06e7) words
 ; udata size:	   22 (0x0016) bytes ( 0.57%)
 ; access size:	   22 (0x0016) bytes
 
